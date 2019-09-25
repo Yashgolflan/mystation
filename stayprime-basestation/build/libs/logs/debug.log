@@ -1,0 +1,365 @@
+2019-09-25 10:32:21.262  INFO   --- [AWT-EventQueue-0] c.s.basestation2.BaseStation2App         : basePath: /opt/StayPrime/BaseStation/
+2019-09-25 10:32:21.340 DEBUG   --- [AWT-EventQueue-0] c.s.b.i.ApplicationInstanceManager       : Listening for application instances on socket 44331
+2019-09-25 10:32:21.343  INFO   --- [AWT-EventQueue-0] com.stayprime.util.ClassUtilities        : StayPrime BaseStation Application
+2019-09-25 10:32:21.353  INFO   --- [AWT-EventQueue-0] com.stayprime.util.ClassUtilities        : Version: 3.0.3null  built: on 19 Sept 2019null
+2019-09-25 10:32:21.354  INFO   --- [AWT-EventQueue-0] c.s.basestation2.BaseStation2App         : System Startup time: Wed Sep 25 10:32:20 IST 2019
+2019-09-25 10:32:21.355  INFO   --- [AWT-EventQueue-0] c.s.basestation2.BaseStation2App         : Desktop session env variable: ubuntu
+2019-09-25 10:32:29.123  WARN   --- [AWT-EventQueue-0] c.s.b.ui.modules.CartUpdatePanel         : org.apache.commons.configuration.ConfigurationException: Cannot locate configuration source update.properties
+2019-09-25 10:32:31.121  INFO 13192 --- [pool-1-thread-1] o.s.boot.SpringApplication               : Starting application on stayprime-Aspire-V5-573G with PID 13192 (started by stayprime in /netbeansBaseStation/stayprime-basestation/build/libs)
+2019-09-25 10:32:31.122  INFO 13192 --- [pool-1-thread-1] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2019-09-25 10:32:31.779  INFO 13192 --- [pool-1-thread-1] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@31efbf1e: startup date [Wed Sep 25 10:32:31 IST 2019]; root of context hierarchy
+2019-09-25 10:32:35.459  INFO 13192 --- [pool-1-thread-1] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-09-25 10:32:35.968  INFO 13192 --- [pool-1-thread-1] c.s.basestation2.SpringApplication       : basePath: /opt/StayPrime/BaseStation/
+2019-09-25 10:32:36.150  INFO 13192 --- [pool-1-thread-1] c.s.b.config.DataSourceConfig            : Creating dataSource for db: jdbc:mysql://spgcclouddb.cwzzsl1wpj65.eu-central-1.rds.amazonaws.com:3306/sp1?zeroDateTimeBehavior=convertToNull&useLegacyDatetimeCode=false
+2019-09-25 10:32:36.153  INFO 13192 --- [pool-1-thread-1] com.zaxxer.hikari.HikariDataSource       : HikariCP pool HikariPool-0 is starting.
+2019-09-25 10:32:38.670 DEBUG 13192 --- [pool-1-thread-1] c.s.b.config.DataSourceConfig            : Created dataSource in 2520 ms
+2019-09-25 10:32:40.819  INFO 13192 --- [pool-1-thread-1] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-09-25 10:32:40.876  INFO 13192 --- [pool-1-thread-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-25 10:32:41.086  INFO 13192 --- [pool-1-thread-1] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2019-09-25 10:32:41.091  INFO 13192 --- [pool-1-thread-1] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-09-25 10:32:41.094  INFO 13192 --- [pool-1-thread-1] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-09-25 10:32:41.500  INFO 13192 --- [pool-1-thread-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2019-09-25 10:32:41.677  INFO 13192 --- [pool-1-thread-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-25 10:32:42.206  INFO 13192 --- [pool-1-thread-1] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2019-09-25 10:32:46.076  INFO 13192 --- [pool-1-thread-1] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-09-25 10:32:46.078  INFO 13192 --- [pool-1-thread-1] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSourceConfig' has been autodetected for JMX exposure
+2019-09-25 10:32:46.079  INFO 13192 --- [pool-1-thread-1] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-09-25 10:32:46.087  INFO 13192 --- [pool-1-thread-1] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSourceConfig': registering with JMX server as MBean [com.stayprime.basestation2.config:name=dataSourceConfig,type=DataSourceConfig]
+2019-09-25 10:32:46.103  INFO 13192 --- [pool-1-thread-1] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-09-25 10:32:46.148  INFO 13192 --- [pool-1-thread-1] o.s.boot.SpringApplication               : Started application in 16.049 seconds (JVM running for 27.699)
+2019-09-25 10:32:47.220  INFO 13192 --- [pool-1-thread-3] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:32:49.131  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:32:50.026  INFO 13192 --- [pool-1-thread-3] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569387510480, remote - 1569386920703, delta - 589777
+2019-09-25 10:32:50.027 DEBUG 13192 --- [pool-1-thread-3] c.s.storage.services.AssetSyncService    : syncCourseSettings()
+2019-09-25 10:32:53.550  INFO 13192 --- [pool-1-thread-3] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:32:55.856 DEBUG 13192 --- [pool-1-thread-3] c.s.storage.services.AssetSyncService    : syncFnB()
+2019-09-25 10:33:01.409  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:33:03.310 DEBUG 13192 --- [monitorTask] com.stayprime.util.EmailUtil             : Sending email: 
+2019-09-25 10:33:07.836  INFO 13192 --- [monitorTask] c.s.b.reporting.CartConnectivityReport   : Email sent successfully to {reports.me@stayprime.com}
+2019-09-25 10:33:08.916  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:33:16.373  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:33:25.953  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:33:33.394  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:33:40.862  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:33:46.120  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:33:47.522  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569387510480, remote - 1569387510480, delta - 0
+2019-09-25 10:33:50.036  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:33:54.835  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:34:02.314  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:34:09.781  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:34:12.598  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:34:14.013  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569387510480, remote - 1569387510480, delta - 0
+2019-09-25 10:34:16.527  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:34:19.052  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:34:26.370  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:34:34.085  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:34:39.052  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:34:40.466  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569387510480, remote - 1569387510480, delta - 0
+2019-09-25 10:34:42.936  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:34:47.220  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:34:54.520  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:35:02.008  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:35:07.220  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:35:08.597  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569387510480, remote - 1569387510480, delta - 0
+2019-09-25 10:35:11.348  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:35:14.062  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:35:21.374  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:35:28.845  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:35:34.062  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:35:35.397  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569387510480, remote - 1569387510480, delta - 0
+2019-09-25 10:35:38.253  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:35:40.832  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:35:48.149  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:35:57.171  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:36:00.832  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:36:02.161  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569387510480, remote - 1569387510480, delta - 0
+2019-09-25 10:36:04.550  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:36:07.321  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:36:14.643  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:36:23.517  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:36:27.321  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:36:28.653  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569387510480, remote - 1569387510480, delta - 0
+2019-09-25 10:36:31.394  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:36:34.148  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:36:41.594  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:36:51.543  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:36:54.177  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:36:55.531  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569387510480, remote - 1569387510480, delta - 0
+2019-09-25 10:36:58.640  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:37:01.201  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:37:08.894  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:37:18.459  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:37:21.201  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:37:22.629  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569387510480, remote - 1569387510480, delta - 0
+2019-09-25 10:37:25.280  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:37:27.915  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:37:35.293  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:37:44.105  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:37:47.915  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:37:49.384  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569387510480, remote - 1569387510480, delta - 0
+2019-09-25 10:37:51.951  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:37:54.750  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:38:03.744  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:38:11.241  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:38:14.750  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:38:16.076  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569387510480, remote - 1569387510480, delta - 0
+2019-09-25 10:38:18.558  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:38:20.951  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:38:28.256  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:38:35.703  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:38:40.951  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:38:42.260  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569387510480, remote - 1569387510480, delta - 0
+2019-09-25 10:38:44.611  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:38:46.960  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:38:54.253  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:39:03.220  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:39:06.960  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:39:08.250  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569387510480, remote - 1569387510480, delta - 0
+2019-09-25 10:39:10.554  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:39:12.921  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:39:20.211  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:39:27.673  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:39:32.921  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:39:34.214  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569387510480, remote - 1569387510480, delta - 0
+2019-09-25 10:39:36.519  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:39:38.910  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:39:46.201  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:39:53.638  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:39:58.910  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:40:00.211  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569387510480, remote - 1569387510480, delta - 0
+2019-09-25 10:40:04.554  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:40:07.344  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:40:14.665  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:40:22.302  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:40:27.345  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:40:28.765  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569387510480, remote - 1569387510480, delta - 0
+2019-09-25 10:40:31.274  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:40:33.789  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:40:41.105  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:40:49.173  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:40:53.789  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:40:55.191  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569387510480, remote - 1569387510480, delta - 0
+2019-09-25 10:40:57.762  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:41:00.297  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:41:07.613  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:41:17.263  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:41:20.297  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:41:21.682  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569387510480, remote - 1569387510480, delta - 0
+2019-09-25 10:41:24.210  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:41:26.721  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:41:34.048  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:41:41.805  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:41:46.721  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:41:48.130  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569387510480, remote - 1569387510480, delta - 0
+2019-09-25 10:41:50.912  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:41:53.621  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:42:01.090  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:42:08.652  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:42:13.621  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:42:16.623  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569387510480, remote - 1569387510480, delta - 0
+2019-09-25 10:42:19.003  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:42:21.506  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:42:28.804  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:42:36.253  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:42:41.506  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:42:42.844  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569387510480, remote - 1569387510480, delta - 0
+2019-09-25 10:42:45.240  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:42:47.623  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:42:54.922  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:43:02.367  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:43:07.624  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:43:08.958  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569387510480, remote - 1569387510480, delta - 0
+2019-09-25 10:43:11.427  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:43:13.841  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:43:21.156  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:43:30.284  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:43:33.841  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:43:35.321  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569387510480, remote - 1569387510480, delta - 0
+2019-09-25 10:43:37.937  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:43:40.530  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:43:47.856  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:43:55.622  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:44:00.530  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:44:01.989  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569388427082, remote - 1569387510480, delta - 916602
+2019-09-25 10:44:01.989 DEBUG 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : syncCourseSettings()
+2019-09-25 10:44:06.123  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:44:07.445 DEBUG 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : syncAds()
+2019-09-25 10:44:11.581  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:44:18.931  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:44:28.038  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:44:31.581  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:44:32.958  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569388427082, remote - 1569388427082, delta - 0
+2019-09-25 10:44:35.357  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:44:37.757  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:44:45.056  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:44:52.502  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:44:57.757  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:44:59.078  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569388427082, remote - 1569388427082, delta - 0
+2019-09-25 10:45:01.587  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:45:04.128  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:45:11.426  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:45:18.881  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:45:24.128  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:45:25.484  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569388427082, remote - 1569388427082, delta - 0
+2019-09-25 10:45:29.454  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:45:31.827  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:45:39.116  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:45:46.549  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:45:51.827  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:45:53.150  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569388427082, remote - 1569388427082, delta - 0
+2019-09-25 10:45:55.520  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:45:57.837  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:46:05.125  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:46:12.557  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:46:17.837  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:46:19.161  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569388568347, remote - 1569388427082, delta - 141265
+2019-09-25 10:46:19.161 DEBUG 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : syncCourseSettings()
+2019-09-25 10:46:22.701  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:46:23.923 DEBUG 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : syncAds()
+2019-09-25 10:46:27.465  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:46:34.759  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:46:43.688  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:46:47.465  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:46:48.830  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569388568347, remote - 1569388568347, delta - 0
+2019-09-25 10:46:51.289  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:46:53.693  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:47:01.010  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:47:08.773  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:47:13.693  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:47:15.048  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569388568347, remote - 1569388568347, delta - 0
+2019-09-25 10:47:17.445  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:47:19.833  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:47:27.134  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:47:34.609  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:47:39.833  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:47:42.846  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569388568347, remote - 1569388568347, delta - 0
+2019-09-25 10:47:45.304  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:47:47.770  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:47:55.077  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:48:02.661  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:48:07.770  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:48:09.137  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569388568347, remote - 1569388568347, delta - 0
+2019-09-25 10:48:11.633  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:48:14.155  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:48:21.465  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:48:28.952  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:48:34.155  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:48:35.513  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569388568347, remote - 1569388568347, delta - 0
+2019-09-25 10:48:37.950  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:48:40.387  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:48:47.695  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:48:56.604  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:49:00.387  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:49:01.702  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569388568347, remote - 1569388568347, delta - 0
+2019-09-25 10:49:04.090  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:49:06.487  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:49:13.781  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:49:21.290  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:49:26.487  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:49:27.815  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569388568347, remote - 1569388568347, delta - 0
+2019-09-25 10:49:30.178  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:49:32.570  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:49:39.861  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:49:47.635  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:49:52.571  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:49:55.740  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569388568347, remote - 1569388568347, delta - 0
+2019-09-25 10:49:58.664  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:50:01.053  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:50:08.345  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:50:15.869  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:50:21.054  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:50:22.391  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569388568347, remote - 1569388568347, delta - 0
+2019-09-25 10:50:24.853  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:50:27.328  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:50:34.625  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:50:42.062  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:50:47.328  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:50:48.639  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569388568347, remote - 1569388568347, delta - 0
+2019-09-25 10:50:50.950  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:50:53.263  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:51:00.571  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:51:09.718  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:51:13.263  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:51:14.690  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569388568347, remote - 1569388568347, delta - 0
+2019-09-25 10:51:17.221  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:51:19.768  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:51:27.100  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:51:34.825  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:51:39.768  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:51:41.201  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569388568347, remote - 1569388568347, delta - 0
+2019-09-25 10:51:43.791  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:51:46.372  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:51:53.692  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:52:01.556  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:52:06.372  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:52:09.319  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569388568347, remote - 1569388568347, delta - 0
+2019-09-25 10:52:11.754  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:52:14.215  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:52:21.520  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:52:29.152  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:52:34.215  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:52:35.576  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569388568347, remote - 1569388568347, delta - 0
+2019-09-25 10:52:38.039  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:52:40.496  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:52:47.810  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:52:55.337  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:53:00.496  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:53:01.874  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569388568347, remote - 1569388568347, delta - 0
+2019-09-25 10:53:04.339  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:53:06.853  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:53:14.157  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:53:23.296  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:53:26.853  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:53:28.254  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569388568347, remote - 1569388568347, delta - 0
+2019-09-25 10:53:30.717  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:53:33.194  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:53:40.515  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:53:48.073  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:53:53.194  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:53:54.663  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569388568347, remote - 1569388568347, delta - 0
+2019-09-25 10:53:57.327  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:53:59.809  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:54:07.122  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:54:15.066  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:54:19.809  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:54:23.452  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569388568347, remote - 1569388568347, delta - 0
+2019-09-25 10:54:26.184  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:54:28.993  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:54:36.470  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:54:44.110  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:54:48.993  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:54:50.420  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569388568347, remote - 1569388568347, delta - 0
+2019-09-25 10:54:52.994  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:54:55.562  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:55:02.881  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:55:10.601  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:55:15.562  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:55:17.037  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569388568347, remote - 1569388568347, delta - 0
+2019-09-25 10:55:19.588  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:55:22.133  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:55:29.452  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:55:38.969  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:55:42.133  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:55:43.585  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569388568347, remote - 1569388568347, delta - 0
+2019-09-25 10:55:46.160  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:55:48.957  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:55:56.277  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:56:04.014  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:56:08.957  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:56:10.397  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569388568347, remote - 1569388568347, delta - 0
+2019-09-25 10:56:13.028  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:56:15.764  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:56:23.085  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:56:32.313  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:56:35.764  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:56:37.188  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569388568347, remote - 1569388568347, delta - 0
+2019-09-25 10:56:39.713  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:56:42.221  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:56:49.535  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:56:57.107  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-25 10:57:02.221  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-25 10:57:03.632  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1569388568347, remote - 1569388568347, delta - 0
+2019-09-25 10:57:06.240  INFO 13192 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1566215710797, remote - 1566215710797, delta - 0
+2019-09-25 10:57:08.741  INFO 13192 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests

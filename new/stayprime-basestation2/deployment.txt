@@ -1,0 +1,23 @@
+1. Site DB backup into .sql dump file.
+2. Fix the asset paths: ads, maps-cropped, maps-original, videos-rotated, videos-original
+3. Remove the initial CREATE DATABASE and USE statements from the generated sql dump file
+4. Run BaseStation with arguments "db update" to update the database.
+5. Copy system_settings properties to course_settings:
+
+Now the siteId is taken from CourseInfo table. Needs to be set there and removed from CourseSettings.
+
+Moved from SystemSettings to CourseSettings:
+- APIKey, APISecret, NexmoNumber (Nexmo) Written by BaseStation (Except for NexmoNumber, seems to be manually set only)
+- StayConnected, SoftwareVersion, MinSoftwareVersion
+
+SET @siteId = , @nowstamp = current_timestamp, @nowunix = unix_timestamp(@nowstamp)*1000;
+UPDATE course_info SET site_id = @siteId WHERE course_id = 0;
+REPLACE INTO course_settings (name, value, last_updated) VALUES ('siteId', @siteId, @nowstamp);
+REPLACE INTO course_settings (name, value, last_updated) VALUES ('courseUpdated', @nowunix, @nowstamp);
+REPLACE INTO course_settings (name, value, last_updated) VALUES ('adsUpdated', @nowunix, @nowstamp);
+REPLACE INTO course_settings (name, value, last_updated) VALUES ('menuUpdated', @nowunix, @nowstamp);
+REPLACE INTO course_settings (name, value, last_updated) VALUES ('pinsUpdated', @nowunix, @nowstamp);
+REPLACE INTO course_settings (name, value, last_updated) VALUES ('courseSettingsUpdated', @nowunix, @nowstamp);
+UPDATE course_info set updated = @nowstamp WHERE course_id = 0;
+REPLACE INTO course_settings (name, value, last_updated) SELECT 'welcomeImage', value, @nowstamp FROM system_settings WHERE NAME = 'WelcomeImage';
+REPLACE INTO course_settings (name, value, last_updated) SELECT 'thankyouImage', value, @nowstamp FROM system_settings WHERE NAME = 'ThankyouImage';

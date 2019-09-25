@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.stayprime.comm.BytePacketUtilsTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-09-25T04:48:28" hostname="stayprime-Aspire-V5-573G" time="0.002">
+  <properties/>
+  <testcase name="testWriteEscaped" classname="com.stayprime.comm.BytePacketUtilsTest" time="0.002"/>
+  <testcase name="testEscapePacket" classname="com.stayprime.comm.BytePacketUtilsTest" time="0.0"/>
+  <system-out><![CDATA[writeEscaped
+Testing escape
+Index 26, 26 != -1
+Testing unescape
+escapePacket
+Testing escape
+Index 26, 26 != -1
+Testing unescape
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

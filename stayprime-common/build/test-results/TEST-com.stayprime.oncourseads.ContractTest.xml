@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.stayprime.oncourseads.ContractTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-09-25T04:48:28" hostname="stayprime-Aspire-V5-573G" time="0.003">
+  <properties/>
+  <testcase name="testGetSponsoredHoleCount" classname="com.stayprime.oncourseads.ContractTest" time="0.002"/>
+  <testcase name="testIsActive" classname="com.stayprime.oncourseads.ContractTest" time="0.0"/>
+  <testcase name="testIsForHole" classname="com.stayprime.oncourseads.ContractTest" time="0.0"/>
+  <system-out><![CDATA[getSponsoredHoleCount
+isActive
+isForHole
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="TaskDialog-1.2.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../stayprime-common/lib/TaskDialog-1.2.0/TaskDialog-1.2.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../stayprime-common/lib/TaskDialog-1.2.0/miglayout-3.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../stayprime-common/lib/TaskDialog-1.2.0/TaskDialog-1.2.0-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../stayprime-common/lib/TaskDialog-1.2.0/TaskDialog-1.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

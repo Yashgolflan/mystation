@@ -1,0 +1,32 @@
+2019-09-08 18:57:23.706 ERROR 13804 --- [AWT-EventQueue-1] org.jdesktop.application.Task            : com.stayprime.basestation2.BaseStationStartupTask@3787be55 failed: java.lang.RuntimeException: Error storing object to file: Clients.json
+
+java.lang.RuntimeException: Error storing object to file: Clients.json
+	at com.stayprime.storage.util.JsonStorage.storeObject(JsonStorage.java:67)
+	at com.stayprime.storage.util.JsonStorage.storeList(JsonStorage.java:50)
+	at com.stayprime.storage.util.LocalStorage.saveClients(LocalStorage.java:150)
+	at com.stayprime.storage.services.AssetSyncService.syncAds(AssetSyncService.java:232)
+	at com.stayprime.storage.services.AssetSyncService.checkAdsUpdated(AssetSyncService.java:147)
+	at com.stayprime.storage.services.AssetSyncService.syncAssets(AssetSyncService.java:106)
+	at com.stayprime.storage.services.AssetSyncService$$FastClassBySpringCGLIB$$b12f0f72.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:651)
+	at com.stayprime.storage.services.AssetSyncService$$EnhancerBySpringCGLIB$$42be2b59.syncAssets(<generated>)
+	at com.stayprime.basestation2.BaseStation2App.syncGolfClub(BaseStation2App.java:240)
+	at com.stayprime.basestation2.BaseStationStartupTask.doInBackground(BaseStationStartupTask.java:39)
+	at com.stayprime.basestation2.BaseStationStartupTask.doInBackground(BaseStationStartupTask.java:23)
+	at javax.swing.SwingWorker$1.call(SwingWorker.java:295)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at javax.swing.SwingWorker.run(SwingWorker.java:334)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.FileNotFoundException: /opt/StayPrime/BaseStation/json/Clients.json (No such file or directory)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at java.io.FileWriter.<init>(FileWriter.java:90)
+	at com.stayprime.storage.util.JsonStorage.storeObject(JsonStorage.java:62)
+	... 18 common frames omitted
+
+2019-09-08 18:57:53.064 ERROR 13938 --- [pool-1-thread-1] c.s.basestation2.CourseSettingsManager   : java.lang.NullPointerException

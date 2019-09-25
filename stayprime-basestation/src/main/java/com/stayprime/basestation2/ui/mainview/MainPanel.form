@@ -1,0 +1,1100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.7" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <NonVisualComponents>
+    <Component class="com.stayprime.basestation2.ui.DashboardManager" name="dashboardManager">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="dashboardManager"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="zoomInButton1">
+      <Properties>
+        <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+          <action class="com.stayprime.basestation2.MainPanel" id="zoomIn" methodName="zoomIn"/>
+        </Property>
+        <Property name="text" type="java.lang.String" resourceKey="zoomInButton1.text"/>
+        <Property name="focusable" type="boolean" value="false"/>
+        <Property name="horizontalTextPosition" type="int" value="0"/>
+        <Property name="name" type="java.lang.String" value="zoomInButton1" noResource="true"/>
+        <Property name="verticalTextPosition" type="int" value="3"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="zoomOutButton1">
+      <Properties>
+        <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+          <action class="com.stayprime.basestation2.MainPanel" id="zoomOut" methodName="zoomOut"/>
+        </Property>
+        <Property name="text" type="java.lang.String" resourceKey="zoomOutButton1.text"/>
+        <Property name="focusable" type="boolean" value="false"/>
+        <Property name="horizontalTextPosition" type="int" value="0"/>
+        <Property name="name" type="java.lang.String" value="zoomOutButton1" noResource="true"/>
+        <Property name="verticalTextPosition" type="int" value="3"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="cartStatusTabSelectorButtonGroup">
+    </Component>
+    <Component class="com.stayprime.basestation2.ui.mainview.PinLocationPanel" name="pinLocationPanel">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="pinLocationPanel" noResource="true"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+      </AuxValues>
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="name" type="java.lang.String" value="Form" noResource="true"/>
+  </Properties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="2"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,2,22,0,0,4,-64"/>
+  </AuxValues>
+
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+  <SubComponents>
+    <Container class="org.jdesktop.swingx.JXPanel" name="leftMenuPanel">
+      <Properties>
+        <Property name="opaque" type="boolean" value="false"/>
+        <Property name="name" type="java.lang.String" value="leftMenuPanel" noResource="true"/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+          <BorderConstraints direction="West"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+      <SubComponents>
+        <Container class="org.jdesktop.swingx.JXPanel" name="leftMenuButtonsPanel">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+                <EmptyBorder bottom="1" left="1" right="1" top="10"/>
+              </Border>
+            </Property>
+            <Property name="name" type="java.lang.String" value="leftMenuButtonsPanel" noResource="true"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+              <BorderConstraints direction="North"/>
+            </Constraint>
+          </Constraints>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="logoLabel">
+              <Properties>
+                <Property name="horizontalAlignment" type="int" value="0"/>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="logoLabel.icon"/>
+                <Property name="name" type="java.lang.String" value="logoLabel" noResource="true"/>
+              </Properties>
+            </Component>
+            <Container class="org.jdesktop.swingx.JXPanel" name="dashboardControlsPanel">
+              <Properties>
+                <Property name="opaque" type="boolean" value="false"/>
+                <Property name="alignmentX" type="float" value="0.0"/>
+                <Property name="name" type="java.lang.String" value="dashboardControlsPanel" noResource="true"/>
+              </Properties>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JToggleButton" name="dashboardButton">
+                  <Properties>
+                    <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                      <action class="com.stayprime.basestation2.ui.mainview.MainPanel" id="showDashboardPanel" methodName="showDashboardPanel"/>
+                    </Property>
+                    <Property name="selected" type="boolean" value="true"/>
+                    <Property name="horizontalAlignment" type="int" value="2"/>
+                    <Property name="name" type="java.lang.String" value="dashboardButton" noResource="true"/>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                      <BorderConstraints direction="North"/>
+                    </Constraint>
+                  </Constraints>
+                </Component>
+                <Container class="org.jdesktop.swingx.JXCollapsiblePane" name="dashLayerPanel">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+                        <EmptyBorder bottom="0" left="10" right="0" top="1"/>
+                      </Border>
+                    </Property>
+                    <Property name="opaque" type="boolean" value="false"/>
+                    <Property name="name" type="java.lang.String" value="dashLayerPanel" noResource="true"/>
+                    <Property name="paintBorderInsets" type="boolean" value="false"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new org.jdesktop.swingx.JXCollapsiblePane() {&#xa;    public void paintComponent(Graphics g) {&#xa;    }&#xa;}"/>
+                  </AuxValues>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                      <BorderConstraints direction="Center"/>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout">
+                    <Property name="axis" type="int" value="3"/>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JCheckBox" name="actionZonesCheckbox">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" resourceKey="actionZonesCheckbox.text"/>
+                        <Property name="name" type="java.lang.String" value="actionZonesCheckbox" noResource="true"/>
+                      </Properties>
+                      <BindingProperties>
+                        <BindingProperty name="selected" source="dashboardManager" sourcePath="${showActionZones}" target="actionZonesCheckbox" targetPath="selected" updateStrategy="0" immediately="false"/>
+                      </BindingProperties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new PersistentCheckBox()"/>
+                      </AuxValues>
+                    </Component>
+                    <Component class="javax.swing.JCheckBox" name="cartPathsCheckbox">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" resourceKey="cartPathsCheckbox.text"/>
+                        <Property name="name" type="java.lang.String" value="cartPathsCheckbox" noResource="true"/>
+                      </Properties>
+                      <BindingProperties>
+                        <BindingProperty name="selected" source="dashboardManager" sourcePath="${showCartPaths}" target="cartPathsCheckbox" targetPath="selected" updateStrategy="0" immediately="false"/>
+                      </BindingProperties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new PersistentCheckBox()"/>
+                      </AuxValues>
+                    </Component>
+                    <Component class="javax.swing.JCheckBox" name="pinLocationCheckbox">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" resourceKey="pinLocationCheckbox.text"/>
+                        <Property name="name" type="java.lang.String" value="pinLocationCheckbox" noResource="true"/>
+                      </Properties>
+                      <BindingProperties>
+                        <BindingProperty name="selected" source="dashboardManager" sourcePath="${showPinFlags}" target="pinLocationCheckbox" targetPath="selected" updateStrategy="0" immediately="false"/>
+                      </BindingProperties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new PersistentCheckBox()"/>
+                      </AuxValues>
+                    </Component>
+                    <Component class="javax.swing.JCheckBox" name="positionCheckbox">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Cart Position" noResource="true"/>
+                        <Property name="name" type="java.lang.String" value="positionCheckbox" noResource="true"/>
+                      </Properties>
+                      <BindingProperties>
+                        <BindingProperty name="selected" source="dashboardManager" sourcePath="${showCarts}" target="positionCheckbox" targetPath="selected" updateStrategy="0" immediately="false"/>
+                      </BindingProperties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new PersistentCheckBox()"/>
+                      </AuxValues>
+                    </Component>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JToggleButton" name="cartStatusButton">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="com.stayprime.basestation2.ui.mainview.MainPanel" id="showCartStatus" methodName="showCartStatus"/>
+                </Property>
+                <Property name="text" type="java.lang.String" resourceKey="cartStatusButton.text"/>
+                <Property name="toolTipText" type="java.lang.String" resourceKey="cartStatusButton.toolTipText"/>
+                <Property name="horizontalAlignment" type="int" value="2"/>
+                <Property name="name" type="java.lang.String" value="cartStatusButton" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JToggleButton" name="notificationsButton">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="com.stayprime.basestation2.ui.mainview.MainPanel" id="showNotifications" methodName="showNotifications"/>
+                </Property>
+                <Property name="horizontalAlignment" type="int" value="2"/>
+                <Property name="name" type="java.lang.String" value="notificationsButton" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="cartAssignmentButton">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="com.stayprime.basestation2.ui.mainview.MainPanel" id="showCartAssignment" methodName="showCartAssignment"/>
+                </Property>
+                <Property name="text" type="java.lang.String" resourceKey="cartAssignmentButton.text"/>
+                <Property name="horizontalAlignment" type="int" value="2"/>
+                <Property name="horizontalTextPosition" type="int" value="0"/>
+                <Property name="name" type="java.lang.String" value="cartAssignmentButton" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JToggleButton" name="menuButton">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="com.stayprime.basestation2.MainPanel" id="showFoodAndBeverageScreen" methodName="showFoodAndBeverageScreen"/>
+                </Property>
+                <Property name="horizontalAlignment" type="int" value="2"/>
+                <Property name="horizontalTextPosition" type="int" value="0"/>
+                <Property name="name" type="java.lang.String" value="cartMgtButton" noResource="true"/>
+                <Property name="verticalTextPosition" type="int" value="3"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="onCourseAdsButton">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="com.stayprime.basestation2.MainPanel" id="showOnCourseAdsPanel" methodName="showOnCourseAdsPanel"/>
+                </Property>
+                <Property name="text" type="java.lang.String" resourceKey="onCourseAdsButton.text"/>
+                <Property name="toolTipText" type="java.lang.String" resourceKey="onCourseAdsButton.toolTipText"/>
+                <Property name="horizontalAlignment" type="int" value="2"/>
+                <Property name="horizontalTextPosition" type="int" value="0"/>
+                <Property name="name" type="java.lang.String" value="onCourseAdsButton" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JToggleButton" name="courseMgtButton">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="com.stayprime.basestation2.ui.mainview.MainPanel" id="showCourseManagementScreen" methodName="showCourseManagementScreen"/>
+                </Property>
+                <Property name="horizontalAlignment" type="int" value="2"/>
+                <Property name="horizontalTextPosition" type="int" value="0"/>
+                <Property name="name" type="java.lang.String" value="courseMgtButton" noResource="true"/>
+                <Property name="verticalTextPosition" type="int" value="3"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JToggleButton" name="cartMgtButton">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="com.stayprime.basestation2.MainPanel" id="showCartManagementScreen" methodName="showCartManagementScreen"/>
+                </Property>
+                <Property name="horizontalAlignment" type="int" value="2"/>
+                <Property name="horizontalTextPosition" type="int" value="0"/>
+                <Property name="name" type="java.lang.String" value="cartMgtButton" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JToggleButton" name="showReportButton">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="com.stayprime.basestation2.ui.mainview.MainPanel" id="showReport" methodName="showReport"/>
+                </Property>
+                <Property name="text" type="java.lang.String" resourceKey="showReportButton.text"/>
+                <Property name="toolTipText" type="java.lang.String" resourceKey="showReportButton.toolTipText"/>
+                <Property name="horizontalAlignment" type="int" value="2"/>
+                <Property name="horizontalTextPosition" type="int" value="0"/>
+                <Property name="name" type="java.lang.String" value="showReportButton" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JToggleButton" name="drawingToolButton">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="com.stayprime.basestation2.MainPanel" id="showDrawingTool" methodName="showDrawingTool"/>
+                </Property>
+                <Property name="horizontalAlignment" type="int" value="2"/>
+                <Property name="horizontalTextPosition" type="int" value="0"/>
+                <Property name="name" type="java.lang.String" value="drawingToolButton" noResource="true"/>
+                <Property name="verticalTextPosition" type="int" value="3"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+          <LayoutCode>
+            <CodeStatement>
+              <CodeExpression id="1_verticalLayout1">
+                <CodeVariable name="verticalLayout1" type="4096" declaredType="org.jdesktop.swingx.VerticalLayout"/>
+                <ExpressionOrigin>
+                  <ExpressionProvider type="CodeConstructor">
+                    <CodeConstructor class="org.jdesktop.swingx.VerticalLayout" parameterTypes=""/>
+                  </ExpressionProvider>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <StatementProvider type="CodeExpression">
+                <CodeExpression id="1_verticalLayout1"/>
+              </StatementProvider>
+            </CodeStatement>
+            <CodeStatement>
+              <CodeExpression id="1_verticalLayout1"/>
+              <StatementProvider type="CodeMethod">
+                <CodeMethod name="setGap" class="org.jdesktop.swingx.VerticalLayout" parameterTypes="int"/>
+              </StatementProvider>
+              <Parameters>
+                <CodeExpression id="2">
+                  <ExpressionOrigin>
+                    <Value type="int" value="5"/>
+                  </ExpressionOrigin>
+                </CodeExpression>
+              </Parameters>
+            </CodeStatement>
+            <CodeStatement>
+              <CodeExpression id="3_leftMenuButtonsPanel">
+                <CodeVariable name="leftMenuButtonsPanel" type="8194" declaredType="org.jdesktop.swingx.JXPanel"/>
+                <ExpressionOrigin>
+                  <ExpressionProvider type="ComponentRef">
+                    <ComponentRef name="leftMenuButtonsPanel"/>
+                  </ExpressionProvider>
+                </ExpressionOrigin>
+              </CodeExpression>
+              <StatementProvider type="CodeMethod">
+                <CodeMethod name="setLayout" class="java.awt.Container" parameterTypes="java.awt.LayoutManager"/>
+              </StatementProvider>
+              <Parameters>
+                <CodeExpression id="1_verticalLayout1"/>
+              </Parameters>
+            </CodeStatement>
+            <CodeStatement>
+              <CodeExpression id="3_leftMenuButtonsPanel"/>
+              <StatementProvider type="CodeMethod">
+                <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component"/>
+              </StatementProvider>
+              <Parameters>
+                <CodeExpression id="4_logoLabel">
+                  <CodeVariable name="logoLabel" type="8194" declaredType="javax.swing.JLabel"/>
+                  <ExpressionOrigin>
+                    <ExpressionProvider type="ComponentRef">
+                      <ComponentRef name="logoLabel"/>
+                    </ExpressionProvider>
+                  </ExpressionOrigin>
+                </CodeExpression>
+              </Parameters>
+            </CodeStatement>
+            <CodeStatement>
+              <CodeExpression id="3_leftMenuButtonsPanel"/>
+              <StatementProvider type="CodeMethod">
+                <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component"/>
+              </StatementProvider>
+              <Parameters>
+                <CodeExpression id="5_dashboardControlsPanel">
+                  <CodeVariable name="dashboardControlsPanel" type="8194" declaredType="org.jdesktop.swingx.JXPanel"/>
+                  <ExpressionOrigin>
+                    <ExpressionProvider type="ComponentRef">
+                      <ComponentRef name="dashboardControlsPanel"/>
+                    </ExpressionProvider>
+                  </ExpressionOrigin>
+                </CodeExpression>
+              </Parameters>
+            </CodeStatement>
+            <CodeStatement>
+              <CodeExpression id="3_leftMenuButtonsPanel"/>
+              <StatementProvider type="CodeMethod">
+                <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component"/>
+              </StatementProvider>
+              <Parameters>
+                <CodeExpression id="6_cartStatusButton">
+                  <CodeVariable name="cartStatusButton" type="8194" declaredType="javax.swing.JToggleButton"/>
+                  <ExpressionOrigin>
+                    <ExpressionProvider type="ComponentRef">
+                      <ComponentRef name="cartStatusButton"/>
+                    </ExpressionProvider>
+                  </ExpressionOrigin>
+                </CodeExpression>
+              </Parameters>
+            </CodeStatement>
+            <CodeStatement>
+              <CodeExpression id="3_leftMenuButtonsPanel"/>
+              <StatementProvider type="CodeMethod">
+                <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component"/>
+              </StatementProvider>
+              <Parameters>
+                <CodeExpression id="7_notificationsButton">
+                  <CodeVariable name="notificationsButton" type="8194" declaredType="javax.swing.JToggleButton"/>
+                  <ExpressionOrigin>
+                    <ExpressionProvider type="ComponentRef">
+                      <ComponentRef name="notificationsButton"/>
+                    </ExpressionProvider>
+                  </ExpressionOrigin>
+                </CodeExpression>
+              </Parameters>
+            </CodeStatement>
+            <CodeStatement>
+              <CodeExpression id="3_leftMenuButtonsPanel"/>
+              <StatementProvider type="CodeMethod">
+                <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component"/>
+              </StatementProvider>
+              <Parameters>
+                <CodeExpression id="8_cartAssignmentButton">
+                  <CodeVariable name="cartAssignmentButton" type="8194" declaredType="javax.swing.JButton"/>
+                  <ExpressionOrigin>
+                    <ExpressionProvider type="ComponentRef">
+                      <ComponentRef name="cartAssignmentButton"/>
+                    </ExpressionProvider>
+                  </ExpressionOrigin>
+                </CodeExpression>
+              </Parameters>
+            </CodeStatement>
+            <CodeStatement>
+              <CodeExpression id="3_leftMenuButtonsPanel"/>
+              <StatementProvider type="CodeMethod">
+                <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component"/>
+              </StatementProvider>
+              <Parameters>
+                <CodeExpression id="9_menuButton">
+                  <CodeVariable name="menuButton" type="8194" declaredType="javax.swing.JToggleButton"/>
+                  <ExpressionOrigin>
+                    <ExpressionProvider type="ComponentRef">
+                      <ComponentRef name="menuButton"/>
+                    </ExpressionProvider>
+                  </ExpressionOrigin>
+                </CodeExpression>
+              </Parameters>
+            </CodeStatement>
+            <CodeStatement>
+              <CodeExpression id="3_leftMenuButtonsPanel"/>
+              <StatementProvider type="CodeMethod">
+                <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component"/>
+              </StatementProvider>
+              <Parameters>
+                <CodeExpression id="10_onCourseAdsButton">
+                  <CodeVariable name="onCourseAdsButton" type="8194" declaredType="javax.swing.JButton"/>
+                  <ExpressionOrigin>
+                    <ExpressionProvider type="ComponentRef">
+                      <ComponentRef name="onCourseAdsButton"/>
+                    </ExpressionProvider>
+                  </ExpressionOrigin>
+                </CodeExpression>
+              </Parameters>
+            </CodeStatement>
+            <CodeStatement>
+              <CodeExpression id="3_leftMenuButtonsPanel"/>
+              <StatementProvider type="CodeMethod">
+                <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component"/>
+              </StatementProvider>
+              <Parameters>
+                <CodeExpression id="11_courseMgtButton">
+                  <CodeVariable name="courseMgtButton" type="8194" declaredType="javax.swing.JToggleButton"/>
+                  <ExpressionOrigin>
+                    <ExpressionProvider type="ComponentRef">
+                      <ComponentRef name="courseMgtButton"/>
+                    </ExpressionProvider>
+                  </ExpressionOrigin>
+                </CodeExpression>
+              </Parameters>
+            </CodeStatement>
+            <CodeStatement>
+              <CodeExpression id="3_leftMenuButtonsPanel"/>
+              <StatementProvider type="CodeMethod">
+                <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component"/>
+              </StatementProvider>
+              <Parameters>
+                <CodeExpression id="12_cartMgtButton">
+                  <CodeVariable name="cartMgtButton" type="8194" declaredType="javax.swing.JToggleButton"/>
+                  <ExpressionOrigin>
+                    <ExpressionProvider type="ComponentRef">
+                      <ComponentRef name="cartMgtButton"/>
+                    </ExpressionProvider>
+                  </ExpressionOrigin>
+                </CodeExpression>
+              </Parameters>
+            </CodeStatement>
+            <CodeStatement>
+              <CodeExpression id="3_leftMenuButtonsPanel"/>
+              <StatementProvider type="CodeMethod">
+                <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component"/>
+              </StatementProvider>
+              <Parameters>
+                <CodeExpression id="13_showReportButton">
+                  <CodeVariable name="showReportButton" type="8194" declaredType="javax.swing.JToggleButton"/>
+                  <ExpressionOrigin>
+                    <ExpressionProvider type="ComponentRef">
+                      <ComponentRef name="showReportButton"/>
+                    </ExpressionProvider>
+                  </ExpressionOrigin>
+                </CodeExpression>
+              </Parameters>
+            </CodeStatement>
+            <CodeStatement>
+              <CodeExpression id="3_leftMenuButtonsPanel"/>
+              <StatementProvider type="CodeMethod">
+                <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component"/>
+              </StatementProvider>
+              <Parameters>
+                <CodeExpression id="14_drawingToolButton">
+                  <CodeVariable name="drawingToolButton" type="8194" declaredType="javax.swing.JToggleButton"/>
+                  <ExpressionOrigin>
+                    <ExpressionProvider type="ComponentRef">
+                      <ComponentRef name="drawingToolButton"/>
+                    </ExpressionProvider>
+                  </ExpressionOrigin>
+                </CodeExpression>
+              </Parameters>
+            </CodeStatement>
+          </LayoutCode>
+        </Container>
+        <Container class="org.jdesktop.swingx.JXPanel" name="logoPanel">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="logoPanel" noResource="true"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+              <BorderConstraints direction="Center"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Container class="org.jdesktop.swingx.JXPanel" name="rightPanel">
+      <Properties>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[650, 500]"/>
+        </Property>
+        <Property name="name" type="java.lang.String" value="rightPanel" noResource="true"/>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[650, 500]"/>
+        </Property>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+          <BorderConstraints direction="Center"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+      <SubComponents>
+        <Container class="org.jdesktop.swingx.JXPanel" name="topButtonsToolbar">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="topButtonsToolbar" noResource="true"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+              <BorderConstraints direction="North"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout">
+            <Property name="axis" type="int" value="0"/>
+          </Layout>
+          <SubComponents>
+            <Container class="org.jdesktop.swingx.JXPanel" name="zoomButtonsToolbar">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="zoomButtonsToolbar" noResource="true"/>
+              </Properties>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout">
+                <Property name="axis" type="int" value="0"/>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JButton" name="zoomInButton">
+                  <Properties>
+                    <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                      <action class="com.stayprime.basestation2.MainPanel" id="zoomIn" methodName="zoomIn"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" resourceKey="zoomInButton.text"/>
+                    <Property name="focusable" type="boolean" value="false"/>
+                    <Property name="horizontalTextPosition" type="int" value="0"/>
+                    <Property name="name" type="java.lang.String" value="zoomInButton" noResource="true"/>
+                    <Property name="verticalTextPosition" type="int" value="3"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JButton" name="zoomOutButton">
+                  <Properties>
+                    <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                      <action class="com.stayprime.basestation2.MainPanel" id="zoomOut" methodName="zoomOut"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" resourceKey="zoomOutButton.text"/>
+                    <Property name="focusable" type="boolean" value="false"/>
+                    <Property name="horizontalTextPosition" type="int" value="0"/>
+                    <Property name="name" type="java.lang.String" value="zoomOutButton" noResource="true"/>
+                    <Property name="verticalTextPosition" type="int" value="3"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JToggleButton" name="atacButton">
+                  <Properties>
+                    <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                      <action class="com.stayprime.basestation2.ui.mainview.MainPanel" id="loadAtacCarts" methodName="loadAtacCarts"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" resourceKey="atacButton.text"/>
+                    <Property name="name" type="java.lang.String" value="atacButton" noResource="true"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="atacButtonItemStateChanged"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JToggleButton" name="pinLocationButton">
+                  <Properties>
+                    <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                      <action class="com.stayprime.basestation2.ui.mainview.MainPanel" id="showPinLocationDialog" methodName="showPinLocationDialog"/>
+                    </Property>
+                    <Property name="name" type="java.lang.String" value="pinLocationButton" noResource="true"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="pinLocationButtonItemStateChanged"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JToggleButton" name="weatherAlertButton">
+                  <Properties>
+                    <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                      <action class="com.stayprime.basestation2.ui.mainview.MainPanel" id="weatherAlert" methodName="weatherAlert"/>
+                    </Property>
+                    <Property name="focusable" type="boolean" value="false"/>
+                    <Property name="horizontalAlignment" type="int" value="2"/>
+                    <Property name="horizontalTextPosition" type="int" value="4"/>
+                    <Property name="name" type="java.lang.String" value="weatherAlertButton" noResource="true"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="weatherAlertButtonItemStateChanged"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JToggleButton" name="cartPathOnlyButton">
+                  <Properties>
+                    <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                      <action class="com.stayprime.basestation2.MainPanel" id="cartPathOnly" methodName="cartPathOnly"/>
+                    </Property>
+                    <Property name="focusable" type="boolean" value="false"/>
+                    <Property name="horizontalAlignment" type="int" value="2"/>
+                    <Property name="horizontalTextPosition" type="int" value="4"/>
+                    <Property name="name" type="java.lang.String" value="cartPathOnlyButton" noResource="true"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="cartPathOnlyButtonItemStateChanged"/>
+                  </Events>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.Box$Filler" name="filler2">
+              <Properties>
+                <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[10, 32767]"/>
+                </Property>
+                <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[10, 0]"/>
+                </Property>
+                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[10, 0]"/>
+                </Property>
+                <Property name="name" type="java.lang.String" value="filler2" noResource="true"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="classDetails" type="java.lang.String" value="Box.Filler.HorizontalStrut"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JToggleButton" name="adminButton">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="com.stayprime.basestation2.ui.mainview.MainPanel" id="administratorLogin" methodName="administratorLogin"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="adminButton.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="adminButton.text"/>
+                <Property name="focusable" type="boolean" value="false"/>
+                <Property name="horizontalAlignment" type="int" value="2"/>
+                <Property name="horizontalTextPosition" type="int" value="4"/>
+                <Property name="name" type="java.lang.String" value="adminButton" noResource="true"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="cardPanel">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="cardPanel" noResource="true"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_LayoutCodePre" type="java.lang.String" value="cardLayout = new AnimatingCardLayout(new FadeAnimation());&#xa;cardLayout.setAnimationDuration(500);&#xa;cardPanel.setLayout(cardLayout);"/>
+          </AuxValues>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+              <BorderConstraints direction="Center"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignCardLayout"/>
+          <SubComponents>
+            <Container class="javax.swing.JPanel" name="dashboardPanel">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="dashboardPanel" noResource="true"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+                  <CardConstraints cardName="dashboardPanel"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+              <SubComponents>
+                <Container class="org.jdesktop.swingx.JXCollapsiblePane" name="drawingSidebarPanel">
+                  <Properties>
+                    <Property name="animated" type="boolean" value="false"/>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder thickness="2">
+                          <Property name="color" resourceKey="drawingSidebarPanel.border.lineColor"/>
+                        </LineBorder>
+                      </Border>
+                    </Property>
+                    <Property name="collapsed" type="boolean" value="true"/>
+                    <Property name="direction" type="org.jdesktop.swingx.JXCollapsiblePane$Direction" editor="org.jdesktop.swingx.JXCollapsiblePaneBeanInfo$DirectionPropertyEditor">
+                      <SerializedValue value="-84,-19,0,5,126,114,0,47,111,114,103,46,106,100,101,115,107,116,111,112,46,115,119,105,110,103,120,46,74,88,67,111,108,108,97,112,115,105,98,108,101,80,97,110,101,36,68,105,114,101,99,116,105,111,110,0,0,0,0,0,0,0,0,18,0,0,120,114,0,14,106,97,118,97,46,108,97,110,103,46,69,110,117,109,0,0,0,0,0,0,0,0,18,0,0,120,112,116,0,5,82,73,71,72,84"/>
+                    </Property>
+                    <Property name="name" type="java.lang.String" value="drawingSidebarPanel" noResource="true"/>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                      <BorderConstraints direction="East"/>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+                  <SubComponents>
+                    <Container class="javax.swing.JToolBar" name="drawingToolBarTitle">
+                      <Properties>
+                        <Property name="floatable" type="boolean" value="false"/>
+                        <Property name="rollover" type="boolean" value="true"/>
+                        <Property name="name" type="java.lang.String" value="drawingToolBarTitle" noResource="true"/>
+                      </Properties>
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                          <BorderConstraints direction="North"/>
+                        </Constraint>
+                      </Constraints>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+                      <SubComponents>
+                        <Component class="javax.swing.JLabel" name="drawingToolTitleLabel">
+                          <Properties>
+                            <Property name="font" type="java.awt.Font" noResource="true" editor="org.netbeans.modules.form.editors2.FontEditor">
+                              <FontInfo relative="true">
+                                <Font bold="true" component="drawingToolTitleLabel" property="font" relativeSize="true" size="-4"/>
+                              </FontInfo>
+                            </Property>
+                            <Property name="text" type="java.lang.String" resourceKey="drawingToolTitleLabel.text"/>
+                            <Property name="name" type="java.lang.String" value="drawingToolTitleLabel" noResource="true"/>
+                          </Properties>
+                        </Component>
+                        <Component class="javax.swing.JButton" name="drawingToolCloseButton">
+                          <Properties>
+                            <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                              <action class="com.stayprime.basestation2.MainPanel" id="closeDrawingTool" methodName="closeDrawingTool"/>
+                            </Property>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
+                              <FontInfo relative="true">
+                                <Font component="drawingToolCloseButton" property="font" relativeSize="true" size="-4"/>
+                              </FontInfo>
+                            </Property>
+                            <Property name="text" type="java.lang.String" resourceKey="drawingToolCloseButton.text"/>
+                            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                              <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+                                <EmptyBorder bottom="4" left="4" right="4" top="4"/>
+                              </Border>
+                            </Property>
+                            <Property name="focusable" type="boolean" value="false"/>
+                            <Property name="horizontalTextPosition" type="int" value="0"/>
+                            <Property name="name" type="java.lang.String" value="drawingToolCloseButton" noResource="true"/>
+                            <Property name="verticalTextPosition" type="int" value="3"/>
+                          </Properties>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                    <Container class="javax.swing.JScrollPane" name="drawingToolScrollPane">
+                      <Properties>
+                        <Property name="name" type="java.lang.String" value="drawingToolScrollPane" noResource="true"/>
+                      </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="drawingToolScrollPane.setViewport(new JViewport() {&#xa;@Override&#xa;public Dimension getPreferredSize() {&#xa;    return new Dimension(super.getPreferredSize().width, getSize().height);&#xa;}&#xa;});"/>
+                      </AuxValues>
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                          <BorderConstraints direction="Center"/>
+                        </Constraint>
+                      </Constraints>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                      <SubComponents>
+                        <Component class="com.stayprime.basestation2.ui.modules.DrawingTool" name="drawingTool">
+                          <Properties>
+                            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                              <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+                                <EmptyBorder bottom="4" left="4" right="4" top="4"/>
+                              </Border>
+                            </Property>
+                            <Property name="name" type="java.lang.String" value="drawingTool" noResource="true"/>
+                          </Properties>
+                          <AuxValues>
+                            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+                          </AuxValues>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+            <Component class="com.stayprime.basestation2.ui.modules.CartManagementPanel" name="cartManagementPanel">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="cartManagementPanel" noResource="true"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+              </AuxValues>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+                  <CardConstraints cardName="cartManagementPanel"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="com.stayprime.basestation2.ui.modules.MenuScreen" name="menuScreen">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="menuScreen" noResource="true"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+              </AuxValues>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+                  <CardConstraints cardName="menuScreen"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="com.stayprime.basestation2.ui.reports.ReportScreen" name="reportScreen">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="reportScreen" noResource="true"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+                  <CardConstraints cardName="reportScreen"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="onCourseAdsScrollPane">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="onCourseAdsScrollPane" noResource="true"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+                  <CardConstraints cardName="onCourseAdsScreen"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="com.stayprime.basestation2.ui.modules.OnCourseAdsScreen" name="onCourseAdsScreen">
+                  <Properties>
+                    <Property name="name" type="java.lang.String" value="onCourseAdsScreen" noResource="true"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+                  </AuxValues>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="com.stayprime.basestation.ui.site.GolfSiteSetupScreen" name="golfSiteSetupScreen">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="golfSiteSetupScreen" noResource="true"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+                  <CardConstraints cardName="golfSiteSetupScreen"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="org.jdesktop.swingx.JXCollapsiblePane" name="sidebarPanel">
+          <Properties>
+            <Property name="animated" type="boolean" value="false"/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder thickness="2">
+                  <Property name="color" resourceKey="sidebarPanel.border.lineColor"/>
+                </LineBorder>
+              </Border>
+            </Property>
+            <Property name="collapsed" type="boolean" value="true"/>
+            <Property name="direction" type="org.jdesktop.swingx.JXCollapsiblePane$Direction" editor="org.jdesktop.swingx.JXCollapsiblePaneBeanInfo$DirectionPropertyEditor" postCode="sidebarPanel.setAnimated(true);">
+              <SerializedValue value="-84,-19,0,5,126,114,0,47,111,114,103,46,106,100,101,115,107,116,111,112,46,115,119,105,110,103,120,46,74,88,67,111,108,108,97,112,115,105,98,108,101,80,97,110,101,36,68,105,114,101,99,116,105,111,110,0,0,0,0,0,0,0,0,18,0,0,120,114,0,14,106,97,118,97,46,108,97,110,103,46,69,110,117,109,0,0,0,0,0,0,0,0,18,0,0,120,112,116,0,5,82,73,71,72,84"/>
+            </Property>
+            <Property name="name" type="java.lang.String" value="sidebarPanel" noResource="true"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+              <BorderConstraints direction="East"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+          <SubComponents>
+            <Container class="javax.swing.JToolBar" name="sideBarTitle">
+              <Properties>
+                <Property name="floatable" type="boolean" value="false"/>
+                <Property name="rollover" type="boolean" value="true"/>
+                <Property name="name" type="java.lang.String" value="sideBarTitle" noResource="true"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                  <BorderConstraints direction="North"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="sidebarTitleLabel">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" noResource="true" editor="org.netbeans.modules.form.editors2.FontEditor">
+                      <FontInfo relative="true">
+                        <Font bold="true" component="sidebarTitleLabel" property="font" relativeSize="true" size="-2"/>
+                      </FontInfo>
+                    </Property>
+                    <Property name="text" type="java.lang.String" resourceKey="sidebarTitleLabel.text"/>
+                    <Property name="name" type="java.lang.String" value="sidebarTitleLabel" noResource="true"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JButton" name="sidebarCloseButton">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
+                      <FontInfo relative="true">
+                        <Font component="sidebarCloseButton" property="font" relativeSize="true" size="-4"/>
+                      </FontInfo>
+                    </Property>
+                    <Property name="text" type="java.lang.String" resourceKey="sidebarCloseButton.text"/>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+                        <EmptyBorder bottom="4" left="4" right="4" top="4"/>
+                      </Border>
+                    </Property>
+                    <Property name="focusable" type="boolean" value="false"/>
+                    <Property name="horizontalTextPosition" type="int" value="0"/>
+                    <Property name="name" type="java.lang.String" value="sidebarCloseButton" noResource="true"/>
+                    <Property name="verticalTextPosition" type="int" value="3"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="sidebarCloseButtonActionPerformed"/>
+                  </Events>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="org.jdesktop.swingx.JXPanel" name="sidebarCardPanel">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="sidebarCardPanel" noResource="true"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                  <BorderConstraints direction="Center"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignCardLayout"/>
+              <SubComponents>
+                <Container class="org.jdesktop.swingx.JXPanel" name="notificationsSidebar">
+                  <Properties>
+                    <Property name="name" type="java.lang.String" value="notificationsSidebar" noResource="true"/>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+                      <CardConstraints cardName="notificationsSidebar"/>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+                  <SubComponents>
+                    <Component class="com.stayprime.basestation2.ui.mainview.NotificationsPanel" name="notificationsPanel">
+                      <Properties>
+                        <Property name="name" type="java.lang.String" value="notificationsPanel" noResource="true"/>
+                      </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+                      </AuxValues>
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                          <BorderConstraints direction="Center"/>
+                        </Constraint>
+                      </Constraints>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="org.jdesktop.swingx.JXPanel" name="cartStatusSidebar">
+                  <Properties>
+                    <Property name="name" type="java.lang.String" value="cartStatusSidebar" noResource="true"/>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+                      <CardConstraints cardName="cartStatusSidebar"/>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="cartTrackingButton" alignment="1" max="32767" attributes="0"/>
+                          <Component id="paceOfPlayButton" alignment="1" max="32767" attributes="0"/>
+                          <Component id="cartStatusTabsPanel" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" max="-2" attributes="0"/>
+                              <Component id="paceOfPlayButton" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="0" max="-2" attributes="0"/>
+                              <Component id="cartTrackingButton" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
+                              <Component id="cartStatusTabsPanel" pref="374" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JToggleButton" name="paceOfPlayButton">
+                      <Properties>
+                        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                          <ComponentRef name="cartStatusTabSelectorButtonGroup"/>
+                        </Property>
+                        <Property name="selected" type="boolean" value="true"/>
+                        <Property name="text" type="java.lang.String" resourceKey="paceOfPlayButton.text"/>
+                        <Property name="name" type="java.lang.String" value="paceOfPlayButton" noResource="true"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="paceOfPlayButtonActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JToggleButton" name="cartTrackingButton">
+                      <Properties>
+                        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                          <ComponentRef name="cartStatusTabSelectorButtonGroup"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" resourceKey="cartTrackingButton.text"/>
+                        <Property name="name" type="java.lang.String" value="cartTrackingButton" noResource="true"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cartTrackingButtonActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Container class="org.jdesktop.swingx.JXPanel" name="cartStatusTabsPanel">
+                      <Properties>
+                        <Property name="name" type="java.lang.String" value="cartStatusTabsPanel" noResource="true"/>
+                      </Properties>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignCardLayout"/>
+                      <SubComponents>
+                        <Component class="com.stayprime.basestation2.ui.mainview.CartPacePanel" name="cartPacePanel">
+                          <Properties>
+                            <Property name="name" type="java.lang.String" value="cartPacePanel" noResource="true"/>
+                          </Properties>
+                          <AuxValues>
+                            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+                          </AuxValues>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+                              <CardConstraints cardName="cartPacePanel"/>
+                            </Constraint>
+                          </Constraints>
+                        </Component>
+                        <Component class="com.stayprime.basestation2.ui.mainview.CartTrackingPanel" name="cartTrackingPanel">
+                          <Properties>
+                            <Property name="name" type="java.lang.String" value="cartTrackingPanel" noResource="true"/>
+                          </Properties>
+                          <AuxValues>
+                            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+                          </AuxValues>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+                              <CardConstraints cardName="cartTrackingPanel"/>
+                            </Constraint>
+                          </Constraints>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

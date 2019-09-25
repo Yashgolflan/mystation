@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rounds" language="groovy" pageWidth="630" pageHeight="842" columnWidth="590" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="09356dc9-19ec-4c8b-b4b2-cb8dd68e67c1">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Title" forecolor="#FFFFFF" fontName="Arial" fontSize="26" isBold="true" pdfFontName="Helvetica-Bold"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<parameter name="Title" class="java.lang.String"/>
+	<parameter name="DateParameter1" class="java.sql.Timestamp">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="DateParameter2" class="java.sql.Timestamp">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[select distinct(cartRound.round_id),cartRound.cart_number,cartRound.start_time,IFNULL(DATE_FORMAT(cartRound.end_time,'%T'),"") as end_time,(select Round(sum(distance),2) from cart_round_hole where round_id=cartRound.round_id and hole_number!=0) as distance,(select GROUP_CONCAT(hole_number) from cart_round_hole where round_id=cartRound.round_id and hole_number!=0) as HolesPlayed from cart_round cartRound,cart_round_hole cartRoundHole
+where cartRound.start_time between $P{DateParameter1} and $P{DateParameter2} and cartRoundHole.hole_number!=0 and cartRound.round_id=cartRoundHole.round_id]]>
+	</queryString>
+	<field name="round_id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cart_number" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="start_time" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="end_time" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="distance" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="HolesPlayed" class="java.lang.String"/>
+	<group name="Group1">
+		<groupExpression><![CDATA[(int)($V{REPORT_COUNT}/15)]]></groupExpression>
+	</group>
+	<group name="Group2">
+		<groupExpression><![CDATA[(int)($V{REPORT_COUNT}/5)]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="70" splitType="Stretch">
+			<textField>
+				<reportElement x="237" y="19" width="100" height="20" uuid="0ec879b8-2438-4731-b490-a68273fe8674"/>
+				<textFieldExpression><![CDATA[$P{Title}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="0" y="0" width="158" height="70" uuid="2fc3d60d-5746-4818-a54a-8d584efb7bf5"/>
+				<imageExpression><![CDATA["/opt/StayPrime/BaseStation/media/logo.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="29" splitType="Stretch">
+			<rectangle>
+				<reportElement x="302" y="0" width="118" height="29" uuid="8f5a52ff-e999-48f9-9fac-8eaf78ce98a0"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="420" y="0" width="172" height="29" uuid="85700e2c-1f5c-4763-8bbb-92dcdc993e8d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="237" y="0" width="65" height="29" uuid="e78f0d22-b76a-4e70-8e82-9fa5f76957f3"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="68" y="0" width="44" height="29" uuid="405d3be2-fde5-4953-a75a-ae60dd098397"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="112" y="0" width="125" height="29" uuid="b7f4e603-752d-44ef-b233-8cf41bc9dcd7"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="1" y="0" width="67" height="29" uuid="2c0f4eb3-4a85-43e3-9d4b-bd0fb9809b5f"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="8" y="8" width="52" height="20" uuid="628f6044-3685-4375-a298-7974d61b20af"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Round Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="73" y="7" width="39" height="20" uuid="05c45e4f-3282-4a65-b351-315506de838e"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cart]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="112" y="7" width="125" height="20" uuid="ae5bc6fc-d4e7-4e89-b3dd-3cf16ae0b10f"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Round Start Time]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="237" y="7" width="65" height="20" uuid="476336a8-9fd3-4de2-a02c-99ada9a07e98"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[End Time]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="302" y="7" width="118" height="20" uuid="71974663-3c63-442c-8a57-45ad9462b111"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Distance]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="422" y="7" width="167" height="20" uuid="a690a70b-f17d-4d8c-8e71-643050c2de6d"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Holes Played]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="36" splitType="Stretch">
+			<rectangle>
+				<reportElement x="237" y="0" width="65" height="36" uuid="84a6f0ca-d8e9-42cc-9ea4-f5e80f7e7b7e"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="112" y="0" width="125" height="36" uuid="28cd705b-8447-46be-9975-d8d43dfe6305"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="420" y="0" width="172" height="36" uuid="46bee830-3565-49f7-8e53-648b0ae65273"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="68" y="0" width="44" height="36" uuid="8877a863-315d-4e37-8275-00a6a2e206bc"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="1" y="0" width="67" height="36" uuid="989e6291-5c6d-48d1-a3ec-baaa503b734c"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="302" y="0" width="118" height="36" uuid="ca8c030e-73ec-42f8-a4ea-27232f2c12b3"/>
+			</rectangle>
+			<textField>
+				<reportElement x="2" y="0" width="66" height="36" uuid="e62dcf42-4382-408e-81a4-d9d6e3311a0e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{round_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="68" y="0" width="44" height="36" uuid="81895f35-db1d-490e-b12f-a02df0d88cfd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{cart_number}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="112" y="0" width="125" height="36" uuid="fffba302-7cd3-48a2-bdb9-ad550ded5967"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{start_time}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="302" y="0" width="118" height="36" uuid="0bc9da75-b598-471e-a766-bb365eed30d5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{distance}.toString()+" m"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="237" y="0" width="65" height="36" uuid="53d0bcd1-9d2f-4782-a7ab-4a3ac2f1007f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{end_time}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="422" y="0" width="170" height="36" uuid="76649efe-f3d3-4ddf-8f51-453efbb30c68"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{HolesPlayed}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

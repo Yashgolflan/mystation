@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.stayprime.hibernate.entities.HolesTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-09-25T04:48:30" hostname="stayprime-Aspire-V5-573G" time="0.004">
+  <properties/>
+  <testcase name="testSetMap" classname="com.stayprime.hibernate.entities.HolesTest" time="0.004"/>
+  <system-out><![CDATA[setMap
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

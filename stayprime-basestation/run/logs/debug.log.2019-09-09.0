@@ -1,0 +1,272 @@
+2019-09-09 12:39:59.084  INFO   --- [AWT-EventQueue-1] c.s.basestation2.BaseStation2App         : basePath: /netbeansBaseStation/stayprime-basestation/run
+2019-09-09 12:39:59.168 DEBUG   --- [AWT-EventQueue-1] c.s.b.i.ApplicationInstanceManager       : Listening for application instances on socket 44331
+2019-09-09 12:39:59.191  INFO   --- [AWT-EventQueue-1] com.stayprime.util.ClassUtilities        : StayPrime BaseStation Application
+2019-09-09 12:39:59.208  INFO   --- [AWT-EventQueue-1] com.stayprime.util.ClassUtilities        : Version: null  built: null
+2019-09-09 12:39:59.213  INFO   --- [AWT-EventQueue-1] c.s.basestation2.BaseStation2App         : System Startup time: Mon Sep 09 12:39:58 IST 2019
+2019-09-09 12:39:59.218  INFO   --- [AWT-EventQueue-1] c.s.basestation2.BaseStation2App         : Desktop session env variable: ubuntu
+2019-09-09 12:40:07.053  WARN   --- [AWT-EventQueue-1] c.s.b.ui.modules.CartUpdatePanel         : org.apache.commons.configuration.ConfigurationException: Cannot locate configuration source update.properties
+2019-09-09 12:40:09.506  INFO 10880 --- [pool-1-thread-1] o.s.boot.SpringApplication               : Starting application on stayprime-Aspire-V5-573G with PID 10880 (/home/stayprime/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/1.3.6.RELEASE/535e6024988998f891f1f9df403e804c093df06b/spring-boot-1.3.6.RELEASE.jar started by stayprime in /netbeansBaseStation/stayprime-basestation/run)
+2019-09-09 12:40:09.507  INFO 10880 --- [pool-1-thread-1] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2019-09-09 12:40:10.267  INFO 10880 --- [pool-1-thread-1] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3649cb61: startup date [Mon Sep 09 12:40:10 IST 2019]; root of context hierarchy
+2019-09-09 12:40:14.410  INFO 10880 --- [pool-1-thread-1] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-09-09 12:40:14.870  INFO 10880 --- [pool-1-thread-1] c.s.basestation2.SpringApplication       : basePath: /netbeansBaseStation/stayprime-basestation/run
+2019-09-09 12:40:15.082  INFO 10880 --- [pool-1-thread-1] c.s.b.config.DataSourceConfig            : Creating dataSource for db: jdbc:mysql://localhost:3306/sp70?zeroDateTimeBehavior=convertToNull&useLegacyDatetimeCode=false
+2019-09-09 12:40:15.087  INFO 10880 --- [pool-1-thread-1] com.zaxxer.hikari.HikariDataSource       : HikariCP pool HikariPool-0 is starting.
+2019-09-09 12:40:16.121 DEBUG 10880 --- [pool-1-thread-1] c.s.b.config.DataSourceConfig            : Created dataSource in 1039 ms
+2019-09-09 12:40:16.841  INFO 10880 --- [pool-1-thread-1] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-09-09 12:40:16.931  INFO 10880 --- [pool-1-thread-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-09 12:40:17.133  INFO 10880 --- [pool-1-thread-1] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2019-09-09 12:40:17.137  INFO 10880 --- [pool-1-thread-1] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-09-09 12:40:17.147  INFO 10880 --- [pool-1-thread-1] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-09-09 12:40:17.658  INFO 10880 --- [pool-1-thread-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2019-09-09 12:40:17.812  INFO 10880 --- [pool-1-thread-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-09 12:40:18.347  INFO 10880 --- [pool-1-thread-1] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2019-09-09 12:40:21.660  INFO 10880 --- [pool-1-thread-1] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-09-09 12:40:21.662  INFO 10880 --- [pool-1-thread-1] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSourceConfig' has been autodetected for JMX exposure
+2019-09-09 12:40:21.663  INFO 10880 --- [pool-1-thread-1] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-09-09 12:40:21.670  INFO 10880 --- [pool-1-thread-1] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSourceConfig': registering with JMX server as MBean [com.stayprime.basestation2.config:name=dataSourceConfig,type=DataSourceConfig]
+2019-09-09 12:40:21.674  INFO 10880 --- [pool-1-thread-1] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-09-09 12:40:21.721  INFO 10880 --- [pool-1-thread-1] o.s.boot.SpringApplication               : Started application in 13.174 seconds (JVM running for 24.257)
+2019-09-09 12:40:22.723  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:40:22.761  INFO 10880 --- [pool-1-thread-3] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-09 12:40:22.816  INFO 10880 --- [pool-1-thread-3] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1567936289284, remote - 1567936289284, delta - 0
+2019-09-09 12:40:22.842  INFO 10880 --- [pool-1-thread-3] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1567924224539, remote - 1567924224539, delta - 0
+2019-09-09 12:40:27.971 DEBUG 10880 --- [monitorTask] com.stayprime.util.EmailUtil             : Sending email: 
+2019-09-09 12:40:29.902  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:40:31.878  INFO 10880 --- [monitorTask] c.s.b.reporting.CartConnectivityReport   : Email sent successfully to {reports.me@stayprime.com}
+2019-09-09 12:40:36.908  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:40:43.912  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:40:50.916  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:40:57.920  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:41:04.926  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:41:11.930  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:41:18.936  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:41:21.690  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-09 12:41:21.696  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1567936289284, remote - 1567936289284, delta - 0
+2019-09-09 12:41:21.705  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1567924224539, remote - 1567924224539, delta - 0
+2019-09-09 12:41:21.748 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 12:41:25.954  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:41:32.957  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:41:39.960  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:41:41.750  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-09 12:41:41.756  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1567936289284, remote - 1567936289284, delta - 0
+2019-09-09 12:41:41.764  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1567924224539, remote - 1567924224539, delta - 0
+2019-09-09 12:41:41.771 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 12:41:46.965  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:41:53.969  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:42:00.973  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:42:01.771  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-09 12:42:01.776  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1567936289284, remote - 1567936289284, delta - 0
+2019-09-09 12:42:01.783  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1567924224539, remote - 1567924224539, delta - 0
+2019-09-09 12:42:01.789 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 12:42:07.976  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:42:14.980  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:42:21.790  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-09 12:42:21.803  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1567936289284, remote - 1567936289284, delta - 0
+2019-09-09 12:42:21.809  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1567924224539, remote - 1567924224539, delta - 0
+2019-09-09 12:42:21.816 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 12:42:21.984  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:42:28.989  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:42:35.994  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:42:41.816  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-09 12:42:41.823  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1567936289284, remote - 1567936289284, delta - 0
+2019-09-09 12:42:41.830  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1567924224539, remote - 1567924224539, delta - 0
+2019-09-09 12:42:41.838 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 12:42:42.998  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:42:50.002  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:42:57.008  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:43:01.839  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-09 12:43:01.845  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1567936289284, remote - 1567936289284, delta - 0
+2019-09-09 12:43:01.851  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1567924224539, remote - 1567924224539, delta - 0
+2019-09-09 12:43:01.856 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 12:43:04.014  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:43:11.018  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:43:18.022  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:43:21.857  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-09 12:43:21.873  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1567936289284, remote - 1567936289284, delta - 0
+2019-09-09 12:43:21.880  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1567924224539, remote - 1567924224539, delta - 0
+2019-09-09 12:43:21.887 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 12:43:25.025  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:43:32.029  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:43:39.032  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:43:41.887  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-09 12:43:41.891  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1567936289284, remote - 1567936289284, delta - 0
+2019-09-09 12:43:41.898  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1567924224539, remote - 1567924224539, delta - 0
+2019-09-09 12:43:41.904 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 12:43:46.035  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:43:53.038  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:44:00.043  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:44:01.905  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-09 12:44:01.911  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1567936289284, remote - 1567936289284, delta - 0
+2019-09-09 12:44:01.918  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1567924224539, remote - 1567924224539, delta - 0
+2019-09-09 12:44:01.924 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 12:44:07.047  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:44:14.050  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:44:21.053  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:44:21.925  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-09 12:44:21.935  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1567936289284, remote - 1567936289284, delta - 0
+2019-09-09 12:44:21.940  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1567924224539, remote - 1567924224539, delta - 0
+2019-09-09 12:44:21.945 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 12:44:28.056  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:44:35.060  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:44:41.946  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-09 12:44:41.951  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1567936289284, remote - 1567936289284, delta - 0
+2019-09-09 12:44:41.958  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1567924224539, remote - 1567924224539, delta - 0
+2019-09-09 12:44:41.964 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 12:44:42.064  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:44:49.069  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:44:56.074  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:45:01.965  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-09 12:45:01.970  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1567936289284, remote - 1567936289284, delta - 0
+2019-09-09 12:45:01.976  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1567924224539, remote - 1567924224539, delta - 0
+2019-09-09 12:45:01.981 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 12:45:03.077  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:45:10.082  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:45:17.085  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:45:21.982  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-09 12:45:21.992  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1567936289284, remote - 1567936289284, delta - 0
+2019-09-09 12:45:21.998  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1567924224539, remote - 1567924224539, delta - 0
+2019-09-09 12:45:22.004 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 12:45:24.088  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:45:31.092  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:45:38.097  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:45:42.005  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-09 12:45:42.010  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1567936289284, remote - 1567936289284, delta - 0
+2019-09-09 12:45:42.018  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1567924224539, remote - 1567924224539, delta - 0
+2019-09-09 12:45:42.024 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 12:45:45.102  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:45:52.106  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:45:59.110  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:46:02.025  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-09 12:46:02.028  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1567936289284, remote - 1567936289284, delta - 0
+2019-09-09 12:46:02.033  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1567924224539, remote - 1567924224539, delta - 0
+2019-09-09 12:46:02.039 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 12:46:06.115  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:46:13.119  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:46:20.124  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:46:22.040  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-09 12:46:22.051  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1567936289284, remote - 1567936289284, delta - 0
+2019-09-09 12:46:22.057  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1567924224539, remote - 1567924224539, delta - 0
+2019-09-09 12:46:22.063 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 12:46:27.127  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:46:34.130  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:46:41.132  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:46:42.064  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-09 12:46:42.069  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1567936289284, remote - 1567936289284, delta - 0
+2019-09-09 12:46:42.076  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1567924224539, remote - 1567924224539, delta - 0
+2019-09-09 12:46:42.082 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 12:46:48.135  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:46:55.137  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:47:02.082  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-09 12:47:02.086  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1567936289284, remote - 1567936289284, delta - 0
+2019-09-09 12:47:02.091  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1567924224539, remote - 1567924224539, delta - 0
+2019-09-09 12:47:02.097 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 12:47:02.140  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:47:09.143  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:47:16.147  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:47:22.098  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-09 12:47:22.107  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1567936289284, remote - 1567936289284, delta - 0
+2019-09-09 12:47:22.112  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1567924224539, remote - 1567924224539, delta - 0
+2019-09-09 12:47:22.118 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 12:47:23.149  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:47:30.153  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:47:37.157  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:47:42.119  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-09 12:47:42.124  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1567936289284, remote - 1567936289284, delta - 0
+2019-09-09 12:47:42.132  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1567924224539, remote - 1567924224539, delta - 0
+2019-09-09 12:47:42.137 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 12:47:44.162  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:47:51.166  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:47:58.169  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:48:02.138  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-09 12:48:02.142  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1567936289284, remote - 1567936289284, delta - 0
+2019-09-09 12:48:02.150  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1567924224539, remote - 1567924224539, delta - 0
+2019-09-09 12:48:02.157 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 12:48:05.174  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:48:12.178  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:48:19.182  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:48:22.158  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-09 12:48:22.168  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1567936289284, remote - 1567936289284, delta - 0
+2019-09-09 12:48:22.173  INFO 10880 --- [pool-6-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1567924224539, remote - 1567924224539, delta - 0
+2019-09-09 12:48:22.178 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 12:48:26.184  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:48:33.188  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:48:40.192  INFO 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 12:48:41.199 DEBUG 10880 --- [AWT-EventQueue-1] c.s.basestation2.BaseStation2App         : Application total runtime: 8 Minutes
+2019-09-09 12:48:41.282  INFO 10880 --- [Thread-5] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@3649cb61: startup date [Mon Sep 09 12:40:10 IST 2019]; root of context hierarchy
+2019-09-09 12:48:41.307  INFO 10880 --- [Thread-5] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-09-09 12:48:41.310  INFO 10880 --- [Thread-5] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-09-09 12:48:41.322  INFO 10880 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-09 12:48:41.329  INFO 10880 --- [Thread-5] com.zaxxer.hikari.pool.HikariPool        : HikariCP pool HikariPool-0 is shutting down.
+2019-09-09 13:52:45.543  INFO   --- [AWT-EventQueue-1] c.s.basestation2.BaseStation2App         : basePath: /netbeansBaseStation/stayprime-basestation/run
+2019-09-09 13:52:45.619 DEBUG   --- [AWT-EventQueue-1] c.s.b.i.ApplicationInstanceManager       : Listening for application instances on socket 44331
+2019-09-09 13:52:45.622  INFO   --- [AWT-EventQueue-1] com.stayprime.util.ClassUtilities        : StayPrime BaseStation Application
+2019-09-09 13:52:45.630  INFO   --- [AWT-EventQueue-1] com.stayprime.util.ClassUtilities        : Version: null  built: null
+2019-09-09 13:52:45.631  INFO   --- [AWT-EventQueue-1] c.s.basestation2.BaseStation2App         : System Startup time: Mon Sep 09 13:52:45 IST 2019
+2019-09-09 13:52:45.633  INFO   --- [AWT-EventQueue-1] c.s.basestation2.BaseStation2App         : Desktop session env variable: ubuntu
+2019-09-09 13:52:51.814  WARN   --- [AWT-EventQueue-1] c.s.b.ui.modules.CartUpdatePanel         : org.apache.commons.configuration.ConfigurationException: Cannot locate configuration source update.properties
+2019-09-09 13:52:54.091  INFO 12259 --- [pool-1-thread-1] o.s.boot.SpringApplication               : Starting application on stayprime-Aspire-V5-573G with PID 12259 (/home/stayprime/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/1.3.6.RELEASE/535e6024988998f891f1f9df403e804c093df06b/spring-boot-1.3.6.RELEASE.jar started by stayprime in /netbeansBaseStation/stayprime-basestation/run)
+2019-09-09 13:52:54.096  INFO 12259 --- [pool-1-thread-1] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2019-09-09 13:52:54.594  INFO 12259 --- [pool-1-thread-1] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7cb1daf: startup date [Mon Sep 09 13:52:54 IST 2019]; root of context hierarchy
+2019-09-09 13:52:57.713  INFO 12259 --- [pool-1-thread-1] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-09-09 13:52:58.192  INFO 12259 --- [pool-1-thread-1] c.s.basestation2.SpringApplication       : basePath: /netbeansBaseStation/stayprime-basestation/run
+2019-09-09 13:52:58.428  INFO 12259 --- [pool-1-thread-1] c.s.b.config.DataSourceConfig            : Creating dataSource for db: jdbc:mysql://spgcclouddb.cwzzsl1wpj65.eu-central-1.rds.amazonaws.com:3306/sp70?zeroDateTimeBehavior=convertToNull&useLegacyDatetimeCode=false
+2019-09-09 13:52:58.434  INFO 12259 --- [pool-1-thread-1] com.zaxxer.hikari.HikariDataSource       : HikariCP pool HikariPool-0 is starting.
+2019-09-09 13:53:00.950 DEBUG 12259 --- [pool-1-thread-1] c.s.b.config.DataSourceConfig            : Created dataSource in 2519 ms
+2019-09-09 13:53:03.339  INFO 12259 --- [pool-1-thread-1] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-09-09 13:53:03.417  INFO 12259 --- [pool-1-thread-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-09 13:53:03.592  INFO 12259 --- [pool-1-thread-1] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2019-09-09 13:53:03.597  INFO 12259 --- [pool-1-thread-1] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-09-09 13:53:03.601  INFO 12259 --- [pool-1-thread-1] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-09-09 13:53:04.008  INFO 12259 --- [pool-1-thread-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2019-09-09 13:53:04.190  INFO 12259 --- [pool-1-thread-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-09-09 13:53:04.737  INFO 12259 --- [pool-1-thread-1] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2019-09-09 13:53:08.014  INFO 12259 --- [pool-1-thread-1] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-09-09 13:53:08.016  INFO 12259 --- [pool-1-thread-1] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSourceConfig' has been autodetected for JMX exposure
+2019-09-09 13:53:08.016  INFO 12259 --- [pool-1-thread-1] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-09-09 13:53:08.023  INFO 12259 --- [pool-1-thread-1] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSourceConfig': registering with JMX server as MBean [com.stayprime.basestation2.config:name=dataSourceConfig,type=DataSourceConfig]
+2019-09-09 13:53:08.026  INFO 12259 --- [pool-1-thread-1] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-09-09 13:53:08.057  INFO 12259 --- [pool-1-thread-1] o.s.boot.SpringApplication               : Started application in 14.858 seconds (JVM running for 24.551)
+2019-09-09 13:53:08.073 ERROR 12259 --- [pool-1-thread-1] c.s.basestation2.CourseSettingsManager   : java.lang.NullPointerException
+2019-09-09 13:53:08.166  INFO 12259 --- [pool-1-thread-2] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-09 13:53:11.179  INFO 12259 --- [pool-1-thread-2] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1568015641358, remote - 0, delta - 1568015641358
+2019-09-09 13:53:11.180 DEBUG 12259 --- [pool-1-thread-2] c.s.storage.services.AssetSyncService    : syncCourseSettings()
+2019-09-09 13:53:13.716 DEBUG 12259 --- [pool-1-thread-2] c.s.storage.services.AssetSyncService    : syncGolfCourse()
+2019-09-09 13:53:14.043  INFO 12259 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 13:53:21.595  INFO 12259 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 13:53:22.352 DEBUG 12259 --- [pool-1-thread-2] c.s.storage.services.AssetSyncService    : loadFullGolfClubDefinition()
+2019-09-09 13:53:29.681  INFO 12259 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 13:53:37.189  INFO 12259 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 13:53:45.284  INFO 12259 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 13:53:52.793  INFO 12259 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 13:54:00.904  INFO 12259 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 13:54:08.044  INFO 12259 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-09 13:54:10.423  INFO 12259 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1568015641358, remote - 1568015641358, delta - 0
+2019-09-09 13:54:10.887  INFO 12259 --- [pool-1-thread-2] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1567924224539, remote - 0, delta - 1567924224539
+2019-09-09 13:54:10.887 DEBUG 12259 --- [pool-1-thread-2] c.s.storage.services.AssetSyncService    : syncPinLocations()
+2019-09-09 13:54:13.311  INFO 12259 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1567924224539, remote - 0, delta - 1567924224539
+2019-09-09 13:54:13.312 DEBUG 12259 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : syncPinLocations()
+2019-09-09 13:54:13.906 DEBUG 12259 --- [pool-1-thread-2] c.s.storage.services.AssetSyncService    : syncAds()
+2019-09-09 13:54:15.787 DEBUG 12259 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : syncAds()
+2019-09-09 13:54:18.788 ERROR 12259 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 13:54:18.789  INFO 12259 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 13:54:22.086 DEBUG 12259 --- [monitorTask] com.stayprime.util.EmailUtil             : Sending email: 
+2019-09-09 13:54:26.109  INFO 12259 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 13:54:27.040  INFO 12259 --- [monitorTask] c.s.b.reporting.CartConnectivityReport   : Email sent successfully to {reports.me@stayprime.com}
+2019-09-09 13:54:33.551  INFO 12259 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 13:54:38.919  INFO 12259 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-09-09 13:54:40.261  INFO 12259 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1568015641358, remote - 1568015641358, delta - 0
+2019-09-09 13:54:42.646  INFO 12259 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1567924224539, remote - 1567924224539, delta - 0
+2019-09-09 13:54:45.659 ERROR 12259 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 13:54:45.660  INFO 12259 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 13:54:53.858  INFO 12259 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-09-09 13:55:00.691 DEBUG 12259 --- [AWT-EventQueue-1] c.s.basestation2.BaseStation2App         : Application total runtime: 2 Minutes
+2019-09-09 13:55:00.791  INFO 12259 --- [Thread-5] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@7cb1daf: startup date [Mon Sep 09 13:52:54 IST 2019]; root of context hierarchy
+2019-09-09 13:55:00.804  INFO 12259 --- [Thread-5] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-09-09 13:55:00.805  INFO 12259 --- [Thread-5] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-09-09 13:55:00.823  INFO 12259 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-09 13:55:00.832  INFO 12259 --- [Thread-5] com.zaxxer.hikari.pool.HikariPool        : HikariCP pool HikariPool-0 is shutting down.

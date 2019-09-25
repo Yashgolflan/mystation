@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="animatingcardlayout_12_24_04">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../stayprime-common/lib/animatingcardlayout_12_24_04/AnimatingCardLayout-src.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../stayprime-common/lib/animatingcardlayout_12_24_04/AnimatingCardLayout.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

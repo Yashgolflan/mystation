@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.stayprime.comm.encoder.TournamentEncoderTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-09-25T04:48:28" hostname="stayprime-Aspire-V5-573G" time="0.01">
+  <properties/>
+  <testcase name="testEncodeTournamentRequest" classname="com.stayprime.comm.encoder.TournamentEncoderTest" time="0.003"/>
+  <testcase name="testEncodePlayerScores" classname="com.stayprime.comm.encoder.TournamentEncoderTest" time="0.002"/>
+  <testcase name="testEncodeRoundAndPlayers" classname="com.stayprime.comm.encoder.TournamentEncoderTest" time="0.004"/>
+  <system-out><![CDATA[encodeTournamentRequest
+encodePlayerScores
+encodeRoundAndPlayers
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

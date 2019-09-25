@@ -1,0 +1,5 @@
+rootProject.name = 'stayprime-basestation'
+include ":stayprime-common"
+project(":stayprime-common").projectDir = file("../stayprime-common")
+include ":stayprime-dao"
+project(":stayprime-dao").projectDir = file("../stayprime-dao")

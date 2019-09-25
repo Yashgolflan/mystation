@@ -1,0 +1,624 @@
+2019-09-24 00:54:41.196 ERROR 22413 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'entityManagerFactory': Singleton bean creation not allowed while the singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2019-09-24 00:55:00.827 ERROR 22480 --- [pool-1-thread-1] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private javax.sql.DataSource org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.dataSource; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/stayprime/basestation2/config/DataSourceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is com.zaxxer.hikari.pool.PoolInitializationException: Exception during pool initialization
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:368)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1123)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1018)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1054)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:829)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:760)
+	at org.springframework.boot.SpringApplication.createAndRefreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:306)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:134)
+	at com.stayprime.basestation2.SpringStartupTask.doInBackground(SpringStartupTask.java:30)
+	at com.stayprime.basestation2.SpringStartupTask.doInBackground(SpringStartupTask.java:16)
+	at javax.swing.SwingWorker$1.call(SwingWorker.java:295)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at javax.swing.SwingWorker.run(SwingWorker.java:334)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private javax.sql.DataSource org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.dataSource; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/stayprime/basestation2/config/DataSourceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is com.zaxxer.hikari.pool.PoolInitializationException: Exception during pool initialization
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:573)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 31 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/stayprime/basestation2/config/DataSourceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is com.zaxxer.hikari.pool.PoolInitializationException: Exception during pool initialization
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1123)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1018)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1192)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1014)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:545)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is com.zaxxer.hikari.pool.PoolInitializationException: Exception during pool initialization
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	... 45 common frames omitted
+Caused by: com.zaxxer.hikari.pool.PoolInitializationException: Exception during pool initialization
+	at com.zaxxer.hikari.pool.BaseHikariPool.initializeConnections(BaseHikariPool.java:550)
+	at com.zaxxer.hikari.pool.BaseHikariPool.<init>(BaseHikariPool.java:172)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:60)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:48)
+	at com.zaxxer.hikari.HikariDataSource.<init>(HikariDataSource.java:80)
+	at com.stayprime.basestation2.config.DataSourceConfig.siteDataSource(DataSourceConfig.java:51)
+	at com.stayprime.basestation2.config.DataSourceConfig.dataSource(DataSourceConfig.java:38)
+	at com.stayprime.basestation2.config.DataSourceConfig$$EnhancerBySpringCGLIB$$d83d88.CGLIB$dataSource$0(<generated>)
+	at com.stayprime.basestation2.config.DataSourceConfig$$EnhancerBySpringCGLIB$$d83d88$$FastClassBySpringCGLIB$$54860c15.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:356)
+	at com.stayprime.basestation2.config.DataSourceConfig$$EnhancerBySpringCGLIB$$d83d88.dataSource(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	... 46 common frames omitted
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:988)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2251)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:95)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:101)
+	at com.zaxxer.hikari.pool.BaseHikariPool.addConnection(BaseHikariPool.java:444)
+	at com.zaxxer.hikari.pool.BaseHikariPool.initializeConnections(BaseHikariPool.java:548)
+	... 62 common frames omitted
+Caused by: java.net.UnknownHostException: spgcclouddb.cwzzsl1wpj65.eu-central-1.rds.amazonaws.com: Name or service not known
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:188)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 78 common frames omitted
+
+2019-09-24 00:55:05.117 ERROR 22480 --- [AWT-EventQueue-1] org.jdesktop.application.Task            : com.stayprime.basestation2.BaseStationStartupTask@450f2880 failed: java.lang.NullPointerException
+
+java.lang.NullPointerException: null
+	at com.stayprime.basestation2.BaseStation2App.syncGolfClub(BaseStation2App.java:240)
+	at com.stayprime.basestation2.BaseStationStartupTask.doInBackground(BaseStationStartupTask.java:39)
+	at com.stayprime.basestation2.BaseStationStartupTask.doInBackground(BaseStationStartupTask.java:23)
+	at javax.swing.SwingWorker$1.call(SwingWorker.java:295)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at javax.swing.SwingWorker.run(SwingWorker.java:334)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-09-24 00:59:33.327 ERROR 22823 --- [Thread-11] o.h.engine.jdbc.spi.SqlExceptionHelper   : Timeout after 30001ms of waiting for a connection.
+2019-09-24 00:59:36.839 ERROR 22823 --- [pool-5-thread-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Timeout after 30000ms of waiting for a connection.
+2019-09-24 00:59:36.842 ERROR 22823 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : org.springframework.transaction.CannotCreateTransactionException: Could not open JPA EntityManager for transaction; nested exception is org.hibernate.QueryTimeoutException: Could not open connection
+2019-09-24 00:59:36.848 ERROR 22823 --- [pool-5-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+java.lang.Exception: null
+	at com.stayprime.basestation2.BaseStationTasks.updateCartsTask(BaseStationTasks.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-09-24 00:59:37.852 ERROR 22823 --- [pool-5-thread-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Interrupted during connection acquisition
+2019-09-24 01:03:01.690 ERROR 23353 --- [pool-1-thread-1] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private javax.sql.DataSource org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.dataSource; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/stayprime/basestation2/config/DataSourceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is com.zaxxer.hikari.pool.PoolInitializationException: Exception during pool initialization
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:368)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1123)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1018)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1054)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:829)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:760)
+	at org.springframework.boot.SpringApplication.createAndRefreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:306)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:134)
+	at com.stayprime.basestation2.SpringStartupTask.doInBackground(SpringStartupTask.java:30)
+	at com.stayprime.basestation2.SpringStartupTask.doInBackground(SpringStartupTask.java:16)
+	at javax.swing.SwingWorker$1.call(SwingWorker.java:295)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at javax.swing.SwingWorker.run(SwingWorker.java:334)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private javax.sql.DataSource org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.dataSource; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/stayprime/basestation2/config/DataSourceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is com.zaxxer.hikari.pool.PoolInitializationException: Exception during pool initialization
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:573)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 31 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/stayprime/basestation2/config/DataSourceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is com.zaxxer.hikari.pool.PoolInitializationException: Exception during pool initialization
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1123)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1018)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1192)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1014)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:545)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is com.zaxxer.hikari.pool.PoolInitializationException: Exception during pool initialization
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	... 45 common frames omitted
+Caused by: com.zaxxer.hikari.pool.PoolInitializationException: Exception during pool initialization
+	at com.zaxxer.hikari.pool.BaseHikariPool.initializeConnections(BaseHikariPool.java:550)
+	at com.zaxxer.hikari.pool.BaseHikariPool.<init>(BaseHikariPool.java:172)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:60)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:48)
+	at com.zaxxer.hikari.HikariDataSource.<init>(HikariDataSource.java:80)
+	at com.stayprime.basestation2.config.DataSourceConfig.siteDataSource(DataSourceConfig.java:51)
+	at com.stayprime.basestation2.config.DataSourceConfig.dataSource(DataSourceConfig.java:38)
+	at com.stayprime.basestation2.config.DataSourceConfig$$EnhancerBySpringCGLIB$$a6532086.CGLIB$dataSource$0(<generated>)
+	at com.stayprime.basestation2.config.DataSourceConfig$$EnhancerBySpringCGLIB$$a6532086$$FastClassBySpringCGLIB$$aa77bdff.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:356)
+	at com.stayprime.basestation2.config.DataSourceConfig$$EnhancerBySpringCGLIB$$a6532086.dataSource(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	... 46 common frames omitted
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:988)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2251)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:95)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:101)
+	at com.zaxxer.hikari.pool.BaseHikariPool.addConnection(BaseHikariPool.java:444)
+	at com.zaxxer.hikari.pool.BaseHikariPool.initializeConnections(BaseHikariPool.java:548)
+	... 62 common frames omitted
+Caused by: java.net.UnknownHostException: spgcclouddb.cwzzsl1wpj65.eu-central-1.rds.amazonaws.com: Name or service not known
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:188)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 78 common frames omitted
+
+2019-09-24 01:03:05.779 ERROR 23353 --- [AWT-EventQueue-1] org.jdesktop.application.Task            : com.stayprime.basestation2.BaseStationStartupTask@28bb6b95 failed: java.lang.NullPointerException
+
+java.lang.NullPointerException: null
+	at com.stayprime.basestation2.BaseStation2App.syncGolfClub(BaseStation2App.java:240)
+	at com.stayprime.basestation2.BaseStationStartupTask.doInBackground(BaseStationStartupTask.java:39)
+	at com.stayprime.basestation2.BaseStationStartupTask.doInBackground(BaseStationStartupTask.java:23)
+	at javax.swing.SwingWorker$1.call(SwingWorker.java:295)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at javax.swing.SwingWorker.run(SwingWorker.java:334)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-09-24 10:25:39.941 ERROR 4459 --- [pool-1-thread-1] c.s.basestation2.CourseSettingsManager   : java.lang.NullPointerException
+2019-09-24 10:42:17.588 ERROR 4911 --- [pool-1-thread-1] c.s.basestation2.CourseSettingsManager   : java.lang.IllegalStateException: Events to DefaultEventTableModel must arrive on the EDT - consider adding GlazedListsSwing.swingThreadProxyList(source) somewhere in your list pipeline
+2019-09-24 12:37:57.100 ERROR 28938 --- [pool-1-thread-1] c.s.basestation2.CourseSettingsManager   : java.lang.IllegalStateException: Cannot combine reorder with other change events
+2019-09-24 13:12:42.832 ERROR 30074 --- [pool-1-thread-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry '1' for key 'UK_t0mpx3tcn786a17uqhmu09hh4'
+2019-09-24 13:13:17.601 ERROR 30074 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.RuntimeException: Error storing object to file: CartInfo.json
+2019-09-24 13:13:17.610 ERROR 30074 --- [pool-5-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+java.lang.Exception: null
+	at com.stayprime.basestation2.BaseStationTasks.updateCartsTask(BaseStationTasks.java:85)
+	at sun.reflect.GeneratedMethodAccessor105.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-09-24 13:13:27.634 ERROR 30074 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.RuntimeException: Error storing object to file: CartInfo.json
+2019-09-24 13:13:27.647 ERROR 30074 --- [pool-5-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+java.lang.Exception: null
+	at com.stayprime.basestation2.BaseStationTasks.updateCartsTask(BaseStationTasks.java:85)
+	at sun.reflect.GeneratedMethodAccessor105.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-09-24 13:14:00.622 ERROR 30329 --- [pool-1-thread-1] c.s.basestation2.CourseSettingsManager   : java.lang.NullPointerException
+2019-09-24 14:32:21.893 ERROR 302 --- [pool-1-thread-1] c.s.basestation2.CourseSettingsManager   : java.lang.NullPointerException
+2019-09-24 14:34:03.047 ERROR 436 --- [pool-1-thread-1] c.s.basestation2.CourseSettingsManager   : java.lang.NullPointerException
+2019-09-24 15:29:38.403 ERROR 2301 --- [pool-1-thread-1] c.s.basestation2.CourseSettingsManager   : java.lang.NullPointerException
+2019-09-24 16:06:21.052 ERROR 4099 --- [pool-1-thread-1] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private javax.sql.DataSource org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.dataSource; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/stayprime/basestation2/config/DataSourceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is com.zaxxer.hikari.pool.PoolInitializationException: Exception during pool initialization
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:368)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1123)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1018)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1054)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:829)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:760)
+	at org.springframework.boot.SpringApplication.createAndRefreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:306)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:134)
+	at com.stayprime.basestation2.SpringStartupTask.doInBackground(SpringStartupTask.java:30)
+	at com.stayprime.basestation2.SpringStartupTask.doInBackground(SpringStartupTask.java:16)
+	at javax.swing.SwingWorker$1.call(SwingWorker.java:295)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at javax.swing.SwingWorker.run(SwingWorker.java:334)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private javax.sql.DataSource org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.dataSource; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/stayprime/basestation2/config/DataSourceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is com.zaxxer.hikari.pool.PoolInitializationException: Exception during pool initialization
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:573)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 31 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/stayprime/basestation2/config/DataSourceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is com.zaxxer.hikari.pool.PoolInitializationException: Exception during pool initialization
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1123)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1018)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1192)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1014)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:545)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is com.zaxxer.hikari.pool.PoolInitializationException: Exception during pool initialization
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	... 45 common frames omitted
+Caused by: com.zaxxer.hikari.pool.PoolInitializationException: Exception during pool initialization
+	at com.zaxxer.hikari.pool.BaseHikariPool.initializeConnections(BaseHikariPool.java:550)
+	at com.zaxxer.hikari.pool.BaseHikariPool.<init>(BaseHikariPool.java:172)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:60)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:48)
+	at com.zaxxer.hikari.HikariDataSource.<init>(HikariDataSource.java:80)
+	at com.stayprime.basestation2.config.DataSourceConfig.siteDataSource(DataSourceConfig.java:51)
+	at com.stayprime.basestation2.config.DataSourceConfig.dataSource(DataSourceConfig.java:38)
+	at com.stayprime.basestation2.config.DataSourceConfig$$EnhancerBySpringCGLIB$$9ed2262e.CGLIB$dataSource$0(<generated>)
+	at com.stayprime.basestation2.config.DataSourceConfig$$EnhancerBySpringCGLIB$$9ed2262e$$FastClassBySpringCGLIB$$75b35fc1.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:356)
+	at com.stayprime.basestation2.config.DataSourceConfig$$EnhancerBySpringCGLIB$$9ed2262e.dataSource(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	... 46 common frames omitted
+Caused by: java.sql.SQLException: Access denied for user 'sp-admin'@'182.71.45.110' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:963)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3966)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3902)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:875)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1712)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1228)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:95)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:101)
+	at com.zaxxer.hikari.pool.BaseHikariPool.addConnection(BaseHikariPool.java:444)
+	at com.zaxxer.hikari.pool.BaseHikariPool.initializeConnections(BaseHikariPool.java:548)
+	... 62 common frames omitted
+
+2019-09-24 16:06:24.312 ERROR 4099 --- [pool-1-thread-1] c.s.basestation2.CourseSettingsManager   : java.lang.NullPointerException
+2019-09-24 16:06:24.447 ERROR 4099 --- [AWT-EventQueue-1] org.jdesktop.application.Task            : com.stayprime.basestation2.BaseStationStartupTask@273e048b failed: java.lang.NullPointerException
+
+java.lang.NullPointerException: null
+	at com.stayprime.basestation2.BaseStation2App.syncGolfClub(BaseStation2App.java:240)
+	at com.stayprime.basestation2.BaseStationStartupTask.doInBackground(BaseStationStartupTask.java:39)
+	at com.stayprime.basestation2.BaseStationStartupTask.doInBackground(BaseStationStartupTask.java:23)
+	at javax.swing.SwingWorker$1.call(SwingWorker.java:295)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at javax.swing.SwingWorker.run(SwingWorker.java:334)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-09-24 16:06:49.368 ERROR 4188 --- [pool-1-thread-1] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private javax.sql.DataSource org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.dataSource; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/stayprime/basestation2/config/DataSourceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is com.zaxxer.hikari.pool.PoolInitializationException: Exception during pool initialization
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:368)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1123)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1018)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1054)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:829)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:760)
+	at org.springframework.boot.SpringApplication.createAndRefreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:306)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:134)
+	at com.stayprime.basestation2.SpringStartupTask.doInBackground(SpringStartupTask.java:30)
+	at com.stayprime.basestation2.SpringStartupTask.doInBackground(SpringStartupTask.java:16)
+	at javax.swing.SwingWorker$1.call(SwingWorker.java:295)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at javax.swing.SwingWorker.run(SwingWorker.java:334)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private javax.sql.DataSource org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.dataSource; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/stayprime/basestation2/config/DataSourceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is com.zaxxer.hikari.pool.PoolInitializationException: Exception during pool initialization
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:573)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 31 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/stayprime/basestation2/config/DataSourceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is com.zaxxer.hikari.pool.PoolInitializationException: Exception during pool initialization
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1123)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1018)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1192)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1014)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:545)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is com.zaxxer.hikari.pool.PoolInitializationException: Exception during pool initialization
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	... 45 common frames omitted
+Caused by: com.zaxxer.hikari.pool.PoolInitializationException: Exception during pool initialization
+	at com.zaxxer.hikari.pool.BaseHikariPool.initializeConnections(BaseHikariPool.java:550)
+	at com.zaxxer.hikari.pool.BaseHikariPool.<init>(BaseHikariPool.java:172)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:60)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:48)
+	at com.zaxxer.hikari.HikariDataSource.<init>(HikariDataSource.java:80)
+	at com.stayprime.basestation2.config.DataSourceConfig.siteDataSource(DataSourceConfig.java:51)
+	at com.stayprime.basestation2.config.DataSourceConfig.dataSource(DataSourceConfig.java:38)
+	at com.stayprime.basestation2.config.DataSourceConfig$$EnhancerBySpringCGLIB$$9ad5e5e.CGLIB$dataSource$0(<generated>)
+	at com.stayprime.basestation2.config.DataSourceConfig$$EnhancerBySpringCGLIB$$9ad5e5e$$FastClassBySpringCGLIB$$a223ff4c.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:356)
+	at com.stayprime.basestation2.config.DataSourceConfig$$EnhancerBySpringCGLIB$$9ad5e5e.dataSource(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	... 46 common frames omitted
+Caused by: java.sql.SQLException: Access denied for user 'sp-admin'@'182.71.45.110' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:963)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3966)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3902)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:875)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1712)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1228)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2253)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:95)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:101)
+	at com.zaxxer.hikari.pool.BaseHikariPool.addConnection(BaseHikariPool.java:444)
+	at com.zaxxer.hikari.pool.BaseHikariPool.initializeConnections(BaseHikariPool.java:548)
+	... 62 common frames omitted
+
+2019-09-24 16:06:55.055 ERROR 4188 --- [pool-1-thread-1] c.s.basestation2.CourseSettingsManager   : java.lang.NullPointerException
+2019-09-24 16:06:55.165 ERROR 4188 --- [AWT-EventQueue-1] org.jdesktop.application.Task            : com.stayprime.basestation2.BaseStationStartupTask@1a290d0b failed: java.lang.NullPointerException
+
+java.lang.NullPointerException: null
+	at com.stayprime.basestation2.BaseStation2App.syncGolfClub(BaseStation2App.java:240)
+	at com.stayprime.basestation2.BaseStationStartupTask.doInBackground(BaseStationStartupTask.java:39)
+	at com.stayprime.basestation2.BaseStationStartupTask.doInBackground(BaseStationStartupTask.java:23)
+	at javax.swing.SwingWorker$1.call(SwingWorker.java:295)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at javax.swing.SwingWorker.run(SwingWorker.java:334)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-09-24 16:07:57.494 ERROR 4328 --- [pool-1-thread-1] c.s.basestation2.CourseSettingsManager   : java.lang.NullPointerException
+2019-09-24 20:52:29.131 ERROR 3128 --- [pool-5-thread-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Timeout after 11928334ms of waiting for a connection.
+2019-09-24 20:52:29.168 ERROR 3128 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : org.springframework.transaction.CannotCreateTransactionException: Could not open JPA EntityManager for transaction; nested exception is org.hibernate.QueryTimeoutException: Could not open connection
+2019-09-24 20:52:29.197 ERROR 3128 --- [pool-5-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+java.lang.Exception: null
+	at com.stayprime.basestation2.BaseStationTasks.updateCartsTask(BaseStationTasks.java:85)
+	at sun.reflect.GeneratedMethodAccessor107.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-09-24 20:52:59.205 ERROR 3128 --- [pool-5-thread-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Timeout after 30001ms of waiting for a connection.
+2019-09-24 20:52:59.206 ERROR 3128 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : org.springframework.dao.QueryTimeoutException: Could not open connection; SQL [n/a]; nested exception is org.hibernate.QueryTimeoutException: Could not open connection
+2019-09-24 20:53:29.209 ERROR 3128 --- [pool-5-thread-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Timeout after 30000ms of waiting for a connection.
+2019-09-24 20:53:59.221 ERROR 3128 --- [pool-5-thread-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Timeout after 30001ms of waiting for a connection.
+2019-09-24 20:53:59.222 ERROR 3128 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : org.springframework.transaction.CannotCreateTransactionException: Could not open JPA EntityManager for transaction; nested exception is org.hibernate.QueryTimeoutException: Could not open connection
+2019-09-24 20:53:59.227 ERROR 3128 --- [pool-5-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+java.lang.Exception: null
+	at com.stayprime.basestation2.BaseStationTasks.updateCartsTask(BaseStationTasks.java:85)
+	at sun.reflect.GeneratedMethodAccessor107.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-09-24 20:54:29.230 ERROR 3128 --- [pool-5-thread-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Timeout after 30000ms of waiting for a connection.
+2019-09-24 20:54:29.231 ERROR 3128 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : org.springframework.dao.QueryTimeoutException: Could not open connection; SQL [n/a]; nested exception is org.hibernate.QueryTimeoutException: Could not open connection
+2019-09-24 20:54:59.233 ERROR 3128 --- [pool-5-thread-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Timeout after 30000ms of waiting for a connection.
+2019-09-24 20:55:29.238 ERROR 3128 --- [pool-5-thread-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Timeout after 30000ms of waiting for a connection.
+2019-09-24 20:55:29.239 ERROR 3128 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : org.springframework.transaction.CannotCreateTransactionException: Could not open JPA EntityManager for transaction; nested exception is org.hibernate.QueryTimeoutException: Could not open connection
+2019-09-24 20:55:29.242 ERROR 3128 --- [pool-5-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+java.lang.Exception: null
+	at com.stayprime.basestation2.BaseStationTasks.updateCartsTask(BaseStationTasks.java:85)
+	at sun.reflect.GeneratedMethodAccessor107.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-09-24 20:58:22.991 ERROR 3128 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : org.springframework.dao.InvalidDataAccessApiUsageException: EntityManagerFactory is closed; nested exception is java.lang.IllegalStateException: EntityManagerFactory is closed

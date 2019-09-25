@@ -1,0 +1,95 @@
+JFDML JFormDesigner: "5.2.2.0.199" Java: "1.8.0_66" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "com.stayprime.basestation2.resources"
+	"i18n.bundleName": "ExportGreensDialog"
+	"i18n.keyPrefix": "ExportGreensDialog"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"modal": true
+			"$sizePolicy": 1
+			"title": new FormMessage( null, "ExportGreensDialog.this.title" )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				"border": sfield com.jgoodies.forms.factories.Borders DIALOG
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+					"$columnSpecs": "default, labelcompgap, default:grow"
+					"$rowSpecs": "default, linegap, default, linegap, default, linegap"
+				} ) {
+					name: "contentPanel"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "layoutLabel"
+						"text": new FormMessage( null, "ExportGreensDialog.layoutLabel.text" )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 1
+						"gridY": 1
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "layoutCombo"
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 3
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "fileLabel"
+						"text": new FormMessage( null, "ExportGreensDialog.fileLabel.text" )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 1
+						"gridY": 3
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "fileButton"
+						"text": new FormMessage( null, "ExportGreensDialog.fileButton.text" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "fileButtonActionPerformed", false ) )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 3
+						"gridY": 3
+					} )
+					add( new FormComponent( "javax.swing.JCheckBox" ) {
+						name: "pinsCheckBox"
+						"text": new FormMessage( null, "ExportGreensDialog.pinsCheckBox.text" )
+						"selected": true
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridY": 5
+						"gridWidth": 3
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+					"$columnSpecs": "glue, button, relgap, button"
+					"$rowSpecs": "pref"
+				} ) {
+					name: "buttonBar"
+					"border": sfield com.jgoodies.forms.factories.Borders BUTTON_BAR_PAD
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "okButton"
+						"text": new FormMessage( null, "ExportGreensDialog.okButton.text" )
+						"enabled": false
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "okButtonActionPerformed", false ) )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 2
+						"gridY": 1
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "cancelButton"
+						"text": new FormMessage( null, "ExportGreensDialog.cancelButton.text" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "cancelButtonActionPerformed", false ) )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 4
+						"gridY": 1
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "South"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 350, 165 )
+		} )
+	}
+}

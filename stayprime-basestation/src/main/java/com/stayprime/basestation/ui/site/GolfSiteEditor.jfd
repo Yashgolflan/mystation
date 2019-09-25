@@ -1,0 +1,148 @@
+JFDML JFormDesigner: "6.0.1.0.112" Java: "1.8.0_131" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "com.stayprime.basestation.ui.site"
+	"i18n.bundleName": "Bundle"
+	"i18n.keyPrefix": "GolfSiteEditor"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "org.jdesktop.swingx.JXPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+			"$columnSpecs": "right:default, labelcompgap, 50dlu:grow, labelcompgap, default, labelcompgap, default, relgap, right:default, labelcompgap, 50dlu:grow, labelcompgap, default, labelcompgap, default"
+			"$rowSpecs": "default, linegap, default, linegap, default"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "nameLabel"
+				"text": new FormMessage( null, "GolfSiteEditor.nameLabel.text" )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "nameField"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 3
+				"gridWidth": 5
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "logoLabel"
+				"text": new FormMessage( null, "GolfSiteEditor.logoLabel.text" )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridY": 3
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "logoField"
+				"editable": false
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 3
+				"gridY": 3
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "logoLoadButton"
+				"text": new FormMessage( null, "GolfSiteEditor.logoLoadButton.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "logoLoadButtonActionPerformed", false ) )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 5
+				"gridY": 3
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "logoClearButton"
+				"text": "<html>&nbsp;X&nbsp;"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "logoClearButtonActionPerformed", false ) )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 7
+				"gridY": 3
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "welcomeLabel"
+				"text": new FormMessage( null, "GolfSiteEditor.welcomeLabel.text" )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridY": 3
+				"gridX": 9
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "welcomeField"
+				"editable": false
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 11
+				"gridY": 3
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "welcomeLoadButton"
+				"text": new FormMessage( null, "GolfSiteEditor.welcomeLoadButton.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "welcomeLoadButtonActionPerformed", false ) )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 13
+				"gridY": 3
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "welcomeClearButton"
+				"text": "<html>&nbsp;X&nbsp;"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "welcomeClearButtonActionPerformed", false ) )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 15
+				"gridY": 3
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "mapLabel"
+				"text": new FormMessage( null, "GolfSiteEditor.mapLabel.text" )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridY": 5
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "mapField"
+				"editable": false
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 3
+				"gridY": 5
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "mapLoadButton"
+				"text": new FormMessage( null, "GolfSiteEditor.mapLoadButton.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "mapLoadButtonActionPerformed", false ) )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 5
+				"gridY": 5
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "mapClearButton"
+				"text": "<html>&nbsp;X&nbsp;"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "mapClearButtonActionPerformed", false ) )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 7
+				"gridY": 5
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "thankLabel"
+				"text": new FormMessage( null, "GolfSiteEditor.thankLabel.text" )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridY": 5
+				"gridX": 9
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "thankField"
+				"editable": false
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 11
+				"gridY": 5
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "thankLoadButton"
+				"text": new FormMessage( null, "GolfSiteEditor.thankLoadButton.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "thankLoadButtonActionPerformed", false ) )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 13
+				"gridY": 5
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "thankClearButton"
+				"text": "<html>&nbsp;X&nbsp;"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "thankClearButtonActionPerformed", false ) )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 15
+				"gridY": 5
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 640, 110 )
+		} )
+	}
+}

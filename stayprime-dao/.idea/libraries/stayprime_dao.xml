@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="stayprime-dao">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/build/libs/stayprime-dao.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,8 @@
+releases
+.gradle
+.nb-gradle
+.nb-gradle-properties
+build
+run
+
+/target/

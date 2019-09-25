@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+/netbeansBaseStation/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+4219852053.index
+1390609687.index
+1114125566.index
+2869996822.index
+2819781125.index
+3947630326.index

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="scorecard" language="groovy" pageWidth="630" pageHeight="842" columnWidth="590" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="67b0f6ae-2373-4bbf-9af2-04160b315d77">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Title" forecolor="#FFFFFF" fontName="Arial" fontSize="26" isBold="true" pdfFontName="Helvetica-Bold"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<parameter name="DateParameter1" class="java.sql.Timestamp">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="DateParameter2" class="java.sql.Timestamp">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="Title" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[select scorecard_id,cart_number,created,email,player_names,holes_played from score_card
+where created between $P{DateParameter1} and $P{DateParameter2}]]>
+	</queryString>
+	<field name="scorecard_id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cart_number" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="created" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="email" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="player_names" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="holes_played" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="64" splitType="Stretch">
+			<textField>
+				<reportElement x="188" y="22" width="172" height="20" uuid="c98e7d49-6167-4bd2-b2cc-1e8e8f0aa970"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{Title}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="0" y="0" width="152" height="64" uuid="5eab3e0d-56b3-42e1-bf4e-6bbf10806a90"/>
+				<imageExpression><![CDATA["/opt/StayPrime/BaseStation/media/logo.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="29" splitType="Stretch">
+			<rectangle>
+				<reportElement x="458" y="0" width="132" height="29" uuid="f1d25167-9c88-4d96-83d4-727750d51e1e"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="255" y="0" width="100" height="29" uuid="74066bd6-5d6e-4b5b-8d9b-09c5d6abb20b"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="50" y="0" width="100" height="29" uuid="9939ab2d-3eb0-4fb7-a5b4-3e5048fd2020"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="150" y="0" width="105" height="29" uuid="68ef37de-43e1-43cf-9812-4d17cc6b8d73"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="-1" y="0" width="51" height="29" uuid="43825350-55a6-4a0c-8941-a9d9c0a295b1"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="-1" y="5" width="51" height="20" uuid="157ee9b3-b073-4fcc-95f0-d559470b53b5"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[  Card Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="52" y="5" width="100" height="20" uuid="3fdfd91f-022b-42dd-bd3a-36e01540f8ae"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cart Number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="255" y="5" width="100" height="20" uuid="ff6f7eff-2be2-4187-addc-c32c65834419"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Email]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="5" width="100" height="20" uuid="8dd6af3e-f387-4df6-89b3-f5166f2c6c83"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Player Names]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="355" y="0" width="103" height="29" uuid="a0cbe7ba-02d0-49c2-a44c-6455a074e225"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="455" y="5" width="135" height="20" uuid="c0339aff-11b0-4e69-826c-485bff59ddd4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Holes Played]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="355" y="5" width="100" height="20" uuid="1e3f70dc-142f-4e99-985c-c7a4ff315e05"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date Created]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="36" splitType="Stretch">
+			<rectangle>
+				<reportElement x="458" y="0" width="132" height="36" uuid="1825a747-3cf1-484f-a328-4e3fecdb09d8"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="255" y="0" width="100" height="36" uuid="51d089d8-e97a-4ec3-8cb5-0f21d44ebc2a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="50" y="0" width="100" height="36" uuid="0b5be19c-a641-4e1f-bbc7-f8691699e22f"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="150" y="0" width="105" height="36" uuid="890838d3-5dcd-44ce-99fa-54c114adf2d6"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="-1" y="0" width="51" height="36" uuid="4637ed8b-3a1f-4cb8-8ea7-be1d9bc1c6ba"/>
+			</rectangle>
+			<textField>
+				<reportElement x="-1" y="0" width="51" height="36" uuid="5fdcc7bd-859c-4b9b-9909-80c4a6e06b52"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{scorecard_id}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="355" y="0" width="103" height="36" uuid="75242926-d4d1-4c9c-bf20-d32cc3a1927b"/>
+			</rectangle>
+			<textField>
+				<reportElement x="52" y="0" width="100" height="36" uuid="3475e6fa-196b-49a7-84a7-f8c4c2e1d651"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{cart_number}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="255" y="0" width="100" height="36" uuid="77a78047-1534-48f8-ba8c-3e28d4aa71e6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="150" y="0" width="100" height="36" uuid="7a83a905-3ef7-405c-9e5f-aa602624c476"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{player_names}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="458" y="0" width="132" height="36" uuid="760125ca-4ab7-4262-9af4-bb8439e877ad"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{holes_played}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="355" y="0" width="100" height="36" uuid="b198207b-28fc-4395-b98b-e69f47c4c4e3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{created}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

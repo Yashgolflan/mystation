@@ -1,0 +1,91 @@
+JFDML JFormDesigner: "6.0.6.0.190" Java: "1.8.0_222" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "com.stayprime.basestation2.ui.dialog.resources"
+	"i18n.bundleName": "PopThresholdSettingsPanel"
+	"i18n.keyPrefix": "PopThresholdSettingsPanel"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+			"$columnSpecs": "right:default, labelcompgap, left:default, labelcompgap, default:grow, labelcompgap, default, labelcompgap, left:default, labelcompgap, default:grow"
+			"$rowSpecs": "fill:default, 10px, fill:default, 10px, default"
+		} ) {
+			name: "this"
+			add( new FormComponent( "com.stayprime.basestation2.ui.custom.JXTitledSeparator" ) {
+				name: "timeBehindLabel"
+				"name": "timeBehindLabel"
+				"title": "Behind Pace of Play caution and warning "
+				"horizontalAlignment": 0
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridWidth": 11
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "cautionLabel"
+				"text": new FormMessage( null, "PopThresholdSettingsPanel.cautionLabel.text" )
+				"name": "cautionLabel"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridY": 3
+			} )
+			add( new FormComponent( "javax.swing.JSpinner" ) {
+				name: "cautionField"
+				"model": new javax.swing.SpinnerNumberModel( 0, 0, 60, 1 )
+				"name": "cautionField"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 3
+				"gridY": 3
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "minutesLabel1"
+				"text": "minutes"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 5
+				"gridY": 3
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "warningLabel"
+				"text": new FormMessage( null, "PopThresholdSettingsPanel.warningLabel.text" )
+				"name": "warningLabel"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridY": 3
+				"gridX": 7
+			} )
+			add( new FormComponent( "javax.swing.JSpinner" ) {
+				name: "warningField"
+				"model": new javax.swing.SpinnerNumberModel( 10, 0, 60, 1 )
+				"name": "warningField"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 9
+				"gridY": 3
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "minutesLabel2"
+				"text": "minutes"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 11
+				"gridY": 3
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "applyButton"
+				"name": "applyButton"
+				"action": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				"text": new FormMessage( null, "PopThresholdSettingsPanel.applyButton.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "applySettings", false ) )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 11
+				"gridY": 5
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 95 )
+		} )
+		add( new FormComponent( "javax.swing.JButton" ) {
+			name: "cancelButton"
+			"text": new FormMessage( null, "PopThresholdSettingsPanel.cancelButton.text" )
+			"name": "cancelButton"
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 270, 175 )
+			"size": new java.awt.Dimension( 85, 24 )
+		} )
+	}
+}

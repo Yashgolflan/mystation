@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<included>
+    <appender name="FILE_ERROR"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <encoder>
+            <pattern>${FILE_LOG_PATTERN}</pattern>
+        </encoder>
+
+        <file>${LOG_ERROR_FILE}</file>
+
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>ERROR</level>
+        </filter>
+
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- rollover daily -->
+            <fileNamePattern>${${LOG_ERROR_FILE}}.%d{yyyy-MM-dd}.%i</fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy
+                class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <!-- or whenever the file size reaches 50MB -->
+                <maxFileSize>10MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+            <!-- keep 30 days' worth of history -->
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+    <!--<rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+        <fileNamePattern>${LOG_FILE}.%i</fileNamePattern>
+    </rollingPolicy>
+    <triggeringPolicy
+        class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+        <MaxFileSize>10MB</MaxFileSize>
+    </triggeringPolicy>-->
+
+    </appender>
+</included>

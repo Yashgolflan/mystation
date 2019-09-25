@@ -1,0 +1,114 @@
+JFDML JFormDesigner: "6.0.6.0.190" Java: "1.8.0_222" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+				"$columnSpecs": "left:15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0"
+				"$rowSpecs": "0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0"
+				"$hGap": 5
+				"$vGap": 5
+				"$alignTop": true
+				"$alignLeft": true
+			} ) {
+				name: "contentPanel"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "Create Reports "
+					"font": new java.awt.Font( "Tahoma", 1, 16 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 1
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "Report Type"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 1
+					"gridx": 1
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "From"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 2
+					"gridy": 1
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "To"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 3
+					"gridy": 1
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+					"$columnSpecs": "left:max(pref;140px):grow"
+					"$rowSpecs": "fill:pref"
+				} ) {
+					name: "panel1"
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "cmbReportType"
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 2
+					"gridx": 1
+				} )
+				add( new FormComponent( "org.jdesktop.swingx.JXDatePicker" ) {
+					name: "xDatePicker1"
+					auxiliary() {
+						"JavaCodeGenerator.customCreateCode": "new JXDatePicker(new Date());"
+					}
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 2
+					"gridy": 2
+				} )
+				add( new FormComponent( "org.jdesktop.swingx.JXDatePicker" ) {
+					name: "xDatePicker2"
+					auxiliary() {
+						"JavaCodeGenerator.customCreateCode": "new JXDatePicker(new Date());"
+					}
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 3
+					"gridy": 2
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "chkEmail"
+					"text": "Attach to Email"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 4
+					"gridy": 2
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "generateReportButton"
+					"text": "Generate Report"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "generateReportButtonActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 3
+					"gridx": 1
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "cancelButton"
+					"text": "Cancel"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "cancelButtonActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 2
+					"gridy": 3
+				} )
+				add( new FormComponent( "javax.swing.JProgressBar" ) {
+					name: "progressBar1"
+					auxiliary() {
+						"JavaCodeGenerator.postCreateCode": "progressBar1.setVisible(false);"
+					}
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 1
+					"gridy": 4
+					"gridwidth": 18
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 840, 495 )
+		} )
+	}
+}

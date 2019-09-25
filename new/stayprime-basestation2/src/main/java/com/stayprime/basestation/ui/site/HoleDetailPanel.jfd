@@ -1,0 +1,118 @@
+JFDML JFormDesigner: "6.0.1.0.112" Java: "1.8.0_131" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		"$setComponentNames": true
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+			"$columnSpecs": "right:pref, labelcompgap, default:grow, labelcompgap, default, labelcompgap, default"
+			"$rowSpecs": "default, linegap, default, linegap, default, linegap, default, relgap, default, 1dlu, fill:max(pref;80dlu)"
+		} ) {
+			name: "this"
+			"name": "Form"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "separator1"
+				"text": "Hole details"
+				"font": &SwingDerivedFont0 new com.jformdesigner.model.SwingDerivedFont( null, 1, 0, false )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridWidth": 7
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "mapLabel"
+				"text": "Map:"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridY": 3
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "mapField"
+				"editable": false
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 3
+				"gridY": 3
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "selectMapButton"
+				"text": "Load"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "selectMapButtonActionPerformed", false ) )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 5
+				"gridY": 3
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "clearMapButton"
+				"text": "<html>&nbsp;X&nbsp;"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "clearMapButtonActionPerformed", false ) )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 7
+				"gridY": 3
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "flybyLabel"
+				"text": "Flyby:"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridY": 5
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "flybyField"
+				"editable": false
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 3
+				"gridY": 5
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "selectFlybyButton"
+				"text": "Load"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "selectFlybyButtonActionPerformed", false ) )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridY": 5
+				"gridX": 5
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "clearFlybyButton"
+				"text": "<html>&nbsp;X&nbsp;"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "clearFlybyButtonActionPerformed", false ) )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridY": 5
+				"gridX": 7
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "protipsLabel"
+				"text": "Pro tips:"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridY": 7
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "protipsField"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridX": 3
+				"gridY": 7
+				"gridWidth": 3
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "protipsEditButton"
+				"text": "..."
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "protipsEditButtonActionPerformed", false ) )
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridY": 7
+				"gridX": 7
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "separator2"
+				"text": "Tee boxes"
+				"font": #SwingDerivedFont0
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridWidth": 7
+				"gridY": 9
+			} )
+			add( new FormComponent( "com.stayprime.basestation.ui.site.HoleTeeBoxEditor" ) {
+				name: "holeTeeBoxEditor"
+			}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+				"gridY": 11
+				"gridWidth": 7
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 465, 295 )
+			"location": new java.awt.Point( 5, 0 )
+		} )
+	}
+}

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="nexmo-sdk">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../stayprime-common/lib/nexmo-https-1.0/nexmo-sdk.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

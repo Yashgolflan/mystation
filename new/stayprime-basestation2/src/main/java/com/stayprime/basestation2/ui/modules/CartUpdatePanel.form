@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.7" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <Properties>
+    <Property name="name" type="java.lang.String" value="Form" noResource="true"/>
+  </Properties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="2"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,0,-60,0,0,2,45"/>
+  </AuxValues>
+  <SubComponents>
+    <Container class="org.jdesktop.swingx.JXPanel" name="settingsPanel">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="settingsPanel" noResource="true"/>
+      </Properties>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="updateLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="updateLabel.text"/>
+            <Property name="name" type="java.lang.String" value="updateLabel" noResource="true"/>
+          </Properties>
+          <BindingProperties>
+            <BindingProperty name="enabled" source="Form" sourcePath="${enabled}" target="updateLabel" targetPath="enabled" updateStrategy="0" immediately="false"/>
+          </BindingProperties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="updateField">
+          <Properties>
+            <Property name="columns" type="int" value="10"/>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[160, 40]"/>
+            </Property>
+            <Property name="name" type="java.lang.String" value="updateField" noResource="true"/>
+          </Properties>
+          <BindingProperties>
+            <BindingProperty name="enabled" source="Form" sourcePath="${enabled}" target="updateField" targetPath="enabled" updateStrategy="0" immediately="false"/>
+          </BindingProperties>
+        </Component>
+        <Container class="com.stayprime.ui.Glue" name="glue2">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="glue2" noResource="true"/>
+          </Properties>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="101" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+        </Container>
+        <Component class="javax.swing.JLabel" name="userLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="userLabel.text"/>
+            <Property name="name" type="java.lang.String" value="userLabel" noResource="true"/>
+          </Properties>
+          <BindingProperties>
+            <BindingProperty name="enabled" source="Form" sourcePath="${enabled}" target="userLabel" targetPath="enabled" updateStrategy="0" immediately="false"/>
+          </BindingProperties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="userField">
+          <Properties>
+            <Property name="columns" type="int" value="6"/>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[120, 40]"/>
+            </Property>
+            <Property name="name" type="java.lang.String" value="userField" noResource="true"/>
+          </Properties>
+          <BindingProperties>
+            <BindingProperty name="enabled" source="Form" sourcePath="${enabled}" target="userField" targetPath="enabled" updateStrategy="0" immediately="false"/>
+          </BindingProperties>
+        </Component>
+        <Container class="com.stayprime.ui.Glue" name="glue3">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[5, 5]"/>
+            </Property>
+            <Property name="name" type="java.lang.String" value="glue3" noResource="true"/>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[5, 5]"/>
+            </Property>
+          </Properties>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="5" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="5" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+        </Container>
+        <Component class="javax.swing.JLabel" name="passLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="passLabel.text"/>
+            <Property name="name" type="java.lang.String" value="passLabel" noResource="true"/>
+          </Properties>
+          <BindingProperties>
+            <BindingProperty name="enabled" source="Form" sourcePath="${enabled}" target="passLabel" targetPath="enabled" updateStrategy="0" immediately="false"/>
+          </BindingProperties>
+        </Component>
+        <Component class="javax.swing.JPasswordField" name="passField">
+          <Properties>
+            <Property name="columns" type="int" value="4"/>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[100, 40]"/>
+            </Property>
+            <Property name="name" type="java.lang.String" value="passField" noResource="true"/>
+          </Properties>
+          <BindingProperties>
+            <BindingProperty name="enabled" source="Form" sourcePath="${enabled}" target="passField" targetPath="enabled" updateStrategy="0" immediately="false"/>
+          </BindingProperties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="org.jdesktop.swingx.JXPanel" name="filesCommandsPanel">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="filesCommandsPanel" noResource="true"/>
+      </Properties>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+        <Property name="columns" type="int" value="0"/>
+        <Property name="horizontalGap" type="int" value="5"/>
+        <Property name="rows" type="int" value="1"/>
+      </Layout>
+      <SubComponents>
+        <Container class="org.jdesktop.swingx.JXPanel" name="jXPanel1">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="jXPanel1" noResource="true"/>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabel1">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="jLabel1.text"/>
+                <Property name="name" type="java.lang.String" value="jLabel1" noResource="true"/>
+              </Properties>
+              <BindingProperties>
+                <BindingProperty name="enabled" source="Form" sourcePath="${enabled}" target="jLabel1" targetPath="enabled" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+                  <GridBagConstraints gridX="0" gridY="0" gridWidth="1" gridHeight="1" fill="2" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="17" weightX="1.0" weightY="0.0"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JButton" name="removeFilesButton">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="com.stayprime.basestation2.CartUpdatePanel" id="removeFiles" methodName="removeFiles"/>
+                </Property>
+                <Property name="name" type="java.lang.String" value="removeFilesButton" noResource="true"/>
+              </Properties>
+              <BindingProperties>
+                <BindingProperty name="enabled" source="Form" sourcePath="${enabled}" target="removeFilesButton" targetPath="enabled" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+                  <GridBagConstraints gridX="1" gridY="0" gridWidth="1" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="13" weightX="0.0" weightY="0.0"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Component class="javax.swing.JButton" name="addFilesButton">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="com.stayprime.basestation2.CartUpdatePanel" id="addFiles" methodName="addFiles"/>
+                </Property>
+                <Property name="name" type="java.lang.String" value="addFilesButton" noResource="true"/>
+              </Properties>
+              <BindingProperties>
+                <BindingProperty name="enabled" source="Form" sourcePath="${enabled}" target="addFilesButton" targetPath="enabled" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+                  <GridBagConstraints gridX="2" gridY="0" gridWidth="1" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="13" weightX="0.0" weightY="0.0"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="jScrollPane1" noResource="true"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+                  <GridBagConstraints gridX="0" gridY="1" gridWidth="3" gridHeight="1" fill="1" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="18" weightX="1.0" weightY="1.0"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JList" name="filesList">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="new DefaultListModel()" type="code"/>
+                    </Property>
+                    <Property name="name" type="java.lang.String" value="filesList" noResource="true"/>
+                    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                      <Dimension value="[300, 200]"/>
+                    </Property>
+                    <Property name="visibleRowCount" type="int" value="4"/>
+                  </Properties>
+                  <BindingProperties>
+                    <BindingProperty name="enabled" source="Form" sourcePath="${enabled}" target="filesList" targetPath="enabled" updateStrategy="0" immediately="false"/>
+                  </BindingProperties>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Container class="org.jdesktop.swingx.JXPanel" name="jXPanel2">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="jXPanel2" noResource="true"/>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabel2">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="jLabel2.text"/>
+                <Property name="name" type="java.lang.String" value="jLabel2" noResource="true"/>
+              </Properties>
+              <BindingProperties>
+                <BindingProperty name="enabled" source="Form" sourcePath="${enabled}" target="jLabel2" targetPath="enabled" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+                  <GridBagConstraints gridX="0" gridY="0" gridWidth="1" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="17" weightX="1.0" weightY="0.0"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="jScrollPane2" noResource="true"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+                  <GridBagConstraints gridX="0" gridY="1" gridWidth="2" gridHeight="1" fill="1" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="18" weightX="1.0" weightY="1.0"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="commandsTextArea">
+                  <Properties>
+                    <Property name="columns" type="int" value="10"/>
+                    <Property name="rows" type="int" value="4"/>
+                    <Property name="name" type="java.lang.String" value="commandsTextArea" noResource="true"/>
+                    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                      <Dimension value="[300, 200]"/>
+                    </Property>
+                  </Properties>
+                  <BindingProperties>
+                    <BindingProperty name="enabled" source="Form" sourcePath="${enabled}" target="commandsTextArea" targetPath="enabled" updateStrategy="0" immediately="false"/>
+                  </BindingProperties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JButton" name="removeFilesButton1">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="com.stayprime.basestation2.CartUpdatePanel" id="clearCommands" methodName="clearCommands"/>
+                </Property>
+                <Property name="text" type="java.lang.String" resourceKey="removeFilesButton1.text"/>
+                <Property name="name" type="java.lang.String" value="removeFilesButton1" noResource="true"/>
+              </Properties>
+              <BindingProperties>
+                <BindingProperty name="enabled" source="Form" sourcePath="${enabled}" target="removeFilesButton1" targetPath="enabled" updateStrategy="0" immediately="false"/>
+              </BindingProperties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+                  <GridBagConstraints gridX="1" gridY="0" gridWidth="1" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="0" insetsLeft="0" insetsBottom="0" insetsRight="0" anchor="13" weightX="0.0" weightY="0.0"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Container class="org.jdesktop.swingx.JXPanel" name="remoteDirPanel">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="remoteDirPanel" noResource="true"/>
+      </Properties>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jLabel3">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="jLabel3.text"/>
+            <Property name="name" type="java.lang.String" value="jLabel3" noResource="true"/>
+          </Properties>
+          <BindingProperties>
+            <BindingProperty name="enabled" source="Form" sourcePath="${enabled}" target="jLabel3" targetPath="enabled" updateStrategy="0" immediately="false"/>
+          </BindingProperties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="remoteDirTextField">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="remoteDirTextField" noResource="true"/>
+          </Properties>
+          <BindingProperties>
+            <BindingProperty name="enabled" source="Form" sourcePath="${enabled}" target="remoteDirTextField" targetPath="enabled" updateStrategy="0" immediately="false"/>
+          </BindingProperties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="org.jdesktop.swingx.JXPanel" name="buttonsPanel">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="buttonsPanel" noResource="true"/>
+      </Properties>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="saveButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="saveButton.text"/>
+            <Property name="name" type="java.lang.String" value="saveButton" noResource="true"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="saveButtonActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="reloadButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="reloadButton.text"/>
+            <Property name="name" type="java.lang.String" value="reloadButton" noResource="true"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="reloadButtonActionPerformed"/>
+          </Events>
+        </Component>
+        <Container class="com.stayprime.ui.Glue" name="glue4">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="glue4" noResource="true"/>
+          </Properties>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+        </Container>
+        <Component class="javax.swing.JButton" name="applyUpdateButton">
+          <Properties>
+            <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+              <action class="com.stayprime.basestation2.ui.modules.CartUpdatePanel" id="applyUpdates" methodName="applyUpdates"/>
+            </Property>
+            <Property name="name" type="java.lang.String" value="applyUpdateButton" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="stopUpdateButton">
+          <Properties>
+            <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+              <action class="com.stayprime.basestation2.ui.modules.CartUpdatePanel" id="stopUpdates" methodName="stopUpdates"/>
+            </Property>
+            <Property name="name" type="java.lang.String" value="stopUpdateButton" noResource="true"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+  <LayoutCode>
+    <CodeStatement>
+      <CodeExpression id="1_verticalLayout22">
+        <CodeVariable name="verticalLayout22" type="4096" declaredType="com.stayprime.ui.VerticalLayout2"/>
+        <ExpressionOrigin>
+          <ExpressionProvider type="CodeConstructor">
+            <CodeConstructor class="com.stayprime.ui.VerticalLayout2" parameterTypes=""/>
+          </ExpressionProvider>
+        </ExpressionOrigin>
+      </CodeExpression>
+      <StatementProvider type="CodeExpression">
+        <CodeExpression id="1_verticalLayout22"/>
+      </StatementProvider>
+    </CodeStatement>
+    <CodeStatement>
+      <CodeExpression id="1_verticalLayout22"/>
+      <StatementProvider type="CodeMethod">
+        <CodeMethod name="setAlignment" class="com.stayprime.ui.VerticalLayout2" parameterTypes="int"/>
+      </StatementProvider>
+      <Parameters>
+        <CodeExpression id="2">
+          <ExpressionOrigin>
+            <Value type="int" value="3"/>
+          </ExpressionOrigin>
+        </CodeExpression>
+      </Parameters>
+    </CodeStatement>
+    <CodeStatement>
+      <CodeExpression id="3">
+        <ExpressionOrigin>
+          <ExpressionProvider type="ComponentRef">
+            <ComponentRef name="."/>
+          </ExpressionProvider>
+        </ExpressionOrigin>
+      </CodeExpression>
+      <StatementProvider type="CodeMethod">
+        <CodeMethod name="setLayout" class="java.awt.Container" parameterTypes="java.awt.LayoutManager"/>
+      </StatementProvider>
+      <Parameters>
+        <CodeExpression id="1_verticalLayout22"/>
+      </Parameters>
+    </CodeStatement>
+    <CodeStatement>
+      <CodeExpression id="3"/>
+      <StatementProvider type="CodeMethod">
+        <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component"/>
+      </StatementProvider>
+      <Parameters>
+        <CodeExpression id="4_settingsPanel">
+          <CodeVariable name="settingsPanel" type="8194" declaredType="org.jdesktop.swingx.JXPanel"/>
+          <ExpressionOrigin>
+            <ExpressionProvider type="ComponentRef">
+              <ComponentRef name="settingsPanel"/>
+            </ExpressionProvider>
+          </ExpressionOrigin>
+        </CodeExpression>
+      </Parameters>
+    </CodeStatement>
+    <CodeStatement>
+      <CodeExpression id="3"/>
+      <StatementProvider type="CodeMethod">
+        <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component"/>
+      </StatementProvider>
+      <Parameters>
+        <CodeExpression id="5_filesCommandsPanel">
+          <CodeVariable name="filesCommandsPanel" type="8194" declaredType="org.jdesktop.swingx.JXPanel"/>
+          <ExpressionOrigin>
+            <ExpressionProvider type="ComponentRef">
+              <ComponentRef name="filesCommandsPanel"/>
+            </ExpressionProvider>
+          </ExpressionOrigin>
+        </CodeExpression>
+      </Parameters>
+    </CodeStatement>
+    <CodeStatement>
+      <CodeExpression id="3"/>
+      <StatementProvider type="CodeMethod">
+        <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component"/>
+      </StatementProvider>
+      <Parameters>
+        <CodeExpression id="6_remoteDirPanel">
+          <CodeVariable name="remoteDirPanel" type="8194" declaredType="org.jdesktop.swingx.JXPanel"/>
+          <ExpressionOrigin>
+            <ExpressionProvider type="ComponentRef">
+              <ComponentRef name="remoteDirPanel"/>
+            </ExpressionProvider>
+          </ExpressionOrigin>
+        </CodeExpression>
+      </Parameters>
+    </CodeStatement>
+    <CodeStatement>
+      <CodeExpression id="3"/>
+      <StatementProvider type="CodeMethod">
+        <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component"/>
+      </StatementProvider>
+      <Parameters>
+        <CodeExpression id="7_buttonsPanel">
+          <CodeVariable name="buttonsPanel" type="8194" declaredType="org.jdesktop.swingx.JXPanel"/>
+          <ExpressionOrigin>
+            <ExpressionProvider type="ComponentRef">
+              <ComponentRef name="buttonsPanel"/>
+            </ExpressionProvider>
+          </ExpressionOrigin>
+        </CodeExpression>
+      </Parameters>
+    </CodeStatement>
+  </LayoutCode>
+</Form>

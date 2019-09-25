@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.stayprime.golfcomm.EncodeUtilTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2019-09-25T04:48:28" hostname="stayprime-Aspire-V5-573G" time="0.023">
+  <properties/>
+  <testcase name="testDecodeShortToCoord" classname="com.stayprime.golfcomm.EncodeUtilTest" time="0.011"/>
+  <testcase name="testEncodeCoordToShort" classname="com.stayprime.golfcomm.EncodeUtilTest" time="0.002"/>
+  <testcase name="testEncodeSpeed" classname="com.stayprime.golfcomm.EncodeUtilTest" time="0.001"/>
+  <testcase name="testDecodeSpeed" classname="com.stayprime.golfcomm.EncodeUtilTest" time="0.001"/>
+  <testcase name="testEncodeHeading" classname="com.stayprime.golfcomm.EncodeUtilTest" time="0.001"/>
+  <testcase name="testEncodeRelativePosition" classname="com.stayprime.golfcomm.EncodeUtilTest" time="0.003"/>
+  <system-out><![CDATA[decodeShortToCoord
+encodeCoordToShort
+encodeSpeed
+decodeSpeed
+encodeHeading
+encodeLocation
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

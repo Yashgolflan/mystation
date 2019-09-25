@@ -1,0 +1,25 @@
+2019-09-09 12:41:21.748 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 12:41:41.771 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 12:42:01.789 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 12:42:21.816 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 12:42:41.838 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 12:43:01.856 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 12:43:21.887 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 12:43:41.904 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 12:44:01.924 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 12:44:21.945 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 12:44:41.964 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 12:45:01.981 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 12:45:22.004 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 12:45:42.024 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 12:46:02.039 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 12:46:22.063 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 12:46:42.082 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 12:47:02.097 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 12:47:22.118 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 12:47:42.137 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 12:48:02.157 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 12:48:22.178 ERROR 10880 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 13:53:08.073 ERROR 12259 --- [pool-1-thread-1] c.s.basestation2.CourseSettingsManager   : java.lang.NullPointerException
+2019-09-09 13:54:18.788 ERROR 12259 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null
+2019-09-09 13:54:45.659 ERROR 12259 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.NumberFormatException: null

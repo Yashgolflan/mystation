@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.stayprime.comm.encoder.MessageEncoderTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2019-09-25T04:48:28" hostname="stayprime-Aspire-V5-573G" time="0.013">
+  <properties/>
+  <testcase name="testEncodeMessage" classname="com.stayprime.comm.encoder.MessageEncoderTest" time="0.005"/>
+  <testcase name="testDecodeMessage" classname="com.stayprime.comm.encoder.MessageEncoderTest" time="0.001"/>
+  <testcase name="testEncodeTextMessage_6args" classname="com.stayprime.comm.encoder.MessageEncoderTest" time="0.001"/>
+  <testcase name="testDecodeTextMessage_BytePacket_int" classname="com.stayprime.comm.encoder.MessageEncoderTest" time="0.0"/>
+  <testcase name="testEncodeTextMessage_5args" classname="com.stayprime.comm.encoder.MessageEncoderTest" time="0.0"/>
+  <testcase name="testDecodeTextMessage_BytePacket" classname="com.stayprime.comm.encoder.MessageEncoderTest" time="0.0"/>
+  <testcase name="testEncodePresetMessage" classname="com.stayprime.comm.encoder.MessageEncoderTest" time="0.0"/>
+  <testcase name="testDecodePresetMessage" classname="com.stayprime.comm.encoder.MessageEncoderTest" time="0.0"/>
+  <testcase name="testEncodeAck" classname="com.stayprime.comm.encoder.MessageEncoderTest" time="0.0"/>
+  <testcase name="testDecodeAck" classname="com.stayprime.comm.encoder.MessageEncoderTest" time="0.0"/>
+  <system-out><![CDATA[encodeMessage
+decodeMessage
+encodeTextMessage
+encodeTextMessage
+decodeTextMessage
+encodePresetMessage
+decodePresetMessage
+encodeAck
+decodeAck
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

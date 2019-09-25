@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.7" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.JButton" name="saveButton">
+      <Properties>
+        <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+          <action class="com.stayprime.basestation2.CartDetailPanel" id="saveAction" methodName="saveAction"/>
+        </Property>
+        <Property name="name" type="java.lang.String" value="saveButton" noResource="true"/>
+      </Properties>
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+      <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+        <EmptyBorder bottom="5" left="5" right="5" top="5"/>
+      </Border>
+    </Property>
+    <Property name="name" type="java.lang.String" value="Form" noResource="true"/>
+  </Properties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="2"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="titleSeparator" alignment="0" max="32767" attributes="0"/>
+          <Component id="operationLabel" alignment="0" max="32767" attributes="0"/>
+          <Component id="buttonsPanel" alignment="1" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="statusUpdatedLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="playingHoleLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="cartLocationLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="macAddressLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="cartNumberLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="cartNumberField" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="playingHoleField" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="paceOfPlayLabel" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="statusUpdatedField" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="cartAppModeLabel" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="cartLocationField" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="headingLabel" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="headingField" min="-2" max="-2" attributes="0"/>
+                          <Component id="cartAppModeField" min="-2" max="-2" attributes="0"/>
+                          <Component id="paceOfPlayField" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Component id="macAddressField" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="operationLabel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+              <Component id="titleSeparator" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="cartNumberLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="cartNumberField" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="macAddressLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="macAddressField" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="cartLocationLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="cartLocationField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="headingLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="headingField" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="playingHoleLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="playingHoleField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="paceOfPlayLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="paceOfPlayField" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="statusUpdatedLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="statusUpdatedField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="cartAppModeLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="cartAppModeField" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="buttonsPanel" min="-2" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="operationLabel">
+      <Properties>
+        <Property name="font" type="java.awt.Font" noResource="true" editor="org.netbeans.modules.form.editors2.FontEditor">
+          <FontInfo relative="true">
+            <Font bold="true" component="operationLabel" property="font" relativeSize="true" size="5"/>
+          </FontInfo>
+        </Property>
+        <Property name="text" type="java.lang.String" resourceKey="operationLabel.text"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+            <EmptyBorder bottom="6" left="12" right="12" top="12"/>
+          </Border>
+        </Property>
+        <Property name="name" type="java.lang.String" value="operationLabel" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JSeparator" name="titleSeparator">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="titleSeparator" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="cartNumberLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" resourceKey="cartNumberLabel.text"/>
+        <Property name="name" type="java.lang.String" value="cartNumberLabel" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="cartNumberField">
+      <Properties>
+        <Property name="columns" type="int" value="6"/>
+        <Property name="text" type="java.lang.String" resourceKey="cartNumberField.text"/>
+        <Property name="name" type="java.lang.String" value="cartNumberField" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="macAddressLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" resourceKey="macAddressLabel.text"/>
+        <Property name="name" type="java.lang.String" value="macAddressLabel" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="macAddressField">
+      <Properties>
+        <Property name="columns" type="int" value="14"/>
+        <Property name="text" type="java.lang.String" resourceKey="macAddressField.text"/>
+        <Property name="name" type="java.lang.String" value="macAddressField" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="cartLocationLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" resourceKey="cartLocationLabel.text"/>
+        <Property name="name" type="java.lang.String" value="cartLocationLabel" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="cartLocationField">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+        <Property name="columns" type="int" value="14"/>
+        <Property name="text" type="java.lang.String" resourceKey="cartLocationField.text"/>
+        <Property name="name" type="java.lang.String" value="cartLocationField" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="playingHoleLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" resourceKey="playingHoleLabel.text"/>
+        <Property name="name" type="java.lang.String" value="playingHoleLabel" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="playingHoleField">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+        <Property name="columns" type="int" value="14"/>
+        <Property name="text" type="java.lang.String" resourceKey="playingHoleField.text"/>
+        <Property name="name" type="java.lang.String" value="playingHoleField" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="statusUpdatedLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" resourceKey="statusUpdatedLabel.text"/>
+        <Property name="name" type="java.lang.String" value="statusUpdatedLabel" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="statusUpdatedField">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+        <Property name="columns" type="int" value="14"/>
+        <Property name="text" type="java.lang.String" resourceKey="statusUpdatedField.text"/>
+        <Property name="name" type="java.lang.String" value="statusUpdatedField" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="headingLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" resourceKey="headingLabel.text"/>
+        <Property name="name" type="java.lang.String" value="headingLabel" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="paceOfPlayLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" resourceKey="paceOfPlayLabel.text"/>
+        <Property name="name" type="java.lang.String" value="paceOfPlayLabel" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="cartAppModeLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" resourceKey="cartAppModeLabel.text"/>
+        <Property name="name" type="java.lang.String" value="cartAppModeLabel" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="paceOfPlayField">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+        <Property name="columns" type="int" value="5"/>
+        <Property name="text" type="java.lang.String" resourceKey="paceOfPlayField.text"/>
+        <Property name="name" type="java.lang.String" value="paceOfPlayField" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="cartAppModeField">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+        <Property name="columns" type="int" value="12"/>
+        <Property name="name" type="java.lang.String" value="cartAppModeField" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="headingField">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+        <Property name="columns" type="int" value="3"/>
+        <Property name="text" type="java.lang.String" resourceKey="headingField.text"/>
+        <Property name="name" type="java.lang.String" value="headingField" noResource="true"/>
+      </Properties>
+    </Component>
+    <Container class="org.jdesktop.swingx.JXPanel" name="buttonsPanel">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="buttonsPanel" noResource="true"/>
+      </Properties>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+        <Property name="alignment" type="int" value="2"/>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="cancelButton">
+          <Properties>
+            <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+              <action class="com.stayprime.basestation2.CartDetailPanel" id="cancelOperation" methodName="cancelOperation"/>
+            </Property>
+            <Property name="text" type="java.lang.String" resourceKey="cancelButton.text"/>
+            <Property name="name" type="java.lang.String" value="cancelButton" noResource="true"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

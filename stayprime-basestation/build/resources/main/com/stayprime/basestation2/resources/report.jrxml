@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="fac4e5df-1cd6-4774-9c69-405dedaf6080">
+	<style name="Title" fontName="Times New Roman" fontSize="50" isBold="true" pdfFontName="Times-Bold"/>
+	<style name="SubTitle" forecolor="#736343" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<style name="Row" mode="Transparent">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style backcolor="#E6DAC3"/>
+		</conditionalStyle>
+	</style>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     fnb_order.`order_id` AS fnb_order_order_id,
+     fnb_order.`current_hole` AS fnb_order_current_hole,
+     fnb_order.`cart_number` AS fnb_order_cart_number,
+     fnb_order.`item` AS fnb_order_item,
+     fnb_order.`quantity` AS fnb_order_quantity,
+     fnb_order.`order_created` AS fnb_order_order_created
+FROM
+     `fnb_order` fnb_order]]>
+	</queryString>
+	<field name="fnb_order_order_id" class="java.lang.Integer"/>
+	<field name="fnb_order_current_hole" class="java.lang.Integer"/>
+	<field name="fnb_order_cart_number" class="java.lang.Integer"/>
+	<field name="fnb_order_item" class="java.lang.String"/>
+	<field name="fnb_order_quantity" class="java.lang.Integer"/>
+	<field name="fnb_order_order_created" class="java.sql.Timestamp"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="136" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="164" height="126" uuid="27b63232-9e8e-4e2b-baf0-7f0d1530a902"/>
+				<imageExpression><![CDATA["coffee.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement style="Title" x="270" y="0" width="263" height="62" uuid="b8199350-11cb-4295-8348-fdb599972a3e"/>
+				<textElement verticalAlignment="Middle">
+					<font pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[Coffee Title]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="SubTitle" x="303" y="62" width="196" height="22" uuid="be886ae6-3139-47d4-b150-a8c5af9296ef"/>
+				<textElement>
+					<font fontName="Times New Roman" pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[Coffee SubTitle]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="172" y="94" width="383" height="42" uuid="45a4f4ef-d355-4891-b970-f53c1a4dd049"/>
+				<textElement textAlignment="Right">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor purus gravida arcu aliquam mattis. Donec et nulla libero, ut varius massa. Nulla sed turpis elit. Etiam aliquet mauris a ligula hendrerit in auctor leo lobortis.]]></text>
+			</staticText>
+			<image>
+				<reportElement x="633" y="-73" width="219" height="209" uuid="6a6f798a-8f57-40a5-98e5-c8bfbc676173"/>
+				<imageExpression><![CDATA["coffee_stain.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="16" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="15" width="802" height="1" uuid="04a2d9ea-a2c5-4e0b-ba55-36f36b0f7524"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement style="Column header" x="0" y="0" width="133" height="15" forecolor="#736343" uuid="10a86477-8f5d-404d-a1b0-e0732ed9c578"/>
+				<text><![CDATA[fnb_order_order_id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="133" y="0" width="133" height="15" forecolor="#736343" uuid="948408e6-8e24-4431-9bca-8f4dfc554656"/>
+				<text><![CDATA[fnb_order_current_hole]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="266" y="0" width="133" height="15" forecolor="#736343" uuid="d643873d-00fe-41da-96f7-cc16bf37ed56"/>
+				<text><![CDATA[fnb_order_cart_number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="399" y="0" width="133" height="15" forecolor="#736343" uuid="3fc27e7e-f694-48a5-9604-0357c7174e93"/>
+				<text><![CDATA[fnb_order_item]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="532" y="0" width="133" height="15" forecolor="#736343" uuid="2b4a4816-5ca1-4e19-9616-ac278978cb43"/>
+				<text><![CDATA[fnb_order_quantity]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="665" y="0" width="133" height="15" forecolor="#736343" uuid="df12ea72-f1a2-43df-b8dd-fb46c7bae440"/>
+				<text><![CDATA[fnb_order_order_created]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="15" splitType="Stretch">
+			<frame>
+				<reportElement style="Row" mode="Opaque" x="0" y="0" width="802" height="15" uuid="4baaafc7-9586-4be5-940a-32858e4471d1"/>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="0" y="0" width="133" height="15" uuid="457ac480-d2fa-4aba-ba2a-e97286990ddb"/>
+					<textFieldExpression><![CDATA[$F{fnb_order_order_id}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="133" y="0" width="133" height="15" uuid="d9c1db2f-33ec-497b-8574-064d76e9c2c4"/>
+					<textFieldExpression><![CDATA[$F{fnb_order_current_hole}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="266" y="0" width="133" height="15" uuid="214193a8-85a9-4d34-b7db-f3f099a6a423"/>
+					<textFieldExpression><![CDATA[$F{fnb_order_cart_number}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="399" y="0" width="133" height="15" uuid="925c87c1-9961-4ffa-8ecc-79ba8fe6b18a"/>
+					<textFieldExpression><![CDATA[$F{fnb_order_item}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="532" y="0" width="133" height="15" uuid="2012b8bd-41dd-403c-a8c3-d6d2b9016812"/>
+					<textFieldExpression><![CDATA[$F{fnb_order_quantity}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="665" y="0" width="133" height="15" uuid="58a61ba8-7e5c-40c0-8fef-9e6a70b7daca"/>
+					<textFieldExpression><![CDATA[$F{fnb_order_order_created}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="6" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="3" width="802" height="1" uuid="32253929-0c87-49d5-90bd-269a78f32ba9"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="25" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="-21" y="1" width="843" height="24" forecolor="#D0B48E" backcolor="#F2EBDF" uuid="338bf172-3bd7-437d-bf7b-d2749fb44189"/>
+				<textField evaluationTime="Report">
+					<reportElement style="Column header" x="783" y="1" width="40" height="20" forecolor="#736343" uuid="a02198c9-d071-4509-b0f4-7ae8779f2b59"/>
+					<textElement verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Column header" x="703" y="1" width="80" height="20" forecolor="#736343" uuid="464fc6e4-bd2d-49b8-8022-3c74865f0cd9"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+				</textField>
+				<textField pattern="EEEEE dd MMMMM yyyy">
+					<reportElement style="Column header" x="22" y="1" width="197" height="20" forecolor="#736343" uuid="6b8b6862-9198-4907-a767-c70e863612a3"/>
+					<textElement verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

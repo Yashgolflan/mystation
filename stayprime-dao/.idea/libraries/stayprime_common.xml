@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="stayprime-common">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../stayprime-common/build/libs/stayprime-common.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

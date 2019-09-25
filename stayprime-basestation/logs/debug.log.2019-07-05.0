@@ -1,0 +1,550 @@
+2019-07-05 04:36:30.121  INFO   --- [AWT-EventQueue-0] c.s.basestation2.BaseStation2App         : basePath: /opt/StayPrime/BaseStation/
+2019-07-05 04:36:30.335 DEBUG   --- [AWT-EventQueue-0] c.s.b.i.ApplicationInstanceManager       : Listening for application instances on socket 44331
+2019-07-05 04:36:30.337  INFO   --- [AWT-EventQueue-0] com.stayprime.util.ClassUtilities        : StayPrime BaseStation Application
+2019-07-05 04:36:30.347  INFO   --- [AWT-EventQueue-0] com.stayprime.util.ClassUtilities        : Version: null  built: null
+2019-07-05 04:36:30.347  INFO   --- [AWT-EventQueue-0] c.s.basestation2.BaseStation2App         : System Startup time: Fri Jul 05 04:36:24 IST 2019
+2019-07-05 04:36:30.348  INFO   --- [AWT-EventQueue-0] c.s.basestation2.BaseStation2App         : Desktop session env variable: ubuntu
+2019-07-05 04:36:39.335  WARN   --- [AWT-EventQueue-0] c.s.b.ui.modules.CartUpdatePanel         : org.apache.commons.configuration.ConfigurationException: Cannot locate configuration source update.properties
+2019-07-05 04:36:43.028  INFO 29157 --- [pool-1-thread-1] o.s.boot.SpringApplication               : Starting application on stayprime-Aspire-V5-573G with PID 29157 (/home/stayprime/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/1.3.6.RELEASE/535e6024988998f891f1f9df403e804c093df06b/spring-boot-1.3.6.RELEASE.jar started by stayprime in /netbeansBaseStation/stayprime-basestation)
+2019-07-05 04:36:43.029  INFO 29157 --- [pool-1-thread-1] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2019-07-05 04:36:43.518  INFO 29157 --- [pool-1-thread-1] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6eaba1a6: startup date [Fri Jul 05 04:36:43 IST 2019]; root of context hierarchy
+2019-07-05 04:36:46.568  INFO 29157 --- [pool-1-thread-1] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-07-05 04:36:46.836  INFO 29157 --- [pool-1-thread-1] c.s.basestation2.SpringApplication       : basePath: /opt/StayPrime/BaseStation/
+2019-07-05 04:36:47.004  INFO 29157 --- [pool-1-thread-1] c.s.b.config.DataSourceConfig            : Creating dataSource for db: jdbc:mysql://spgcclouddb.cwzzsl1wpj65.eu-central-1.rds.amazonaws.com:3306/sp56?zeroDateTimeBehavior=convertToNull&useLegacyDatetimeCode=false
+2019-07-05 04:36:47.047  INFO 29157 --- [pool-1-thread-1] com.zaxxer.hikari.HikariDataSource       : HikariCP pool HikariPool-0 is starting.
+2019-07-05 04:36:47.447  INFO 29157 --- [pool-1-thread-1] com.zaxxer.hikari.pool.HikariPool        : HikariCP pool HikariPool-0 is shutting down.
+2019-07-05 04:36:47.495  WARN 29157 --- [pool-1-thread-1] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private javax.sql.DataSource org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.dataSource; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/stayprime/basestation2/config/DataSourceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is com.zaxxer.hikari.pool.PoolInitializationException: Exception during pool initialization
+2019-07-05 04:36:47.568 ERROR 29157 --- [pool-1-thread-1] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private javax.sql.DataSource org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.dataSource; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/stayprime/basestation2/config/DataSourceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is com.zaxxer.hikari.pool.PoolInitializationException: Exception during pool initialization
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:368)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1123)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1018)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1054)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:829)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:760)
+	at org.springframework.boot.SpringApplication.createAndRefreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:306)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:134)
+	at com.stayprime.basestation2.SpringStartupTask.doInBackground(SpringStartupTask.java:30)
+	at com.stayprime.basestation2.SpringStartupTask.doInBackground(SpringStartupTask.java:16)
+	at javax.swing.SwingWorker$1.call(SwingWorker.java:295)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at javax.swing.SwingWorker.run(SwingWorker.java:334)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private javax.sql.DataSource org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.dataSource; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/stayprime/basestation2/config/DataSourceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is com.zaxxer.hikari.pool.PoolInitializationException: Exception during pool initialization
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:573)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 31 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/stayprime/basestation2/config/DataSourceConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is com.zaxxer.hikari.pool.PoolInitializationException: Exception during pool initialization
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1123)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1018)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1192)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1014)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:545)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is com.zaxxer.hikari.pool.PoolInitializationException: Exception during pool initialization
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	... 45 common frames omitted
+Caused by: com.zaxxer.hikari.pool.PoolInitializationException: Exception during pool initialization
+	at com.zaxxer.hikari.pool.BaseHikariPool.initializeConnections(BaseHikariPool.java:550)
+	at com.zaxxer.hikari.pool.BaseHikariPool.<init>(BaseHikariPool.java:172)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:60)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:48)
+	at com.zaxxer.hikari.HikariDataSource.<init>(HikariDataSource.java:80)
+	at com.stayprime.basestation2.config.DataSourceConfig.siteDataSource(DataSourceConfig.java:51)
+	at com.stayprime.basestation2.config.DataSourceConfig.dataSource(DataSourceConfig.java:38)
+	at com.stayprime.basestation2.config.DataSourceConfig$$EnhancerBySpringCGLIB$$3698738e.CGLIB$dataSource$0(<generated>)
+	at com.stayprime.basestation2.config.DataSourceConfig$$EnhancerBySpringCGLIB$$3698738e$$FastClassBySpringCGLIB$$71dd73b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:356)
+	at com.stayprime.basestation2.config.DataSourceConfig$$EnhancerBySpringCGLIB$$3698738e.dataSource(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	... 46 common frames omitted
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:988)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2251)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:95)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:101)
+	at com.zaxxer.hikari.pool.BaseHikariPool.addConnection(BaseHikariPool.java:444)
+	at com.zaxxer.hikari.pool.BaseHikariPool.initializeConnections(BaseHikariPool.java:548)
+	... 62 common frames omitted
+Caused by: java.net.UnknownHostException: spgcclouddb.cwzzsl1wpj65.eu-central-1.rds.amazonaws.com: Name or service not known
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:188)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 78 common frames omitted
+
+2019-07-05 04:36:47.599  INFO 29157 --- [pool-1-thread-1] .b.l.ClasspathLoggingApplicationListener : Application failed to start with classpath: [file:/usr/lib/jvm/jdk1.8.0_211/jre/lib/charsets.jar, file:/usr/lib/jvm/jdk1.8.0_211/jre/lib/deploy.jar, file:/usr/lib/jvm/jdk1.8.0_211/jre/lib/ext/cldrdata.jar, file:/usr/lib/jvm/jdk1.8.0_211/jre/lib/ext/dnsns.jar, file:/usr/lib/jvm/jdk1.8.0_211/jre/lib/ext/jaccess.jar, file:/usr/lib/jvm/jdk1.8.0_211/jre/lib/ext/jfxrt.jar, file:/usr/lib/jvm/jdk1.8.0_211/jre/lib/ext/localedata.jar, file:/usr/lib/jvm/jdk1.8.0_211/jre/lib/ext/nashorn.jar, file:/usr/lib/jvm/jdk1.8.0_211/jre/lib/ext/sunec.jar, file:/usr/lib/jvm/jdk1.8.0_211/jre/lib/ext/sunjce_provider.jar, file:/usr/lib/jvm/jdk1.8.0_211/jre/lib/ext/sunpkcs11.jar, file:/usr/lib/jvm/jdk1.8.0_211/jre/lib/ext/zipfs.jar, file:/usr/lib/jvm/jdk1.8.0_211/jre/lib/javaws.jar, file:/usr/lib/jvm/jdk1.8.0_211/jre/lib/jce.jar, file:/usr/lib/jvm/jdk1.8.0_211/jre/lib/jfr.jar, file:/usr/lib/jvm/jdk1.8.0_211/jre/lib/jfxswt.jar, file:/usr/lib/jvm/jdk1.8.0_211/jre/lib/jsse.jar, file:/usr/lib/jvm/jdk1.8.0_211/jre/lib/management-agent.jar, file:/usr/lib/jvm/jdk1.8.0_211/jre/lib/plugin.jar, file:/usr/lib/jvm/jdk1.8.0_211/jre/lib/resources.jar, file:/usr/lib/jvm/jdk1.8.0_211/jre/lib/rt.jar, file:/netbeansBaseStation/stayprime-basestation/out/production/classes/, file:/netbeansBaseStation/stayprime-basestation/out/production/resources/, file:/netbeansBaseStation/stayprime-common/lib/hessian-4.0.7/hessian-4.07-patched.jar, file:/netbeansBaseStation/stayprime-common/lib/TaskDialog-1.2.0/TaskDialog-1.2.0.jar, file:/netbeansBaseStation/stayprime-common/lib/animatingcardlayout_12_24_04/AnimatingCardLayout.jar, file:/netbeansBaseStation/stayprime-common/lib/ganymed-ssh2-build251beta1/ganymed-ssh2-build251beta1.jar, file:/netbeansBaseStation/stayprime-common/out/production/classes/, file:/netbeansBaseStation/stayprime-common/out/production/resources/, file:/netbeansBaseStation/stayprime-dao/out/production/classes/, file:/netbeansBaseStation/stayprime-dao/out/production/resources/, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter/1.3.6.RELEASE/eb4181e48cbe0edab189b114e63c18593b23b77d/spring-boot-starter-1.3.6.RELEASE.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-data-jpa/1.3.6.RELEASE/24953d7e2594b5d1cea2f74b82e162cfc11dbadc/spring-boot-starter-data-jpa-1.3.6.RELEASE.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.swinglabs.swingx/swingx-beaninfo/1.6.5-1/b94548c338669c5f1d2736f1e730877bac6543ac/swingx-beaninfo-1.6.5-1.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/net.java.balloontip/balloontip/1.2.4.1/eb475b60f7270cd8a70e0fc5904d1efbaffc16be/balloontip-1.2.4.1.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/com.googlecode.soundlibs/jlayer/1.0.1-2/eed1661b45c5479b2c265b9ec0e5836677b9a1ae/jlayer-1.0.1-2.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.rendersnake/rendersnake/1.8/6d9ed47745ed26317f1302e280d975f21a6d42a0/rendersnake-1.8.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.apache.pdfbox/pdfbox/2.0.2/997dba365753d7da93255781fb17ee40fbca79bc/pdfbox-2.0.2.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/net.sf.jasperreports/jasperreports/6.3.0/127f84aadd082da2c6ac66423f4c913e0af22405/jasperreports-6.3.0.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/com.zaxxer/HikariCP/2.3.9/70ce7554cac96bdb5cb5cfaf04c5e8e89217476a/HikariCP-2.3.9.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/com.intellij/forms_rt/6.0.5/67bd8efabfe8ff0adb28faa4c87df0440d97ba58/forms_rt-6.0.5.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.21/139535a69a4239db087de9bab0bee568bf8e0b70/slf4j-api-1.7.21.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/commons-lang/commons-lang/2.6/ce1edb914c94ebc388f086c6827e8bdeec71ac2/commons-lang-2.6.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.5/2852e6e05fbb95076fc091f6d1780f1f8fe35e0f/commons-io-2.5.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2.2/8ad72fe39fa8c91eaaf12aadb21e0c3661fe26d5/commons-collections-3.2.2.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/commons-configuration/commons-configuration/1.10/2b36e4adfb66d966c5aef2d73deb6be716389dc9/commons-configuration-1.10.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-all/1.8.6/96a26bfa6e5aea2e3c46df44a19de93a2acd2366/groovy-all-1.8.6.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.apache.poi/poi/3.10.1/95174823e13aa828cb715b542e647e56096ffcb2/poi-3.10.1.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/commons-beanutils/commons-beanutils/1.9.2/7a87d845ad3a155297e8f67d9008f4c1e5656b71/commons-beanutils-1.9.2.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.8.2/d27c24204c5e507b16fec01006b3d0f1ec42aed4/joda-time-2.8.2.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/net.java.dev.glazedlists/glazedlists_java15/1.9.1/3ec96aff6b7addc9a2f0f82eca7147613142e45/glazedlists_java15-1.9.1.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.jdesktop.bsaf/bsaf/1.9/abec2b518ab0abc2353882c4549ff87b97d3e864/bsaf-1.9.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.swinglabs.swingx/swingx-all/1.6.5-1/1ea704cd8779f8df8a3d345ee1344239e7774d52/swingx-all-1.6.5-1.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/com.jgoodies/jgoodies-forms/1.9.0/eda960be2f88d47d14a81b742772b07684abc7d0/jgoodies-forms-1.9.0.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.jdesktop/beansbinding/1.2.1/5a34143743fc23e24b27e7cb7042ff0fb710a69b/beansbinding-1.2.1.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/com.jidesoft/jide-oss/3.6.14/58d9d8d12221eb87c42bab894ed31f506a6f527/jide-oss-3.6.14.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/net.java.dev.timingframework/timingframework/1.0/2c12a328bfd82ddb0c4389e915229ea3df1740b8/timingframework-1.0.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/com.miglayout/miglayout-swing/4.2/ca85067488e79a2078ba4eb8e2617653e9172388/miglayout-swing-4.2.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-entitymanager/4.3.11.Final/27a119fcc2b91c50e5285dd11158fac2c38c9d1b/hibernate-entitymanager-4.3.11.Final.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/xerces/xercesImpl/2.11.0/9bb329db1cfc4e22462c9d6b43a8432f5850e92c/xercesImpl-2.11.0.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/javax.mail/mail/1.4.7/9add058589d5d85adeb625859bf2c5eeaaedf12d/mail-1.4.7.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/fluent-hc/4.5.2/7bfdfa49de6d720ad3c8cedb6a5238eec564dfed/fluent-hc-4.5.2.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/com.kenai.nbpwr/edu-umd-cs-findbugs-annotations/1.3.2-201002241900/17ac3ab1435a01bc6cdfc1c897c416cbf8b1750d/edu-umd-cs-findbugs-annotations-1.3.2-201002241900.nbm, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/1.11.4.RELEASE/c2b1fd4dbf7dff772d6124bb35892759e8bf088e/spring-data-commons-1.11.4.RELEASE.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.2.7.RELEASE/289f2906943827d37de89240dbac8fe4b315a838/spring-context-4.2.7.RELEASE.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/mysql/mysql-connector-java/5.1.39/4617fe8dc8f1969ec450984b0b9203bc8b7c8ad5/mysql-connector-java-5.1.39.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/1.3.6.RELEASE/535e6024988998f891f1f9df403e804c093df06b/spring-boot-1.3.6.RELEASE.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/1.3.6.RELEASE/6cb3cc449960a537768b7060c3eab9ebb6a07773/spring-boot-autoconfigure-1.3.6.RELEASE.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/1.3.6.RELEASE/194dc550f6d3b17067641085b6fd3d1c217202fd/spring-boot-starter-logging-1.3.6.RELEASE.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.2.7.RELEASE/3d08f6f68e0654bf4be50559aec4218334189583/spring-core-4.2.7.RELEASE.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.16/d64fb662c9e42789149f5078a62a22edda786c6a/snakeyaml-1.16.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-aop/1.3.6.RELEASE/15f54738986014219c98cfd2fddac67de17b3916/spring-boot-starter-aop-1.3.6.RELEASE.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-jdbc/1.3.6.RELEASE/6a1bd13afbae1dcd7207dfd6f8fd94b549fa32e5/spring-boot-starter-jdbc-1.3.6.RELEASE.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/javax.transaction/javax.transaction-api/1.2/d81aff979d603edd90dcd8db2abc1f4ce6479e3e/javax.transaction-api-1.2.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-jpa/1.9.4.RELEASE/80b83510e67aa085b7d91d2d096d90133ec995de/spring-data-jpa-1.9.4.RELEASE.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aspects/4.2.7.RELEASE/cf2c3455c7bb6e6c44085b4d8983e37823a7c52a/spring-aspects-4.2.7.RELEASE.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/de.sciss/weblaf-core/1.28/58599ecd15d41b870d5efc573e5c7b72571abb73/weblaf-core-1.28.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/de.sciss/weblaf-ui/1.28/9c3871de78dfb307e7dada2df170539f343340e1/weblaf-ui-1.28.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/2973d150c0dc1fefe998f834810d68f278ea58ec/junit-4.12.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.1/905075e6c80f206bbe6cf1e809d2caa69f420c76/commons-lang3-3.1.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.apache.pdfbox/fontbox/2.0.2/1753b66d890d7002da9d7bd47dfbe45ec17be054/fontbox-2.0.2.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/commons-digester/commons-digester/2.1/73a8001e7a54a255eef0f03521ec1805dc738ca0/commons-digester-2.1.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/com.lowagie/itext/2.1.7.js5/d48d10d267d999255167c291e2197b00da829112/itext-2.1.7.js5.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.jfree/jcommon/1.0.23/a316f336ca996e0c6bec4e4fbd49be8f5e1c3968/jcommon-1.0.23.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.jfree/jfreechart/1.0.19/ba9ee7dbb2e4c57a6901c79f614ed2dea9cc0e20/jfreechart-1.0.19.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.eclipse.jdt.core.compiler/ecj/4.3.1/21582b0e662b9e54fc6f0f2721d36f753ce7c58c/ecj-4.3.1.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.codehaus.castor/castor-xml/1.3.3/1072663e1b7463f6452eba51749bec5526f4883d/castor-xml-1.3.3.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.6.7/81838e08d5e10e33cdee7299f9682d836b78c63e/jackson-core-2.6.7.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.6.7/1857f49ee9dffe1c8d17d4c3980e0d713af2806/jackson-databind-2.6.7.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.6.7/7e08eafe72cbd11c955d92109108bd2bfaab979e/jackson-annotations-2.6.7.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-core/4.5.1/9a3a0258f668213f873891bec16ca4489281329e/lucene-core-4.5.1.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-analyzers-common/4.5.1/ef6c6328e6095c91647126af88cf034ab235a6ed/lucene-analyzers-common-4.5.1.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-queryparser/4.5.1/63f46dc7577d676e7d8e5c63891c737297a9a61c/lucene-queryparser-4.5.1.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.olap4j/olap4j/0.9.7.309-JS-3/b959e1e72a5ab17668609edb2949b09a6a51b82e/olap4j-0.9.7.309-JS-3.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/com.google.zxing/core/2.3.0/80a402b12accd66d4be7e5dbcb44e42baa0bdd7c/core-2.3.0.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/com.ibm.icu/icu4j/57.1/198ea005f41219f038f4291f0b0e9f3259730e92/icu4j-57.1.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.18.1-GA/d9a09f7732226af26bf99f19e2cffe0ae219db5b/javassist-3.18.1-GA.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/asm/asm-commons/2.2.3/6387341fb474a9b09f19d416ab2d09cfa8faaa30/asm-commons-2.2.3.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/com.jgoodies/forms/1.0.7/d5ae5d18b9462993911024437191bab558d3c001/forms-1.0.7.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/jdom/jdom/1.0/a2ac1cd690ab4c80defe7f9bce14d35934c35cec/jdom-1.0.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/com.jgoodies/jgoodies-common/1.8.1/dffc159cf71bde5dcbb65916305684f6b43d45b1/jgoodies-common-1.8.1.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/com.miglayout/miglayout-core/4.2/70f2bfa2a077ee1632cc8229deffa1d942825c78/miglayout-core-4.2.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.3.0.Final/3616bb87707910296e2c195dc016287080bba5af/jboss-logging-3.3.0.Final.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging-annotations/1.2.0.Beta1/2f437f37bb265d9f8f1392823dbca12d2bec06d6/jboss-logging-annotations-1.2.0.Beta1.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/4.3.11.Final/536ac0021240d97db99c7d2983067cef1a6f3af5/hibernate-core-4.3.11.Final.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/dom4j/dom4j/1.6.1/5d3ccc056b6f056dbf0dddfdf43894b9065a8f94/dom4j-1.6.1.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.hibernate.common/hibernate-commons-annotations/4.0.5.Final/2a581b9edb8168e45060d8bad8b7f46712d2c52c/hibernate-commons-annotations-4.0.5.Final.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.hibernate.javax.persistence/hibernate-jpa-2.1-api/1.0.0.Final/5e731d961297e5a07290bfaf3db1fbc8bbbf405a/hibernate-jpa-2.1-api-1.0.0.Final.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.transaction/jboss-transaction-api_1.2_spec/1.0.0.Final/1f9fef7a9fcbb41cc390fc370a291cf30729e094/jboss-transaction-api_1.2_spec-1.0.0.Final.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/xml-apis/xml-apis/1.4.01/3789d9fada2d3d458c4ba2de349d48780f381ee3/xml-apis-1.4.01.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/javax.activation/activation/1.1/e6cb541461c2834bdea3eb920f1884d1eb508b50/activation-1.1.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.5.2/733db77aa8d9b2d68015189df76ab06304406e50/httpclient-4.5.2.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/net.sourceforge.findbugs/annotations/1.3.2/d77bc83e0408680034a29481a89de0dba9802a97/annotations-1.3.2.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/4.2.7.RELEASE/ae0501728c0ee072e25cb5e11b63b883c0786b4b/spring-beans-4.2.7.RELEASE.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.slf4j/jcl-over-slf4j/1.7.21/331b564a3a42f002a0004b039c1c430da89062cd/jcl-over-slf4j-1.7.21.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/4.2.7.RELEASE/bd65f97ba61fd3dcc0b74765d3fa388aeb388aa7/spring-aop-4.2.7.RELEASE.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/4.2.7.RELEASE/547b8e02f5e219f6c8c8f84675d0cd7a8a6e92cf/spring-expression-4.2.7.RELEASE.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.1.7/9865cf6994f9ff13fce0bf93f2054ef6c65bb462/logback-classic-1.1.7.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/1.7.21/2f22c882ffa479d1e9ff4eb0e8e2c29f2a0871ed/jul-to-slf4j-1.7.21.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjweaver/1.8.9/db28774f477f07220eac18d5ec9c4e01f48589d7/aspectjweaver-1.8.9.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-jdbc/8.0.36/51f718c096f0c0c6de00a45b578bad81b014aa5/tomcat-jdbc-8.0.36.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jdbc/4.2.7.RELEASE/fcf6fc778ada99a42259cdddf2f1f4cee102d934/spring-jdbc-4.2.7.RELEASE.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.springframework/spring-orm/4.2.7.RELEASE/fe0f3f496510c8ab9ed949246a74173d9e29ddaa/spring-orm-4.2.7.RELEASE.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/4.2.7.RELEASE/c6db53cd8393e212b5239a1ad7a6aa0ca83d6b71/spring-tx-4.2.7.RELEASE.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/com.thoughtworks.xstream/xstream/1.4.7/bce3282142b63068260f021fcbe48b72e8d71a1a/xstream-1.4.7.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/net.htmlparser.jericho/jericho-html/3.3/bf3aa8c67df4683da93d49e98d56cd0bc48f7c62/jericho-html-3.3.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/com.mortennobel/java-image-scaling/0.8.5/7d879313a0688a737703e5a4f115c16378c5cf8b/java-image-scaling-0.8.5.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/bouncycastle/bcmail-jdk14/138/14ff2dfec8578f5f6838c4d6a77a86789afe5382/bcmail-jdk14-138.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/bouncycastle/bcprov-jdk14/138/de366c3243a586eb3c0e2bcde1ed9bb1bfb985ff/bcprov-jdk14-138.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.codehaus.castor/castor-core/1.3.3/2fbb4a27b840e116526a1189dbe53307551ecfb4/castor-core-1.3.3.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/stax/stax/1.2.0/c434800de5e4bbe1822805be5fb1c32d6834f830/stax-1.2.0.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/javax.xml.stream/stax-api/1.0-2/d6337b0de8b25e53e81b922352fbea9f9f57ba0b/stax-api-1.0-2.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-queries/4.5.1/62f829859c8bc2df6239cf4c1d8f96ed46b5e541/lucene-queries-4.5.1.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-sandbox/4.5.1/4b038e148cac043176ecacdb34078a9ee07bd957/lucene-sandbox-4.5.1.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/asm/asm-tree/2.2.3/93f4ffda9068fed6c6d508293f838bc0279fd65b/asm-tree-2.2.3.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/antlr/antlr/2.7.7/83cd2cd674a217ade95a4bb83a8a14f351f48bd0/antlr-2.7.7.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.jboss/jandex/1.1.0.Final/e84a2122e76f0b6503be78094ddf2108057ac15f/jandex-1.1.0.Final.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.5/e7501a1b34325abb00d17dde96150604a0658b54/httpcore-4.4.5.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.9/9ce04e34240f674bc72680f8b843b1457383161a/commons-codec-1.9.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.1.7/7873092d39ef741575ca91378a6a21c388363ac8/logback-core-1.1.7.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-juli/8.0.36/2f04a42a84db65bd5666c79eb4865cc07eee5886/tomcat-juli-8.0.36.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/com.jhlabs/filters/2.0.235/af6a2dfefef70f1ab2d7a8d1f8173f67e276b3f4/filters-2.0.235.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bctsp-jdk14/1.38/4821122f8390d15f4b5ee652621e2a2bb1f1bf16/bctsp-jdk14-1.38.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/stax/stax-api/1.0.1/49c100caf72d658aca8e58bd74a4ba90fa2b0d70/stax-api-1.0.1.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/jakarta-regexp/jakarta-regexp/1.4/ea514a179ac1dd7e81c7e6594468b9b9910d298/jakarta-regexp-1.4.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/asm/asm/2.2.3/a21deee7c82ec4b17e4f63088fd2257511e15ad5/asm-2.2.3.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcprov-jdk14/1.38/de366c3243a586eb3c0e2bcde1ed9bb1bfb985ff/bcprov-jdk14-1.38.jar, file:/home/stayprime/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcmail-jdk14/1.38/14ff2dfec8578f5f6838c4d6a77a86789afe5382/bcmail-jdk14-1.38.jar, file:/home/stayprime/Music/idea-IU-191.7479.19/lib/idea_rt.jar]
+2019-07-05 04:36:59.443 ERROR 29157 --- [AWT-EventQueue-0] org.jdesktop.application.Task            : com.stayprime.basestation2.BaseStationStartupTask@4c3701f8 failed: java.lang.NullPointerException
+
+java.lang.NullPointerException: null
+	at com.stayprime.basestation2.BaseStation2App.syncGolfClub(BaseStation2App.java:237)
+	at com.stayprime.basestation2.BaseStationStartupTask.doInBackground(BaseStationStartupTask.java:39)
+	at com.stayprime.basestation2.BaseStationStartupTask.doInBackground(BaseStationStartupTask.java:23)
+	at javax.swing.SwingWorker$1.call(SwingWorker.java:295)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at javax.swing.SwingWorker.run(SwingWorker.java:334)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-07-05 04:55:29.074  INFO   --- [AWT-EventQueue-0] c.s.basestation2.BaseStation2App         : basePath: /opt/StayPrime/BaseStation/
+2019-07-05 04:55:29.287 DEBUG   --- [AWT-EventQueue-0] c.s.b.i.ApplicationInstanceManager       : Listening for application instances on socket 44331
+2019-07-05 04:55:29.289  INFO   --- [AWT-EventQueue-0] com.stayprime.util.ClassUtilities        : StayPrime BaseStation Application
+2019-07-05 04:55:29.292  INFO   --- [AWT-EventQueue-0] com.stayprime.util.ClassUtilities        : Version: null  built: null
+2019-07-05 04:55:29.292  INFO   --- [AWT-EventQueue-0] c.s.basestation2.BaseStation2App         : System Startup time: Fri Jul 05 04:55:28 IST 2019
+2019-07-05 04:55:29.293  INFO   --- [AWT-EventQueue-0] c.s.basestation2.BaseStation2App         : Desktop session env variable: ubuntu
+2019-07-05 04:55:35.658  WARN   --- [AWT-EventQueue-0] c.s.b.ui.modules.CartUpdatePanel         : org.apache.commons.configuration.ConfigurationException: Cannot locate configuration source update.properties
+2019-07-05 04:55:37.726  INFO 1077 --- [pool-1-thread-1] o.s.boot.SpringApplication               : Starting application on stayprime-Aspire-V5-573G with PID 1077 (/home/stayprime/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/1.3.6.RELEASE/535e6024988998f891f1f9df403e804c093df06b/spring-boot-1.3.6.RELEASE.jar started by stayprime in /netbeansBaseStation/stayprime-basestation)
+2019-07-05 04:55:37.727  INFO 1077 --- [pool-1-thread-1] o.s.boot.SpringApplication               : No active profile set, falling back to default profiles: default
+2019-07-05 04:55:38.248  INFO 1077 --- [pool-1-thread-1] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6ae8e886: startup date [Fri Jul 05 04:55:38 IST 2019]; root of context hierarchy
+2019-07-05 04:55:40.470  INFO 1077 --- [pool-1-thread-1] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-07-05 04:55:40.700  INFO 1077 --- [pool-1-thread-1] c.s.basestation2.SpringApplication       : basePath: /opt/StayPrime/BaseStation/
+2019-07-05 04:55:40.905  INFO 1077 --- [pool-1-thread-1] c.s.b.config.DataSourceConfig            : Creating dataSource for db: jdbc:mysql://spgcclouddb.cwzzsl1wpj65.eu-central-1.rds.amazonaws.com:3306/sp56?zeroDateTimeBehavior=convertToNull&useLegacyDatetimeCode=false
+2019-07-05 04:55:40.997  INFO 1077 --- [pool-1-thread-1] com.zaxxer.hikari.HikariDataSource       : HikariCP pool HikariPool-0 is starting.
+2019-07-05 04:55:46.061 DEBUG 1077 --- [pool-1-thread-1] c.s.b.config.DataSourceConfig            : Created dataSource in 5155 ms
+2019-07-05 04:55:49.866  INFO 1077 --- [pool-1-thread-1] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-07-05 04:55:56.207  INFO 1077 --- [pool-1-thread-1] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-07-05 04:55:56.210  INFO 1077 --- [pool-1-thread-1] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSourceConfig' has been autodetected for JMX exposure
+2019-07-05 04:55:56.211  INFO 1077 --- [pool-1-thread-1] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-07-05 04:55:56.224  INFO 1077 --- [pool-1-thread-1] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSourceConfig': registering with JMX server as MBean [com.stayprime.basestation2.config:name=dataSourceConfig,type=DataSourceConfig]
+2019-07-05 04:55:56.233  INFO 1077 --- [pool-1-thread-1] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-07-05 04:55:56.280  INFO 1077 --- [pool-1-thread-1] o.s.boot.SpringApplication               : Started application in 19.158 seconds (JVM running for 31.771)
+2019-07-05 04:55:56.772  INFO 1077 --- [pool-1-thread-3] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 04:56:00.194  INFO 1077 --- [pool-1-thread-3] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 04:56:04.353  INFO 1077 --- [pool-1-thread-3] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 04:56:05.172  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 04:56:13.854 DEBUG 1077 --- [monitorTask] com.stayprime.util.EmailUtil             : Sending email: 
+2019-07-05 04:56:21.666  INFO 1077 --- [monitorTask] c.s.b.reporting.CartConnectivityReport   : Email sent successfully to {reports.me@stayprime.com}
+2019-07-05 04:56:23.925  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 04:56:31.482  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 04:56:45.059  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 04:56:52.814  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 04:57:08.086  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 04:57:10.454  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 04:57:15.254  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 04:57:21.015  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 04:57:32.772  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 04:57:40.693  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 04:57:41.854  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 04:57:44.113  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 04:57:49.553  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 04:58:04.220  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 04:58:24.317  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 04:58:26.550  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 04:58:32.311  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 04:58:35.830  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 04:58:44.114  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 04:58:51.920  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 04:59:05.097  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 04:59:07.386  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 04:59:16.077  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 04:59:21.338  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 04:59:30.495  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 04:59:38.309  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 04:59:51.793  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 04:59:54.787  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:00:00.229  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:00:05.234  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:00:15.154  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:00:36.758  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:00:39.627  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:00:45.492  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:00:50.741  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:01:00.162  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:01:08.075  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:01:21.239  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:01:27.195  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:01:33.068  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:01:38.711  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:01:49.713  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:01:57.665  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:01:58.711  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:02:01.582  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:02:06.852  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:02:22.028  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:02:29.978  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:02:33.568  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:02:35.454  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:02:40.575  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:02:56.299  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:03:04.213  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:03:06.190  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:03:07.841  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:03:12.572  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:03:28.113  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:03:35.941  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:03:39.770  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:03:42.184  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:03:47.451  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:04:01.855  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:04:09.488  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:04:11.694  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:04:14.659  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:04:20.094  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:04:35.311  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:04:43.093  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:04:58.181  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:05:01.050  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:05:06.494  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:05:11.484  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:05:23.140  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:05:31.090  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:05:31.772  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:05:34.183  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:05:39.493  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:05:55.750  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:06:04.802  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:06:07.898  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:06:13.657  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:06:28.002  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:06:36.011  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:06:47.338  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:06:49.674  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:06:54.935  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:07:00.283  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:07:13.692  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:07:20.284  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:07:22.775  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:07:27.894  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:07:33.095  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:07:44.483  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:07:52.104  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:07:53.175  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:07:55.733  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:08:00.724  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:08:18.179  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:08:25.339  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:08:28.056  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:08:33.495  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:08:38.610  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:08:49.184  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:08:57.177  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:08:58.611  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:09:01.657  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:09:07.417  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:09:26.805  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:09:34.897  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:09:35.740  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:09:38.453  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:09:43.895  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:09:58.946  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:10:06.895  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:10:20.563  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:10:27.095  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:10:32.394  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:10:37.659  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:10:48.538  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:10:56.354  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:10:57.659  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:10:59.933  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:11:05.493  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:11:21.362  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:11:29.456  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:11:33.573  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:11:36.034  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:11:41.648  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:11:57.567  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:12:05.614  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:12:06.612  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:12:08.854  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:12:14.623  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:12:31.264  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:12:39.213  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:12:43.409  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:12:45.507  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:12:50.009  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:13:06.340  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:13:14.413  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:13:15.413  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:13:17.649  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:13:23.094  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:13:37.520  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:13:45.326  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:13:57.339  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:14:00.053  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:14:03.754  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:14:08.386  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:14:18.712  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:14:26.264  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:14:28.386  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:14:30.164  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:14:35.413  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:14:51.093  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:15:00.210  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:15:02.610  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:15:08.369  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:15:24.220  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:15:32.008  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:15:33.074  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:15:35.567  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:15:40.392  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:15:56.468  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:16:06.303  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:16:08.042  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:16:12.591  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:16:24.738  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:16:32.270  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:16:45.658  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:16:48.550  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:16:53.649  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:16:57.978  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:17:08.763  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:17:17.978  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:17:20.222  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:17:25.970  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:17:41.015  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:17:48.980  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:18:01.493  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:18:04.086  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:18:09.169  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:18:18.012  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:18:30.236  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:18:37.931  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:18:38.942  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:18:41.030  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:18:46.518  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:19:03.580  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:19:11.532  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:19:12.531  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:19:14.910  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:19:24.052  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:19:39.099  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:19:47.044  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:19:57.895  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:20:00.264  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:20:04.234  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:20:09.491  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:20:17.771  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:20:25.475  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:20:39.331  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:20:41.669  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:20:46.429  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:20:50.179  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:20:59.713  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:21:07.364  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:21:20.222  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:21:23.088  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:21:28.210  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:21:35.623  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:21:46.454  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:21:54.270  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:21:55.623  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:21:58.162  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:22:04.050  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:22:19.417  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:22:27.371  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:22:28.281  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:22:30.606  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:22:35.357  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:22:50.844  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:22:58.408  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:23:09.611  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:23:11.696  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:23:16.813  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:23:21.756  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:23:31.620  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:23:39.163  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:23:53.904  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:23:56.628  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:24:02.070  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:24:07.198  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:24:17.125  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:24:24.947  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:24:37.442  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:24:39.704  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:24:44.496  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:24:53.278  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:25:03.805  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:25:11.796  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:25:13.278  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:25:16.314  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:25:21.435  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:25:37.934  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:25:46.035  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:25:46.715  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:25:49.282  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:25:57.912  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:26:14.744  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:26:22.708  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:26:23.669  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:26:26.107  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:26:32.359  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:26:49.498  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:26:57.268  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:27:04.791  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:27:07.216  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:27:12.965  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:27:28.536  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:27:37.072  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:27:38.072  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:27:40.631  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:27:46.388  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:28:07.204  INFO 1077 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : Updating service requests
+2019-07-05 05:28:17.111  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Syncing assets
+2019-07-05 05:28:19.742  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking CourseSettingsUpdated timestamp local - 1562221476525, remote - 1562221476525, delta - 0
+2019-07-05 05:28:25.109  INFO 1077 --- [pool-5-thread-1] c.s.storage.services.AssetSyncService    : Checking PinsUpdated timestamp local - 1560233798538, remote - 1560233798538, delta - 0
+2019-07-05 05:28:33.121  INFO 1077 --- [Thread-58] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@6ae8e886: startup date [Fri Jul 05 04:55:38 IST 2019]; root of context hierarchy
+2019-07-05 05:28:33.618  INFO 1077 --- [Thread-58] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-07-05 05:28:33.618  INFO 1077 --- [Thread-58] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-07-05 05:28:33.627  INFO 1077 --- [Thread-58] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-05 05:28:34.108  INFO 1077 --- [Thread-58] com.zaxxer.hikari.pool.HikariPool        : HikariCP pool HikariPool-0 is shutting down.
+2019-07-05 05:28:35.023  WARN 1077 --- [pool-5-thread-1] com.zaxxer.hikari.proxy.ConnectionProxy  : Connection com.mysql.jdbc.JDBC4Connection@b085767 (HikariPool-0) marked as broken because of SQLSTATE(08003), ErrorCode(0).
+
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.Util.getInstance(Util.java:387)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:917)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:896)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:885)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:860)
+	at com.mysql.jdbc.ConnectionImpl.throwConnectionClosedException(ConnectionImpl.java:1246)
+	at com.mysql.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:1241)
+	at com.mysql.jdbc.ConnectionImpl.rollback(ConnectionImpl.java:4564)
+	at com.zaxxer.hikari.proxy.ConnectionProxy.rollback(ConnectionProxy.java:318)
+	at com.zaxxer.hikari.proxy.ConnectionJavassistProxy.rollback(ConnectionJavassistProxy.java)
+	at org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction.doRollback(JdbcTransaction.java:163)
+	at org.hibernate.engine.transaction.spi.AbstractTransactionImpl.rollback(AbstractTransactionImpl.java:211)
+	at org.hibernate.jpa.internal.TransactionImpl.rollback(TransactionImpl.java:108)
+	at org.springframework.orm.jpa.JpaTransactionManager.doRollback(JpaTransactionManager.java:544)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processRollback(AbstractPlatformTransactionManager.java:853)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.rollback(AbstractPlatformTransactionManager.java:830)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.completeTransactionAfterThrowing(TransactionAspectSupport.java:503)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:285)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:131)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy91.findAll(Unknown Source)
+	at com.stayprime.basestation2.services.CartService.syncCarts(CartService.java:54)
+	at com.stayprime.basestation2.BaseStationTasks.updateCartsTask(BaseStationTasks.java:76)
+	at sun.reflect.GeneratedMethodAccessor113.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-07-05 05:28:35.025  WARN 1077 --- [pool-5-thread-1] com.zaxxer.hikari.proxy.ConnectionProxy  : Connection com.mysql.jdbc.JDBC4Connection@b085767 (HikariPool-0) marked as broken because of SQLSTATE(08003), ErrorCode(0).
+
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.Util.getInstance(Util.java:387)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:917)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:896)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:885)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:860)
+	at com.mysql.jdbc.ConnectionImpl.throwConnectionClosedException(ConnectionImpl.java:1246)
+	at com.mysql.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:1241)
+	at com.mysql.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:4801)
+	at com.zaxxer.hikari.proxy.ConnectionProxy.setAutoCommit(ConnectionProxy.java:334)
+	at com.zaxxer.hikari.proxy.ConnectionJavassistProxy.setAutoCommit(ConnectionJavassistProxy.java)
+	at org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction.releaseManagedConnection(JdbcTransaction.java:127)
+	at org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction.doRollback(JdbcTransaction.java:170)
+	at org.hibernate.engine.transaction.spi.AbstractTransactionImpl.rollback(AbstractTransactionImpl.java:211)
+	at org.hibernate.jpa.internal.TransactionImpl.rollback(TransactionImpl.java:108)
+	at org.springframework.orm.jpa.JpaTransactionManager.doRollback(JpaTransactionManager.java:544)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processRollback(AbstractPlatformTransactionManager.java:853)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.rollback(AbstractPlatformTransactionManager.java:830)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.completeTransactionAfterThrowing(TransactionAspectSupport.java:503)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:285)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:131)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy91.findAll(Unknown Source)
+	at com.stayprime.basestation2.services.CartService.syncCarts(CartService.java:54)
+	at com.stayprime.basestation2.BaseStationTasks.updateCartsTask(BaseStationTasks.java:76)
+	at sun.reflect.GeneratedMethodAccessor113.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+

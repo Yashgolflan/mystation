@@ -1,0 +1,139 @@
+JFDML JFormDesigner: "6.0.6.0.190" Java: "1.8.0_212" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "com.stayprime.basestation.ui.site"
+	"i18n.bundleName": "Bundle"
+	"i18n.keyPrefix": "GolfCourseSetupScreen"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "org.jdesktop.swingx.JXPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				"preferredSize": new java.awt.Dimension( 700, 661 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+					"$columnSpecs": "default"
+					"$rowSpecs": "fill:min:grow, fill:default"
+				} ) {
+					name: "dialogPane"
+					"border": sfield com.jgoodies.forms.factories.Borders DIALOG
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+						"$columnSpecs": "182dlu, labelcompgap, (177dlu<default<200dlu)"
+						"$rowSpecs": "default, linegap, default, unrelgap, default, linegap, fill:61dlu:grow(0.1), unrelgap, 0dlu, linegap, fill:default:grow(0.9)"
+					} ) {
+						name: "contentPanel"
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "golfCourseSetupLabel"
+							"text": new FormMessage( null, "GolfCourseSetupScreen.golfCourseSetupLabel.text" )
+							"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 6, false )
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridX": 1
+							"gridY": 1
+						} )
+						add( new FormComponent( "com.stayprime.basestation.ui.site.GolfSiteEditor" ) {
+							name: "golfSiteEditor"
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridY": 3
+							"vAlign": sfield com.jgoodies.forms.layout.CellConstraints TOP
+							"gridWidth": 3
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "coursesLabel"
+							"text": new FormMessage( null, "GolfCourseSetupScreen.coursesLabel.text" )
+							"font": &SwingDerivedFont0 new com.jformdesigner.model.SwingDerivedFont( null, 1, 3, false )
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridY": 5
+						} )
+						add( new FormComponent( "com.stayprime.basestation.ui.site.CourseListEditor" ) {
+							name: "courseListEditor"
+							"preferredSize": new java.awt.Dimension( 130, 120 )
+							"minimumSize": new java.awt.Dimension( 130, 120 )
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridY": 7
+						} )
+						add( new FormComponent( "com.stayprime.basestation.ui.site.CourseDetailPanel" ) {
+							name: "courseDetailPanel1"
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridX": 3
+							"gridY": 5
+							"vAlign": sfield com.jgoodies.forms.layout.CellConstraints FILL
+							"gridHeight": 3
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "holesLabel"
+							"text": new FormMessage( null, "GolfCourseSetupScreen.holesLabel.text" )
+							"font": #SwingDerivedFont0
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridY": 9
+						} )
+						add( new FormComponent( "com.stayprime.basestation.ui.site.HoleListEditor" ) {
+							name: "holeListEditor"
+							"preferredSize": new java.awt.Dimension( 130, 150 )
+							"minimumSize": new java.awt.Dimension( 130, 150 )
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridY": 11
+						} )
+						add( new FormComponent( "com.stayprime.basestation.ui.site.HoleDetailPanel" ) {
+							name: "holeDetailPanel"
+							"preferredSize": new java.awt.Dimension( 177, 200 )
+							"maximumSize": new java.awt.Dimension( 176, 600 )
+							"requestFocusEnabled": false
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridX": 3
+							"gridY": 9
+							"gridHeight": 3
+						} )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 1
+						"gridY": 1
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+						"$columnSpecs": "glue, button, relgap, button"
+						"$rowSpecs": "pref"
+					} ) {
+						name: "buttonBar"
+						"border": sfield com.jgoodies.forms.factories.Borders BUTTON_BAR_PAD
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "saveButton"
+							"text": new FormMessage( null, "GolfCourseSetupScreen.saveButton.text" )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "saveChanges", false ) )
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridX": 2
+							"gridY": 1
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "cancelButton"
+							"text": new FormMessage( null, "GolfCourseSetupScreen.cancelButton.text" )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "exitThisScreen", false ) )
+						}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+							"gridX": 4
+							"gridY": 1
+						} )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 1
+						"gridY": 2
+					} )
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 820, 585 )
+		} )
+		addBindingGroup( new FormBindingGroup( class org.jdesktop.beansbinding.BindingGroup ) {
+			"name": "bindingGroup"
+			addBinding( new FormBinding( "this", "modified", "saveButton", "enabled" ) {
+				"updateStrategy": enum org.jdesktop.beansbinding.AutoBinding$UpdateStrategy READ
+			} )
+			addBinding( new FormBinding( "courseListEditor", "selectedItem", "holeListEditor", "golfCourse" ) )
+			addBinding( new FormBinding( "holeListEditor", "selectedItem", "holeDetailPanel", "editingObject" ) {
+				"updateStrategy": enum org.jdesktop.beansbinding.AutoBinding$UpdateStrategy READ
+			} )
+			addBinding( new FormBinding( "courseListEditor", "selectedItem", "courseDetailPanel1", "editingObject" ) {
+				"updateStrategy": enum org.jdesktop.beansbinding.AutoBinding$UpdateStrategy READ
+			} )
+		} )
+	}
+}

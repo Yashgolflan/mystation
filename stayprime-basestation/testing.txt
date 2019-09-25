@@ -1,0 +1,4 @@
+ PASS=
+mysqldump -uroot -p$PASS --host=spgcclouddb.cwzzsl1wpj65.eu-central-1.rds.amazonaws.com sp37 | mysql -uroot -p$PASS --host=spgcclouddb.cwzzsl1wpj65.eu-central-1.rds.amazonaws.com sp1
+mysql -uroot -p --host=spgcclouddb.cwzzsl1wpj65.eu-central-1.rds.amazonaws.com
+

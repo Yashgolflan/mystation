@@ -1,0 +1,10 @@
+GRANT SELECT ON stayprime.* TO 'default' IDENTIFIED BY 'golfcart';
+GRANT INSERT, UPDATE ON stayprime.cart_info TO 'default' IDENTIFIED BY 'golfcart';
+GRANT INSERT, UPDATE ON stayprime.cart_unit TO 'default' IDENTIFIED BY 'golfcart';
+GRANT INSERT, UPDATE, DELETE ON stayprime.course_settings TO 'default' IDENTIFIED BY 'golfcart';
+GRANT INSERT, UPDATE, DELETE ON stayprime.service_request TO 'default' IDENTIFIED BY 'golfcart';
+GRANT INSERT, UPDATE, DELETE ON stayprime.carts_ahead TO 'default' IDENTIFIED BY 'golfcart';
+GRANT INSERT, UPDATE, DELETE ON stayprime.menu_items TO 'default' IDENTIFIED BY 'golfcart';
+GRANT INSERT, UPDATE, DELETE ON stayprime.pin_location TO 'default' IDENTIFIED BY 'golfcart';
+GRANT INSERT, UPDATE, DELETE ON stayprime.cart_tracking TO 'default' IDENTIFIED BY 'golfcart';
+FLUSH PRIVILEGES;

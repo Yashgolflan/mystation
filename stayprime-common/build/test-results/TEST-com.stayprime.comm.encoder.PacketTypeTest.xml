@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.stayprime.comm.encoder.PacketTypeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-09-25T04:48:28" hostname="stayprime-Aspire-V5-573G" time="0.003">
+  <properties/>
+  <testcase name="testValues" classname="com.stayprime.comm.encoder.PacketTypeTest" time="0.003"/>
+  <system-out><![CDATA[values
+NULL
+LOCATION
+FB_ORDER
+ROUNDS_STAT
+COMM_SMS
+SCORECARD_STAT
+WALKER_SCORECARD_STAT
+TMT_SCORES
+TMT_LEADERBOARDFORMAT
+TMT_LEADERBOARD
+TMT_REQUEST
+TMT_ROUND_PLAYERS
+CART_AHEAD_LIST
+CART_LIST
+TEXT_MESSAGE
+ACK
+COMMAND
+WIFI
+PIN_LOCATIONS
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

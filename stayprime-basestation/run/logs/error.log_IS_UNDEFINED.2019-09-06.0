@@ -1,0 +1,3 @@
+2019-09-06 14:21:29.142 ERROR 19572 --- [pool-1-thread-1] c.s.basestation2.CourseSettingsManager   : java.util.ConcurrentModificationException: Cannot begin a new event while another event is in progress by thread, AWT-EventQueue-1
+2019-09-06 14:40:05.193 ERROR 8072 --- [pool-1-thread-1] c.s.basestation2.CourseSettingsManager   : java.lang.NullPointerException
+2019-09-06 15:15:20.774 ERROR 24640 --- [pool-1-thread-1] c.s.basestation2.CourseSettingsManager   : java.util.ConcurrentModificationException: Cannot begin a new event while another event is in progress by thread, AWT-EventQueue-1

@@ -1,0 +1,5 @@
+2019-09-02 16:30:07.925 ERROR 22819 --- [pool-6-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.ArrayIndexOutOfBoundsException: 89
+2019-09-02 16:46:09.331 ERROR 23650 --- [pool-1-thread-1] c.s.basestation2.CourseSettingsManager   : java.lang.NullPointerException
+2019-09-02 17:49:11.484 ERROR 25124 --- [pool-1-thread-1] c.s.basestation2.CourseSettingsManager   : java.lang.NullPointerException
+2019-09-02 17:50:19.561 ERROR 25239 --- [pool-1-thread-1] c.s.basestation2.CourseSettingsManager   : java.lang.NullPointerException
+2019-09-02 17:53:03.444 ERROR 25354 --- [pool-1-thread-1] c.s.basestation2.CourseSettingsManager   : java.lang.NullPointerException

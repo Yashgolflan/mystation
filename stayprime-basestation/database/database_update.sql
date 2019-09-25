@@ -1,0 +1,10 @@
+USE `stayprime`;
+ALTER TABLE `cart_info` CHANGE COLUMN `mac_address` `mac_address` VARCHAR(20) NULL DEFAULT NULL;
+ALTER TABLE `cart_unit` CHANGE COLUMN `mac_address` `mac_address` VARCHAR(20) NOT NULL;
+ALTER TABLE `cart_unit` CHANGE COLUMN `ip_address` `ip_address` VARCHAR(20) NULL DEFAULT NULL;
+ALTER TABLE `cart_unit` CHANGE COLUMN `firmware_version` `firmware_version` VARCHAR(32) NULL DEFAULT NULL;
+ALTER TABLE `cart_unit` CHANGE COLUMN `software_version` `software_version` VARCHAR(32) NULL DEFAULT NULL;
+ALTER TABLE `hole_objects` CHANGE COLUMN `shape` `shape` LONGTEXT NULL DEFAULT NULL;
+ALTER TABLE `pin_location` CHANGE COLUMN `course` `course` INT NOT NULL;
+ALTER TABLE `pin_location` CHANGE COLUMN `hole` `hole` INT NOT NULL;
+ALTER TABLE `tee_boxes` DROP FOREIGN KEY `(null)`;

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="hessian-4.0.7">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../stayprime-common/lib/hessian-4.0.7/hessian-4.07-patched.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../stayprime-common/lib/hessian-4.0.7/hessian-4.0.7-src.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

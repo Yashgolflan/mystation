@@ -1,0 +1,82 @@
+2019-09-03 11:41:25.195 ERROR 30990 --- [pool-1-thread-1] c.s.basestation2.CourseSettingsManager   : java.lang.NullPointerException
+2019-09-03 12:14:49.628 ERROR 31089 --- [pool-1-thread-2] c.s.b.u.modules.OnCourseAdsStorageTasks  : java.lang.RuntimeException: DeleteClientTask: org.springframework.dao.DataIntegrityViolationException: not-null property references a null or transient value : com.stayprime.hibernate.entities.Ads.clients; nested exception is org.hibernate.PropertyValueException: not-null property references a null or transient value : com.stayprime.hibernate.entities.Ads.clients
+2019-09-03 12:14:53.763 ERROR 31089 --- [pool-1-thread-3] c.s.b.u.modules.OnCourseAdsStorageTasks  : java.lang.RuntimeException: DeleteClientTask: org.springframework.dao.DataIntegrityViolationException: not-null property references a null or transient value : com.stayprime.hibernate.entities.Ads.clients; nested exception is org.hibernate.PropertyValueException: not-null property references a null or transient value : com.stayprime.hibernate.entities.Ads.clients
+2019-09-03 12:15:03.454 ERROR 31089 --- [pool-1-thread-1] c.s.b.u.modules.OnCourseAdsStorageTasks  : java.lang.RuntimeException: DeleteClientTask: org.springframework.dao.DataIntegrityViolationException: not-null property references a null or transient value : com.stayprime.hibernate.entities.Ads.clients; nested exception is org.hibernate.PropertyValueException: not-null property references a null or transient value : com.stayprime.hibernate.entities.Ads.clients
+2019-09-03 12:15:41.645 ERROR 31089 --- [pool-1-thread-2] c.s.b.u.modules.OnCourseAdsStorageTasks  : java.lang.RuntimeException: DeleteClientTask: org.springframework.dao.DataIntegrityViolationException: not-null property references a null or transient value : com.stayprime.hibernate.entities.Ads.clients; nested exception is org.hibernate.PropertyValueException: not-null property references a null or transient value : com.stayprime.hibernate.entities.Ads.clients
+2019-09-03 12:18:10.385 ERROR 31089 --- [pool-1-thread-2] c.s.b.u.modules.OnCourseAdsStorageTasks  : java.lang.RuntimeException: DeleteClientTask: org.springframework.dao.DataIntegrityViolationException: not-null property references a null or transient value : com.stayprime.hibernate.entities.Ads.clients; nested exception is org.hibernate.PropertyValueException: not-null property references a null or transient value : com.stayprime.hibernate.entities.Ads.clients
+2019-09-03 12:18:16.065 ERROR 31089 --- [pool-1-thread-3] c.s.b.u.modules.OnCourseAdsStorageTasks  : java.lang.RuntimeException: DeleteClientTask: org.springframework.dao.DataIntegrityViolationException: not-null property references a null or transient value : com.stayprime.hibernate.entities.Ads.clients; nested exception is org.hibernate.PropertyValueException: not-null property references a null or transient value : com.stayprime.hibernate.entities.Ads.clients
+2019-09-03 13:41:01.187 ERROR 4134 --- [pool-1-thread-1] c.s.basestation2.CourseSettingsManager   : java.lang.NullPointerException
+2019-09-03 13:43:53.294 ERROR 4134 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.RuntimeException: Error storing object to file: CartInfo.json
+2019-09-03 13:43:53.535 ERROR 4134 --- [pool-5-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+java.lang.Exception: null
+	at com.stayprime.basestation2.BaseStationTasks.updateCartsTask(BaseStationTasks.java:85)
+	at sun.reflect.GeneratedMethodAccessor104.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-09-03 13:45:57.747 ERROR 4338 --- [pool-1-thread-1] c.s.basestation2.CourseSettingsManager   : java.lang.NullPointerException
+2019-09-03 14:33:30.248 ERROR 3862 --- [pool-1-thread-1] c.s.basestation2.CourseSettingsManager   : java.lang.NullPointerException
+2019-09-03 14:41:35.806 ERROR 4249 --- [pool-1-thread-1] c.s.basestation2.CourseSettingsManager   : java.lang.NullPointerException
+2019-09-03 14:45:29.966 ERROR 4422 --- [pool-1-thread-1] c.s.basestation2.CourseSettingsManager   : java.lang.NullPointerException
+2019-09-03 14:54:57.739 ERROR 5155 --- [pool-1-thread-1] c.s.basestation2.CourseSettingsManager   : java.lang.NullPointerException
+2019-09-03 14:54:58.066 ERROR 5155 --- [pool-5-thread-1] c.s.basestation2.BaseStationTasks        : java.lang.RuntimeException: Error storing object to file: CartInfo.json
+2019-09-03 14:54:58.084 ERROR 5155 --- [pool-5-thread-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task.
+
+java.lang.Exception: null
+	at com.stayprime.basestation2.BaseStationTasks.updateCartsTask(BaseStationTasks.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-09-03 14:54:58.109 ERROR 5155 --- [AWT-EventQueue-1] org.jdesktop.application.Task            : com.stayprime.basestation2.BaseStationStartupTask@67bda530 failed: java.lang.RuntimeException: Error storing object to file: CourseSettings.json
+
+java.lang.RuntimeException: Error storing object to file: CourseSettings.json
+	at com.stayprime.storage.util.JsonStorage.storeObject(JsonStorage.java:67)
+	at com.stayprime.storage.util.JsonStorage.storeList(JsonStorage.java:50)
+	at com.stayprime.storage.util.LocalStorage.saveCourseSettings(LocalStorage.java:88)
+	at com.stayprime.storage.services.AssetSyncService.syncCourseSettings(AssetSyncService.java:171)
+	at com.stayprime.storage.services.AssetSyncService.checkCourseSettingsUpdated(AssetSyncService.java:119)
+	at com.stayprime.storage.services.AssetSyncService.syncAssets(AssetSyncService.java:103)
+	at com.stayprime.storage.services.AssetSyncService$$FastClassBySpringCGLIB$$b12f0f72.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:651)
+	at com.stayprime.storage.services.AssetSyncService$$EnhancerBySpringCGLIB$$449cd584.syncAssets(<generated>)
+	at com.stayprime.basestation2.BaseStation2App.syncGolfClub(BaseStation2App.java:240)
+	at com.stayprime.basestation2.BaseStationStartupTask.doInBackground(BaseStationStartupTask.java:39)
+	at com.stayprime.basestation2.BaseStationStartupTask.doInBackground(BaseStationStartupTask.java:23)
+	at javax.swing.SwingWorker$1.call(SwingWorker.java:295)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at javax.swing.SwingWorker.run(SwingWorker.java:334)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.FileNotFoundException: /opt/StayPrime/BaseStation/json/CourseSettings.json (No such file or directory)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at java.io.FileWriter.<init>(FileWriter.java:90)
+	at com.stayprime.storage.util.JsonStorage.storeObject(JsonStorage.java:62)
+	... 18 common frames omitted
+
+2019-09-03 14:55:54.690 ERROR 5225 --- [pool-1-thread-1] c.s.basestation2.CourseSettingsManager   : java.lang.NullPointerException

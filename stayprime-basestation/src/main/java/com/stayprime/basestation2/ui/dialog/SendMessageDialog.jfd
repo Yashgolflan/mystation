@@ -1,0 +1,76 @@
+JFDML JFormDesigner: "5.2.2.0.199" Java: "1.8.0_66" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "com.stayprime.basestation2.resources"
+	"i18n.bundleName": "BaseStation2App"
+	"i18n.keyPrefix": "SendMessageDialog"
+	contentType: "form/swing"
+	root: new FormRoot {
+		auxiliary() {
+			"JavaCodeGenerator.i18nInitMethod": true
+		}
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				"border": sfield com.jgoodies.forms.factories.Borders DIALOG
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+					"$columnSpecs": "default:grow"
+					"$rowSpecs": "default, linegap, fill:default:grow"
+				} ) {
+					name: "contentPanel"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "titleLabel"
+						"text": new FormMessage( null, "SendMessageDialog.titleLabel.text" )
+						"font": new java.awt.Font( "Droid Sans", 1, 14 )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "textAreaScrollPane"
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "textArea"
+							"lineWrap": true
+							"rows": 8
+							"columns": 40
+						} )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridY": 3
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jgoodies.forms.layout.FormLayout ) {
+					"$columnSpecs": "glue, button, relgap, button"
+					"$rowSpecs": "pref"
+				} ) {
+					name: "buttonBar"
+					"border": sfield com.jgoodies.forms.factories.Borders BUTTON_BAR_PAD
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "okButton"
+						"text": new FormMessage( null, "SendMessageDialog.okButton.text" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "okButtonActionPerformed", false ) )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "okButtonActionPerformed", false ) )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 2
+						"gridY": 1
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "cancelButton"
+						"text": new FormMessage( null, "SendMessageDialog.cancelButton.text" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "cancelButtonActionPerformed", false ) )
+					}, new FormLayoutConstraints( class com.jgoodies.forms.layout.CellConstraints ) {
+						"gridX": 4
+						"gridY": 1
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "South"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}

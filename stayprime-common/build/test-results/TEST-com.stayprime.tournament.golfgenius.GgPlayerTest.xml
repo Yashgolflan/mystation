@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.stayprime.tournament.golfgenius.GgPlayerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-09-25T04:48:28" hostname="stayprime-Aspire-V5-573G" time="0.009">
+  <properties/>
+  <testcase name="testListToString" classname="com.stayprime.tournament.golfgenius.GgPlayerTest" time="0.009"/>
+  <system-out><![CDATA[listToString
+34,Bb,true,false;35,Cc,false,true;
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

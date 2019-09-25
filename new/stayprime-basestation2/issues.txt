@@ -1,0 +1,21 @@
+Issues found or introduced by porting all persistence to Spring Data and LocalStorage
+
+Found:
+-CartListMenu for sending commands to devices may not be functional.
+-In CartManagementScreen delete unit is not operational, we should implement:
+  User press Delete > Confirm dialog with checkbox "Delete cart" and "Delete unit".
+-SmsApiSettingsPanel is not in use
+-AtacServiceThread is not in use. Needs to be moved to the server side.
+
+Removed PredefinedMessageDialog, needs to be reimplemented to send:
+    WEATHER_ALERT_ENABLE, WEATHER_ALERT_DISABLE //"Enable Weather Alert"
+    CARTPATH_ONLY_ENABLE, CARTPATH_ONLY_DISABLE //"Enable Cart Path Only"
+    DISABLE_CARTKILL, ENABLE_CARTKILL //"Enable Accessible Mode"
+    In CartPacePanel:204, a setting should toggle these commands
+
+-Removed Courses.defaultTees
+-Create admin user not working
+-Should login using localStorage credentials
+-Need to finish Screen impl and saving in GolfCourseSetupScreen
+
+-CrudRepository.save doesn't play well with CourseInfo because our id is 0

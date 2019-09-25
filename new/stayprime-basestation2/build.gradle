@@ -1,0 +1,117 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.3.6.RELEASE")
+    }
+}
+
+plugins {
+    id 'com.palantir.git-version' version '0.5.2'
+}
+
+apply plugin: 'java'
+apply plugin: 'spring-boot'
+
+group = 'stayprime'
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+if (!hasProperty('mainClass')) {
+    ext.mainClass = 'com.stayprime.basestation2.SpringApplication'
+}
+
+springBoot {
+    mainClass = 'com.stayprime.basestation2.SpringApplication'
+    requiresUnpack = ['stayprime:stayprime-dao', 'stayprime:stayprime-common']
+}
+
+repositories {
+    mavenCentral()
+    maven{url "http://jasperreports.sourceforge.net/maven2/"}
+    maven{url "http://jaspersoft.artifactoryonline.com/jaspersoft/third-party-ce-artifacts/"}
+}
+
+configurations {
+    compile.exclude group: 'commons-logging'
+    compile.exclude group: 'log4j'
+    compile.exclude module: 'log4j-over-slf4j'
+}
+
+dependencies {
+    compile project(":stayprime-common")
+    compile project(":stayprime-dao")
+
+    compile("org.springframework.boot:spring-boot-starter")
+    compile("org.springframework.boot:spring-boot-starter-data-jpa")
+    compile("org.swinglabs.swingx:swingx-beaninfo:1.6.5-1")
+    compile("net.java.balloontip:balloontip:1.2.4.1")
+    compile("de.sciss:weblaf:1.28") {
+        exclude module: "slf4j-simple"
+    }
+    compile("com.googlecode.soundlibs:jlayer:1.0.1-2")
+    compile files('../stayprime-common/lib/animatingcardlayout_12_24_04/AnimatingCardLayout.jar')
+    compile files('../stayprime-common/lib/ganymed-ssh2-build251beta1/ganymed-ssh2-build251beta1.jar')
+
+    compile("org.rendersnake:rendersnake:1.8")
+    compile("org.apache.pdfbox:pdfbox:2.0.2")
+    compile("net.sf.jasperreports:jasperreports:6.3.0")
+    compile("com.zaxxer:HikariCP:2.3.9")
+
+    compile("org.slf4j:slf4j-api:1.7.21")
+    runtime("org.slf4j:jcl-over-slf4j:1.7.21")
+    runtime("org.codehaus.groovy:groovy-all:1.8.6")
+    runtime("org.apache.poi:poi:3.10.1")
+
+    testCompile group: 'junit', name: 'junit', version: '4.10'
+}
+
+task(run, dependsOn: 'classes', type: JavaExec) {
+    main = mainClass
+    classpath = sourceSets.main.runtimeClasspath
+    workingDir project.projectDir.toString() + '/run'
+    workingDir.mkdirs()
+    //Args for db ddl tasks: create, update, validate
+//    args '/opt/StayPrime/BaseStation/', 'db', 'update'
+    args workingDir
+    standardInput = System.in
+}
+
+task(debug, dependsOn: 'classes', type: JavaExec) {
+    main = mainClass
+    classpath = sourceSets.main.runtimeClasspath
+    workingDir project.projectDir.toString() + '/run'
+    workingDir.mkdirs()
+    //Args for db ddl tasks: create, update, validate
+//    args '/opt/StayPrime/BaseStation/', 'db', 'validate'
+    args workingDir
+    standardInput = System.in
+    debug true
+}
+
+test {
+    workingDir project.projectDir.toString() + '/run/test'
+    workingDir.mkdirs()
+}
+
+jar {
+    logger.quiet("Version: " + gitVersion());
+    manifest {
+        attributes(
+            "Manifest-Version": "1.0",
+            "Class-Path": configurations.runtime.collect { "libs/" + it.getName() }.join(' '),
+            "Version": gitVersion(),
+            "Built-Date": getDate(),
+            "Main-Class": mainClass
+        )
+    }
+}
+
+def getDate() {
+    def date = new Date()
+    def formattedDate = date.format('yyyy-MM-dd HH:mm:ss')
+    return formattedDate
+}
